@@ -15,18 +15,74 @@
 // Needed to obtain the Navigation Controller
 #import "AppDelegate.h"
 
+#import "LevelHelperLoader.h"
+#import "GameConstants.h"
+#import "GameObjectGoal.h"
+
+#import "b2WorldCallbacks.h"
+#import "Trajectories.h"
+
+//-------------------
+// Class TrajectoryRayCastClosestCallback
+//-------------------
+#ifndef DEGTORAD
+#define DEGTORAD 0.0174532925199432957f
+#define RADTODEG 57.295779513082320876f
+#endif
+
+// This callback finds the closest hit, optionally ignoring one particular body
+class TrajectoryRayCastClosestCallback : public b2RayCastCallback
+{
+public:
+    TrajectoryRayCastClosestCallback(b2Body* ignoreBody) : m_hit(false), m_ignoreBody(ignoreBody) {}
+    TrajectoryRayCastClosestCallback() : m_hit(false) {}
+    
+    float32 ReportFixture(b2Fixture* fixture, const b2Vec2& point, const b2Vec2& normal, float32 fraction)
+    {
+        if ( fixture->GetBody() == m_ignoreBody )
+            return -1;
+        
+        m_hit = true;
+        m_point = point;
+        m_normal = normal;
+        return fraction;
+    }
+    
+    b2Body* m_ignoreBody;
+    bool m_hit;
+    b2Vec2 m_point;
+    b2Vec2 m_normal;
+};
+//-------------------
+// End of Class TrajectoryRayCastClosestCallback
+//-------------------
 
 enum {
 	kTagParentNode = 1,
 };
 
+#pragma mark - spawn touches
+
+@interface SpawnTouches: NSObject
+{
+    UITouch*    touch;
+    CGPoint     startPoint;
+    CGPoint     endPoint;
+}
+@property (nonatomic, retain) UITouch* touch;
+@property (nonatomic, readwrite) CGPoint startPoint;
+@property (nonatomic, readwrite) CGPoint endPoint;
+@end
+
+@implementation SpawnTouches
+@synthesize touch, startPoint, endPoint;
+
+@end
 
 #pragma mark - HelloWorldLayer
 
 @interface HelloWorldLayer()
 -(void) initPhysics;
--(void) addNewSpriteAtPosition:(CGPoint)p;
--(void) createMenu;
 @end
 
 @implementation HelloWorldLayer
@@ -54,15 +110,37 @@ enum {
 		
 		self.isTouchEnabled = YES;
 		self.isAccelerometerEnabled = YES;
-		CGSize s = [CCDirector sharedDirector].winSize;
+//		CGSize s = [CCDirector sharedDirector].winSize;
 		
 		// init physics
 		[self initPhysics];
-		
-		// create reset button
-		[self createMenu];
-		
-		//Set up sprite
+    
+        
+        //create a LevelHelperLoader object that has the data of the specified level
+        loader = [[LevelHelperLoader alloc] initWithContentOfFile:@"level04"];
+        
+        //create all objects from the level file and adds them to the cocos2d layer (self)
+        [loader addObjectsToWorld:world cocos2dLayer:self];
+        
+        //checks if the level has physics boundaries
+        if([loader hasPhysicBoundaries])
+        {
+            //if it does, it will create the physic boundaries
+            [loader createPhysicBoundaries:world]; 
+        }
+        
+        // Setup collision detection
+        [loader useLevelHelperCollisionHandling];//necessary or else collision in LevelHelper will not be performed
+        
+        [loader registerBeginOrEndCollisionCallbackBetweenTagA:BALL andTagB:BLOCK_BLACK idListener:self selListener:@selector(beginEndCollisionBetweenBallAndBlackBlock:)];
+        [loader registerBeginOrEndCollisionCallbackBetweenTagA:BALL andTagB:BLOCK_RED idListener:self selListener:@selector(beginEndCollisionBetweenBallAndRedBlock:)];
+        [loader registerBeginOrEndCollisionCallbackBetweenTagA:BALL andTagB:BLOCK_YELLOW idListener:self selListener:@selector(beginEndCollisionBetweenBallAndYellowBlock:)];
+        
+        // Setup goal collision
+        [loader registerBeginOrEndCollisionCallbackBetweenTagA:BALL andTagB:GOAL_YELLOW idListener:self selListener:@selector(collisionBallAndGoalYellow:)];
+        
+        // do level setup
+        [self setupLevel];
 		
 #if 1
 		// Use batch node. Faster
@@ -75,18 +153,193 @@ enum {
 #endif
 		[self addChild:parent z:0 tag:kTagParentNode];
 		
-		
-		[self addNewSpriteAtPosition:ccp(s.width/2, s.height/2)];
-		
-		CCLabelTTF *label = [CCLabelTTF labelWithString:@"Tap screen" fontName:@"Marker Felt" fontSize:32];
-		[self addChild:label z:0];
-		[label setColor:ccc3(0,0,255)];
-		label.position = ccp( s.width/2, s.height-50);
-		
 		[self scheduleUpdate];
 	}
 	return self;
 }
+
+
+#pragma mark -- 
+#pragma mark Handle collision
+/*
+ -----------------------------
+    Handle collision start
+ --------------------------------
+ */
+-(void) beginEndCollisionBetweenBallAndBlackBlock:(LHContactInfo*)contact
+{
+    
+    LHSprite* ballSprite = [contact spriteA];
+    [ballSprite setFrame:1];
+}
+
+-(void) beginEndCollisionBetweenBallAndYellowBlock:(LHContactInfo*)contact
+{
+
+    LHSprite* ballSprite = [contact spriteA];
+    [ballSprite setFrame:4];
+}
+
+
+-(void) beginEndCollisionBetweenBallAndRedBlock:(LHContactInfo*)contact{
+
+    LHSprite* ballSprite = [contact spriteA];
+    [ballSprite setFrame:3];
+}
+
+-(void) collisionBallAndGoalYellow:(LHContactInfo*)contact
+{
+    // If same color, increment goal ball count
+    // otherwise decrease
+    // change goal yellow frame according the the ball count
+    LHSprite* ballSprite = [contact spriteA];
+    LHSprite* goalSprite = [contact spriteB];
+    
+    [self goalHitBySprite:ballSprite andGoalSprite:goalSprite];
+}
+/*
+ -----------------------------
+ Handle collision start
+ -----------------------------
+ */
+
+#pragma mark --
+#pragma mark Setup level stuffs
+
+NSMutableArray      *goalsArray;
+NSMutableDictionary *goalInfo;
+
+-(void) setupLevel
+{
+    // set all goal frame to 4
+    NSArray* spritesGoalYellow = [loader spritesWithTag:GOAL_YELLOW];
+    
+    for (LHSprite *sprite in spritesGoalYellow) {
+        [sprite setFrame:GOAL_NEUTRAL_FRAME_INDEX];
+        [self goalAddSprite:sprite];
+    }
+    
+    // setup physics boundary
+    if([loader hasPhysicBoundaries])
+    {
+        [loader createPhysicBoundaries:world];
+    }
+    
+    // gravity 0.6 times
+    world->SetGravity(b2Vec2(world->GetGravity().x * 0.6, world->GetGravity().y * 0.6));
+}
+
+#pragma mark --
+#pragma mark Goal helper functions
+
+/*
+ -----------------------------
+ -----------------------------
+ Start of Goal helper functions
+ */
+
+-(void) goalAddSprite:(LHSprite*)spriteGoal
+{
+    // add goal sprite into array
+    if (!goalsArray) {
+        goalsArray = [[NSMutableArray alloc] init];
+    }
+    
+    GameObjectGoal* goalObject = [[GameObjectGoal alloc] init];
+    
+    switch (spriteGoal.tag) {
+        case GOAL_YELLOW:
+            goalObject.goalColor = GoalTypeYellow;
+            break;
+        default:
+            break;
+    }
+    
+    goalObject.nRainCollectedCount = 0;
+    goalObject.nRainTargetCount = GOAL_TARGET_COUNT;
+    goalObject.goalSprite = spriteGoal;
+    
+    [goalsArray addObject:goalObject];
+}
+-(void)goalRemoveSprite:(LHSprite*)spriteGoal
+{
+    GameObjectGoal *goalObject;
+    for (GameObjectGoal *gog in goalsArray) {
+        if ([gog.goalSprite isEqual:spriteGoal]) {
+            goalObject = gog;
+            break;
+        }
+    }
+    
+    [goalsArray removeObject:goalObject];
+}
+
+-(void) goalHitBySprite:(LHSprite*)spriteBall andGoalSprite:(LHSprite*)spriteGoal
+{
+    // remove the ball
+    // check goal same color or not
+    if ([goalsArray count] <=0) {
+        return;
+    }
+    
+    int nBallColor = [spriteBall currentFrame];
+    
+    //get goal info
+    GameObjectGoal* goalInfo;
+    for (GameObjectGoal *gog in goalsArray) {
+        if ([gog.goalSprite isEqual:spriteGoal]) {
+            goalInfo = gog;
+            break;
+        }
+    }
+    
+    NSAssert(goalInfo, @"must have goalinfo object");
+    
+    if (!goalInfo) {
+        return;
+    }
+    
+    if (goalInfo.goalColor == nBallColor) {
+        //happier
+        goalInfo.nRainCollectedCount++;
+    }
+    else {
+        //sadder
+        goalInfo.nRainCollectedCount--;
+    }
+    
+    // make goal happier or sadder by changing the frame
+    float fPercentageComplete = (float)goalInfo.nRainCollectedCount / (float)goalInfo.nRainTargetCount;
+    int nGoalRange = GOAL_SUCCESS_FRAME_INDEX  - GOAL_NEUTRAL_FRAME_INDEX;
+    int nDelta = fPercentageComplete * nGoalRange;
+    int nCalculatedFrame = GOAL_NEUTRAL_FRAME_INDEX + nDelta;
+    
+    [spriteGoal setFrame: nCalculatedFrame];
+    
+    if (goalInfo.nRainCollectedCount >= goalInfo.nRainTargetCount) {
+        [spriteGoal setPosition:CGPointMake(99999, 99999)];
+//        [spriteGoal removeBodyFromWorld];
+        [spriteGoal removeSelf];
+        [spriteGoal removeFromParentAndCleanup:YES];
+        [self goalRemoveSprite:spriteGoal];
+    }
+    
+    [self performSelector:@selector(removeBall:) withObject:spriteBall afterDelay:0.04];
+}
+
+-(void)removeBall:(LHSprite*)spriteBall
+{
+    [spriteBall removeBodyFromWorld];
+    [spriteBall removeSelf];
+    [spriteBall removeFromParentAndCleanup:YES];
+}
+
+/*
+  END OF GOAL HELPER FUNCTIONS
+ -----------------------------
+ -----------------------------
+ */
+
 
 -(void) dealloc
 {
@@ -99,55 +352,6 @@ enum {
 	[super dealloc];
 }	
 
--(void) createMenu
-{
-	// Default font size will be 22 points.
-	[CCMenuItemFont setFontSize:22];
-	
-	// Reset Button
-	CCMenuItemLabel *reset = [CCMenuItemFont itemWithString:@"Reset" block:^(id sender){
-		[[CCDirector sharedDirector] replaceScene: [HelloWorldLayer scene]];
-	}];
-	
-	// Achievement Menu Item using blocks
-	CCMenuItem *itemAchievement = [CCMenuItemFont itemWithString:@"Achievements" block:^(id sender) {
-		
-		
-		GKAchievementViewController *achivementViewController = [[GKAchievementViewController alloc] init];
-		achivementViewController.achievementDelegate = self;
-		
-		AppController *app = (AppController*) [[UIApplication sharedApplication] delegate];
-		
-		[[app navController] presentModalViewController:achivementViewController animated:YES];
-		
-		[achivementViewController release];
-	}];
-	
-	// Leaderboard Menu Item using blocks
-	CCMenuItem *itemLeaderboard = [CCMenuItemFont itemWithString:@"Leaderboard" block:^(id sender) {
-		
-		
-		GKLeaderboardViewController *leaderboardViewController = [[GKLeaderboardViewController alloc] init];
-		leaderboardViewController.leaderboardDelegate = self;
-		
-		AppController *app = (AppController*) [[UIApplication sharedApplication] delegate];
-		
-		[[app navController] presentModalViewController:leaderboardViewController animated:YES];
-		
-		[leaderboardViewController release];
-	}];
-	
-	CCMenu *menu = [CCMenu menuWithItems:itemAchievement, itemLeaderboard, reset, nil];
-	
-	[menu alignItemsVertically];
-	
-	CGSize size = [[CCDirector sharedDirector] winSize];
-	[menu setPosition:ccp( size.width/2, size.height/2)];
-	
-	
-	[self addChild: menu z:-1];	
-}
-
 -(void) initPhysics
 {
 	
@@ -157,52 +361,16 @@ enum {
 	gravity.Set(0.0f, -10.0f);
 	world = new b2World(gravity);
 	
-	
-	// Do we want to let bodies sleep?
-	world->SetAllowSleeping(true);
-	
-	world->SetContinuousPhysics(true);
-	
-	m_debugDraw = new GLESDebugDraw( PTM_RATIO );
-	world->SetDebugDraw(m_debugDraw);
-	
-	uint32 flags = 0;
-	flags += b2Draw::e_shapeBit;
-	//		flags += b2Draw::e_jointBit;
-	//		flags += b2Draw::e_aabbBit;
-	//		flags += b2Draw::e_pairBit;
-	//		flags += b2Draw::e_centerOfMassBit;
-	m_debugDraw->SetFlags(flags);		
-	
-	
-	// Define the ground body.
-	b2BodyDef groundBodyDef;
-	groundBodyDef.position.Set(0, 0); // bottom-left corner
-	
-	// Call the body factory which allocates memory for the ground body
-	// from a pool and creates the ground box shape (also from a pool).
-	// The body is also added to the world.
-	b2Body* groundBody = world->CreateBody(&groundBodyDef);
-	
-	// Define the ground box shape.
-	b2EdgeShape groundBox;		
-	
-	// bottom
-	
-	groundBox.Set(b2Vec2(0,0), b2Vec2(s.width/PTM_RATIO,0));
-	groundBody->CreateFixture(&groundBox,0);
-	
-	// top
-	groundBox.Set(b2Vec2(0,s.height/PTM_RATIO), b2Vec2(s.width/PTM_RATIO,s.height/PTM_RATIO));
-	groundBody->CreateFixture(&groundBox,0);
-	
-	// left
-	groundBox.Set(b2Vec2(0,s.height/PTM_RATIO), b2Vec2(0,0));
-	groundBody->CreateFixture(&groundBox,0);
-	
-	// right
-	groundBox.Set(b2Vec2(s.width/PTM_RATIO,s.height/PTM_RATIO), b2Vec2(s.width/PTM_RATIO,0));
-	groundBody->CreateFixture(&groundBox,0);
+//	
+//	// Do we want to let bodies sleep?
+//	world->SetAllowSleeping(true);
+//	
+//	world->SetContinuousPhysics(true);
+//	
+//	m_debugDraw = new GLESDebugDraw( PTM_RATIO ;
+//	world->SetDebugDraw(m_debugDraw);
+//	
+
 }
 
 -(void) draw
@@ -223,42 +391,6 @@ enum {
 	kmGLPopMatrix();
 }
 
--(void) addNewSpriteAtPosition:(CGPoint)p
-{
-	CCLOG(@"Add sprite %0.2f x %02.f",p.x,p.y);
-	// Define the dynamic body.
-	//Set up a 1m squared box in the physics world
-	b2BodyDef bodyDef;
-	bodyDef.type = b2_dynamicBody;
-	bodyDef.position.Set(p.x/PTM_RATIO, p.y/PTM_RATIO);
-	b2Body *body = world->CreateBody(&bodyDef);
-	
-	// Define another box shape for our dynamic body.
-	b2PolygonShape dynamicBox;
-	dynamicBox.SetAsBox(.5f, .5f);//These are mid points for our 1m box
-	
-	// Define the dynamic body fixture.
-	b2FixtureDef fixtureDef;
-	fixtureDef.shape = &dynamicBox;	
-	fixtureDef.density = 1.0f;
-	fixtureDef.friction = 0.3f;
-	body->CreateFixture(&fixtureDef);
-	
-
-	CCNode *parent = [self getChildByTag:kTagParentNode];
-	
-	//We have a 64x64 sprite sheet with 4 different 32x32 images.  The following code is
-	//just randomly picking one of the images
-	int idx = (CCRANDOM_0_1() > .5 ? 0:1);
-	int idy = (CCRANDOM_0_1() > .5 ? 0:1);
-	CCPhysicsSprite *sprite = [CCPhysicsSprite spriteWithTexture:spriteTexture_ rect:CGRectMake(32 * idx,32 * idy,32,32)];
-	[parent addChild:sprite];
-	
-	[sprite setPTMRatio:PTM_RATIO];
-	[sprite setBody:body];
-	[sprite setPosition: ccp( p.x, p.y)];
-
-}
 
 -(void) update: (ccTime) dt
 {
@@ -272,33 +404,281 @@ enum {
 	
 	// Instruct the world to perform a single step of simulation. It is
 	// generally best to keep the time step and iterations fixed.
-	world->Step(dt, velocityIterations, positionIterations);	
+	world->Step(dt, velocityIterations, positionIterations);
+    
+    
+    //Iterate over the bodies in the physics world
+	for (b2Body* b = world->GetBodyList(); b; b = b->GetNext())
+	{
+		if (b->GetUserData() != NULL)
+        {
+			//Synchronize the AtlasSprites position and rotation with the corresponding body
+			CCSprite *myActor = (CCSprite*)b->GetUserData();
+            
+            if(myActor != 0)
+            {
+                //THIS IS VERY IMPORTANT - GETTING THE POSITION FROM BOX2D TO COCOS2D
+                myActor.position = [LevelHelperLoader metersToPoints:b->GetPosition()];
+                myActor.rotation = -1 * CC_RADIANS_TO_DEGREES(b->GetAngle());
+            }
+            
+        }
+	}
+    
+    CGSize s = [[CCDirector sharedDirector] winSize];
+    for (int n = 0; n<[ballSprites count]; ++n) {
+        LHSprite* mySprite = [ballSprites objectAtIndex:n];
+        if (mySprite.position.x < 0 || mySprite.position.x > s.width || mySprite.position.y < 0 || mySprite.position.y>s.height){
+            [mySprite removeBodyFromWorld];
+            [mySprite removeFromParentAndCleanup:YES];
+            [ballSprites removeObject:mySprite];
+
+        }
+    }
+}
+
+#pragma mark --
+#pragma mark trajectory prediction
+static int nMaxTrajectoryPoints = 30;
+NSMutableArray *trajectorySprites;
+
+b2Vec2 getTrajectoryPoint( b2Vec2& startingPosition, b2Vec2& startingVelocity, float n , b2World* world)
+{
+    //velocity and gravity are given per second but we want time step values here
+    float t = 10 / 60.0f; // seconds per time step (at 60fps)
+    b2Vec2 stepVelocity = 6.0 * t * startingVelocity; // m/s
+    b2Vec2 stepGravity = t * t * world->GetGravity(); // m/s/s
+    
+    return startingPosition + n * stepVelocity + 0.5f * (n*n+n) * stepGravity;
+}
+
+float originalOpacity;
+- (void) drawTrajectory:(CGPoint)startPos andVel:(CGPoint)startingVelocity {
+    
+    if (!trajectorySprites) {
+        trajectorySprites = [[NSMutableArray alloc] init];
+        
+        for (int i = 0 ; i<nMaxTrajectoryPoints; i++) {
+            LHSprite* sprite  = [loader createSpriteWithName:@"trajectory" fromSheet:@"UntitledSheet" fromSHFile:@"game_images" tag:BALL];
+            [sprite setScale:0.2];
+            originalOpacity = [sprite opacity];
+            [trajectorySprites addObject:sprite];
+        }
+    }
+    
+    
+    for (int i = 0; i < nMaxTrajectoryPoints; i++) { // three seconds at 60fps
+        b2Vec2 startposition = b2Vec2(startPos.x, startPos.y);
+        b2Vec2 endposition = b2Vec2(startingVelocity.x, startingVelocity.y);
+        b2Vec2 trajectoryPosition = getTrajectoryPoint( startposition, endposition, i , world);
+        
+        
+        // show sprite at pos
+        LHSprite *sprite = [trajectorySprites objectAtIndex:i];
+        [sprite transformPosition:CGPointMake(trajectoryPosition.x, trajectoryPosition.y)];
+        
+        if ( i > 0 && [self isTrajectoryCollideAtPos:CGPointMake(trajectoryPosition.x, trajectoryPosition.y) andSprite:sprite ]) {
+            break;
+        }
+        
+        
+        [sprite setOpacity:originalOpacity];
+    }
+}
+
+- (void) clearTrajectory
+{
+    for (int i = 0; i < nMaxTrajectoryPoints; i++) {
+        // show sprite at pos
+        LHSprite *sprite = [trajectorySprites objectAtIndex:i];
+        [sprite setOpacity:0.0];
+    }
+}
+
+- (BOOL) isTrajectoryCollideAtPos:(CGPoint)trajectoryPos andSprite:(LHSprite*)trajectorySprite{
+    /// Check against all block
+    int nStartBlock = BLOCK_START + 1;
+    int nEndBlock   = BLOCK_END;
+    
+    // Reiterate all kind of blocks
+    for (int n = nStartBlock; n < nEndBlock; n++) {
+        NSArray *spritesBlock = [loader spritesWithTag:(LevelHelper_TAG)n];
+        for (LHSprite* sprite in spritesBlock) {
+            CGRect frame = [sprite boundingBox];
+            CGRect frame2 = [trajectorySprite boundingBox];
+//            if (CGRectContainsRect(frame, frame2)) {
+            if (CGRectContainsPoint(frame, trajectoryPos)) {
+                return YES;
+            }
+        }
+    }
+    
+    return false;
+}
+
+#pragma mark --
+#pragma mark Handle touches
+
+static int nColorIndex = 0;
+NSMutableArray* ballSprites;
+
+- (void)ccTouchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
+{
+    for( UITouch *touch in touches ) {
+        [self spawnTouchStart:touch];
+    }
+}
+
+- (void)ccTouchesMoved:(NSSet *)touches withEvent:(UIEvent *)event
+{
+    for( UITouch *touch in touches ) {
+        [self spawnTouchEnd:touch isEnded:false];
+    }
 }
 
 - (void)ccTouchesEnded:(NSSet *)touches withEvent:(UIEvent *)event
 {
-	//Add a new body/atlas sprite at the touched location
+    
 	for( UITouch *touch in touches ) {
-		CGPoint location = [touch locationInView: [touch view]];
-		
-		location = [[CCDirector sharedDirector] convertToGL: location];
-		
-		[self addNewSpriteAtPosition: location];
+        [self spawnTouchEnd:touch isEnded:YES];
 	}
+
+}
+
+NSMutableArray* pendingSpawners = nil;
+static const float fMultiplier = 8;
+static const int nMax = 20;
+static const float fDelay = 0.2;
+
+- (void)spawnTouchStart:(UITouch*)touch
+{
+    if (!pendingSpawners) {
+        pendingSpawners = [[NSMutableArray alloc] init];
+    }
+
+    SpawnTouches* spawnTouch = [[SpawnTouches alloc] init];
+    [spawnTouch setTouch:touch];
+    [spawnTouch setStartPoint:[touch locationInView: [touch view]]];
+    [pendingSpawners addObject:spawnTouch];
+}
+
+- (void)spawnTouchEnd:(UITouch*)touch isEnded:(BOOL)bEnded
+{
+    for ( SpawnTouches* spawnTouch in pendingSpawners ) {
+        if (![spawnTouch.touch isEqual:touch]) {
+            continue;
+        }
+        
+        NSLog(@"touch end called");
+        
+        
+        CGPoint start   = spawnTouch.startPoint;
+        CGPoint end     = [touch locationInView:[touch view]];
+        end = [[CCDirector sharedDirector] convertToGL: end];
+        start = [[CCDirector sharedDirector] convertToGL: start];
+        
+        CGPoint direct ;
+        if (ccpDistance(end, start) != 0) {
+            direct  = ccpNormalize(ccpSub(end, start));
+            direct = ccpMult(direct, fMultiplier);
+        }else {
+            direct = ccp(0, 0);
+        }
+        
+        
+		CGPoint location = start;
+
+        NSMutableDictionary *loc = [[NSMutableDictionary alloc] init];
+        [loc setValue:[NSNumber numberWithFloat:location.x] forKey:@"x"];
+        [loc setValue:[NSNumber numberWithFloat:location.y] forKey:@"y"];
+        [loc setValue:[NSNumber numberWithFloat:direct.x] forKey:@"velx"];
+        [loc setValue:[NSNumber numberWithFloat:direct.y] forKey:@"vely"];
+        [loc setValue:[NSNumber numberWithInteger:nColorIndex] forKey:@"colorIndex"];
+        
+
+        nColorIndex++;
+
+        if(bEnded){
+            [pendingSpawners removeObject:spawnTouch];
+            [self trySpawnRainAtPosition:loc];
+            
+            [self clearTrajectory];
+        }
+        else {
+            // draw trajectory
+            [self clearTrajectory];
+            [self drawTrajectory:location andVel:direct];
+        }
+    
+    }
+}
+
+-(void) trySpawnRainAtPosition:(NSMutableDictionary*)loc
+{
+    // Check if spawn inside start area
+    if (false == [self isSpawnInsideStartArea:loc]){
+        
+        return;
+    }
+    
+    for (int nIndex = 0; nIndex < nMax; ++nIndex) {
+        [self performSelector:@selector(addNewSpriteAtPosition:) withObject:loc afterDelay:nIndex*fDelay];
+    }
+}
+
+-(void) addNewSpriteAtPosition:(NSMutableDictionary*)loc
+{
+    CGPoint pos = CGPointMake([[loc objectForKey:@"x"] floatValue], [[loc objectForKey:@"y"] floatValue]);
+    CGPoint direct = CGPointMake([[loc objectForKey:@"velx"] floatValue], [[loc objectForKey:@"vely"] floatValue]);
+    int color = [[loc objectForKey:@"colorIndex"] integerValue];
+    
+    LHSprite* mySprite;
+    
+    if ((color%3)==0) {
+        mySprite = [loader createSpriteWithName:@"ball_red" fromSheet:@"UntitledSheet" fromSHFile:@"game_images" tag:BALL];
+        [mySprite transformPosition:pos];
+    }
+    else if ((color%3)==1) {
+        mySprite = [loader createSpriteWithName:@"ball_darkblue" fromSheet:@"UntitledSheet" fromSHFile:@"game_images" tag:BALL];
+        [mySprite transformPosition:pos];
+    }
+    else if ((color%3)==2) {
+        mySprite = [loader createSpriteWithName:@"ball_yellow" fromSheet:@"UntitledSheet" fromSHFile:@"game_images" tag:BALL];
+        [mySprite transformPosition:pos];
+    }
+    
+    [mySprite body]->SetLinearVelocity(b2Vec2(direct.x, direct.y));
+    [mySprite body]->SetLinearDamping(-6.0);
+    [mySprite prepareAnimationNamed:@"balls" fromSHScene:@"game_images"];
+    
+    if (!ballSprites) {
+        ballSprites = [[NSMutableArray alloc]init];
+    }
+    
+    [ballSprites addObject:mySprite];
+    
+}
+
+// # Function to check whether spawn point is inside the start area
+// - Doesn't support multiple start area yet
+
+- (BOOL) isSpawnInsideStartArea:(NSMutableDictionary*)loc
+{
+    CGPoint spawnPos = CGPointMake([[loc objectForKey:@"x"] floatValue], [[loc objectForKey:@"y"] floatValue]);
+    
+    // Get the start area
+    LHSprite* spriteStartArea = [[loader spritesWithTag:START_AREA] objectAtIndex:0];
+    
+    if (spriteStartArea == nil) {
+        return false;
+    }
+    
+    CGRect spriteBoundary = spriteStartArea.boundingBox;
+    
+    return CGRectContainsPoint(spriteBoundary, spawnPos);
 }
 
 #pragma mark GameKit delegate
 
--(void) achievementViewControllerDidFinish:(GKAchievementViewController *)viewController
-{
-	AppController *app = (AppController*) [[UIApplication sharedApplication] delegate];
-	[[app navController] dismissModalViewControllerAnimated:YES];
-}
-
--(void) leaderboardViewControllerDidFinish:(GKLeaderboardViewController *)viewController
-{
-	AppController *app = (AppController*) [[UIApplication sharedApplication] delegate];
-	[[app navController] dismissModalViewControllerAnimated:YES];
-}
 
 @end
