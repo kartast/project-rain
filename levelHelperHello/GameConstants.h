@@ -16,6 +16,8 @@ static int GOAL_SUCCESS_FRAME_INDEX = 8;
 
 static int GOAL_TARGET_COUNT = 30;
 
+static const float gravityMult = 0.6;
+
 #define GOAL_COLOR          @"goal_color"
 #define GOAL_COLOR_YELLOW   @"goal_color_yellow"
 #define GOAL_COLOR_RED      @"goal_color_red"

@@ -74,6 +74,10 @@ enum {
 @property (nonatomic, readwrite) CGPoint endPoint;
 @end
 
+
+
+NSMutableArray* allStars;
+
 @implementation SpawnTouches
 @synthesize touch, startPoint, endPoint;
 
@@ -117,7 +121,7 @@ enum {
     
         
         //create a LevelHelperLoader object that has the data of the specified level
-        loader = [[LevelHelperLoader alloc] initWithContentOfFile:@"level04"];
+        loader = [[LevelHelperLoader alloc] initWithContentOfFile:@"Levels/level06"];
         
         //create all objects from the level file and adds them to the cocos2d layer (self)
         [loader addObjectsToWorld:world cocos2dLayer:self];
@@ -135,9 +139,18 @@ enum {
         [loader registerBeginOrEndCollisionCallbackBetweenTagA:BALL andTagB:BLOCK_BLACK idListener:self selListener:@selector(beginEndCollisionBetweenBallAndBlackBlock:)];
         [loader registerBeginOrEndCollisionCallbackBetweenTagA:BALL andTagB:BLOCK_RED idListener:self selListener:@selector(beginEndCollisionBetweenBallAndRedBlock:)];
         [loader registerBeginOrEndCollisionCallbackBetweenTagA:BALL andTagB:BLOCK_YELLOW idListener:self selListener:@selector(beginEndCollisionBetweenBallAndYellowBlock:)];
+        [loader registerBeginOrEndCollisionCallbackBetweenTagA:BALL andTagB:BLOCK_GREEN idListener:self selListener:@selector(beginEndCollisionBetweenBallAndGreenBlock:)];
+        [loader registerBeginOrEndCollisionCallbackBetweenTagA:BALL andTagB:BLOCK_BLUE idListener:self selListener:@selector(beginEndCollisionBetweenBallAndBlueBlock:)];
         
         // Setup goal collision
         [loader registerBeginOrEndCollisionCallbackBetweenTagA:BALL andTagB:GOAL_YELLOW idListener:self selListener:@selector(collisionBallAndGoalYellow:)];
+        
+        // Setup star collision
+        [loader registerBeginOrEndCollisionCallbackBetweenTagA:BALL andTagB:STAR_YELLOW idListener:self selListener:@selector(collisionBallAndStar:)];
+        [loader registerBeginOrEndCollisionCallbackBetweenTagA:BALL andTagB:STAR_RED idListener:self selListener:@selector(collisionBallAndStar:)];
+        [loader registerBeginOrEndCollisionCallbackBetweenTagA:BALL andTagB:STAR_GREEN idListener:self selListener:@selector(collisionBallAndStar:)];
+        [loader registerBeginOrEndCollisionCallbackBetweenTagA:BALL andTagB:STAR_BLUE idListener:self selListener:@selector(collisionBallAndStar:)];
+        [loader registerBeginOrEndCollisionCallbackBetweenTagA:BALL andTagB:STAR_BLACK idListener:self selListener:@selector(collisionBallAndStar:)];
         
         // do level setup
         [self setupLevel];
@@ -173,6 +186,18 @@ enum {
     [ballSprite setFrame:1];
 }
 
+-(void) beginEndCollisionBetweenBallAndGreenBlock:(LHContactInfo*)contact{
+    
+    LHSprite* ballSprite = [contact spriteA];
+    [ballSprite setFrame:2];
+}
+
+-(void) beginEndCollisionBetweenBallAndBlueBlock:(LHContactInfo*)contact{
+    
+    LHSprite* ballSprite = [contact spriteA];
+    [ballSprite setFrame:0];
+}
+
 -(void) beginEndCollisionBetweenBallAndYellowBlock:(LHContactInfo*)contact
 {
 
@@ -197,6 +222,17 @@ enum {
     
     [self goalHitBySprite:ballSprite andGoalSprite:goalSprite];
 }
+
+- (void)collisionBallAndStar:(LHContactInfo*)contact
+{
+    // If same color, increment goal ball count
+    // otherwise decrease
+    // change goal yellow frame according the the ball count
+    LHSprite* ballSprite = [contact spriteA];
+    LHSprite* goalSprite = [contact spriteB];
+    
+    [self starHitBySprite:ballSprite andGoalSprite:goalSprite];
+}
 /*
  -----------------------------
  Handle collision start
@@ -209,15 +245,18 @@ enum {
 NSMutableArray      *goalsArray;
 NSMutableDictionary *goalInfo;
 
+
 -(void) setupLevel
 {
     // set all goal frame to 4
-    NSArray* spritesGoalYellow = [loader spritesWithTag:GOAL_YELLOW];
+//    NSArray* spritesGoalYellow = [loader spritesWithTag:GOAL_YELLOW];
+//    
+//    for (LHSprite *sprite in spritesGoalYellow) {
+//        [sprite setFrame:GOAL_NEUTRAL_FRAME_INDEX];
+//        [self goalAddSprite:sprite];
+//    }
+    [self findStars];
     
-    for (LHSprite *sprite in spritesGoalYellow) {
-        [sprite setFrame:GOAL_NEUTRAL_FRAME_INDEX];
-        [self goalAddSprite:sprite];
-    }
     
     // setup physics boundary
     if([loader hasPhysicBoundaries])
@@ -226,7 +265,45 @@ NSMutableDictionary *goalInfo;
     }
     
     // gravity 0.6 times
-    world->SetGravity(b2Vec2(world->GetGravity().x * 0.6, world->GetGravity().y * 0.6));
+    world->SetGravity(b2Vec2(world->GetGravity().x * gravityMult, world->GetGravity().y * gravityMult));
+}
+
+
+- (void) findStars {
+    NSArray* blueStars = [loader spritesWithTag:STAR_BLUE];
+    NSArray* blackStars = [loader spritesWithTag:STAR_BLACK];
+    NSArray* greenStars = [loader spritesWithTag:STAR_GREEN];
+    NSArray* redStars = [loader spritesWithTag:STAR_RED];
+    NSArray* yellowStars = [loader spritesWithTag:STAR_YELLOW];
+    
+    if (!allStars) {
+        allStars = [[NSMutableArray alloc] init];
+    }
+    
+    for (LHSprite* sprite in blueStars) {
+        [sprite setFrame:0];
+        [allStars addObject:sprite];
+    }
+    
+    for (LHSprite* sprite in blackStars) {
+        [sprite setFrame:1];
+        [allStars addObject:sprite];
+    }
+    
+    for (LHSprite* sprite in greenStars) {
+        [sprite setFrame:2];
+        [allStars addObject:sprite];
+    }
+    
+    for (LHSprite* sprite in redStars) {
+        [sprite setFrame:3];
+        [allStars addObject:sprite];
+    }
+    
+    for (LHSprite* sprite in yellowStars) {
+        [sprite setFrame:4];
+        [allStars addObject:sprite];
+    }
 }
 
 #pragma mark --
@@ -261,6 +338,7 @@ NSMutableDictionary *goalInfo;
     
     [goalsArray addObject:goalObject];
 }
+
 -(void)goalRemoveSprite:(LHSprite*)spriteGoal
 {
     GameObjectGoal *goalObject;
@@ -340,6 +418,26 @@ NSMutableDictionary *goalInfo;
  -----------------------------
  */
 
+-(void) starHitBySprite:(LHSprite*)spriteBall andGoalSprite:(LHSprite*)spriteGoal
+{
+    // remove the ball
+    // check goal same color or not
+    if ([allStars count] <=0) {
+        return;
+    }
+    
+    int nBallColor = [spriteBall currentFrame];
+
+    
+    if ([spriteGoal currentFrame] == [spriteBall currentFrame]) {
+        // Hit !!
+        // do animation
+        // hide star
+//        [spriteGoal removeBodyFromWorld];
+        [spriteGoal removeFromParentAndCleanup:YES];
+            [allStars removeObject:spriteGoal];
+    }
+}
 
 -(void) dealloc
 {
@@ -400,11 +498,11 @@ NSMutableDictionary *goalInfo;
 	//http://gafferongames.com/game-physics/fix-your-timestep/
 	
 	int32 velocityIterations = 8;
-	int32 positionIterations = 1;
+	int32 positionIterations = 10;
 	
 	// Instruct the world to perform a single step of simulation. It is
 	// generally best to keep the time step and iterations fixed.
-	world->Step(dt, velocityIterations, positionIterations);
+	world->Step(dt*1.4, velocityIterations, positionIterations);
     
     
     //Iterate over the bodies in the physics world
@@ -439,7 +537,7 @@ NSMutableDictionary *goalInfo;
 
 #pragma mark --
 #pragma mark trajectory prediction
-static int nMaxTrajectoryPoints = 30;
+static int nMaxTrajectoryPoints = 10;
 NSMutableArray *trajectorySprites;
 
 b2Vec2 getTrajectoryPoint( b2Vec2& startingPosition, b2Vec2& startingVelocity, float n , b2World* world)
@@ -546,9 +644,31 @@ NSMutableArray* ballSprites;
 }
 
 NSMutableArray* pendingSpawners = nil;
-static const float fMultiplier = 8;
-static const int nMax = 20;
+static const float fMultiplier = 0.05;
+static const int nMax = 1;
 static const float fDelay = 0.2;
+
+CGFloat DistanceBetweenTwoPoints(CGPoint point1,CGPoint point2)
+{
+    CGFloat dx = point2.x - point1.x;
+    CGFloat dy = point2.y - point1.y;
+    return sqrt(dx*dx + dy*dy );
+};
+
+- (CGPoint)getStartAreaCenterNearest:(CGPoint)touchPt
+{
+    NSArray* startAreas = [loader spritesWithTag:START_AREA];
+    touchPt = [[CCDirector sharedDirector] convertToGL: touchPt];
+    
+    for (LHSprite *startAreaSprite in startAreas ) {
+        CGRect boundingBox = [startAreaSprite boundingBox];
+        if (CGRectContainsPoint(boundingBox, touchPt)) {
+            return [[CCDirector sharedDirector] convertToUI:startAreaSprite.position];
+            break;
+        }
+    }
+    return CGPointMake(-1, -1);
+}
 
 - (void)spawnTouchStart:(UITouch*)touch
 {
@@ -556,9 +676,15 @@ static const float fDelay = 0.2;
         pendingSpawners = [[NSMutableArray alloc] init];
     }
 
+    // Should ignore touch?
+    CGPoint startAreaTouched = [self getStartAreaCenterNearest:[touch locationInView: [touch view]]];
+    if (startAreaTouched.x == -1 && startAreaTouched.y == -1) {
+        return;
+    }
+    
     SpawnTouches* spawnTouch = [[SpawnTouches alloc] init];
     [spawnTouch setTouch:touch];
-    [spawnTouch setStartPoint:[touch locationInView: [touch view]]];
+    [spawnTouch setStartPoint:startAreaTouched];
     [pendingSpawners addObject:spawnTouch];
 }
 
@@ -569,9 +695,6 @@ static const float fDelay = 0.2;
             continue;
         }
         
-        NSLog(@"touch end called");
-        
-        
         CGPoint start   = spawnTouch.startPoint;
         CGPoint end     = [touch locationInView:[touch view]];
         end = [[CCDirector sharedDirector] convertToGL: end];
@@ -580,7 +703,7 @@ static const float fDelay = 0.2;
         CGPoint direct ;
         if (ccpDistance(end, start) != 0) {
             direct  = ccpNormalize(ccpSub(end, start));
-            direct = ccpMult(direct, fMultiplier);
+            direct = ccpMult(direct, ccpDistance(end, start)*fMultiplier);
         }else {
             direct = ccp(0, 0);
         }
@@ -599,6 +722,7 @@ static const float fDelay = 0.2;
         nColorIndex++;
 
         if(bEnded){
+                NSLog(@"touch end called start:%f,%f end:%f,%f direction:%f,%f", start.x, start.y, end.x, end.y, direct.x, direct.y);
             [pendingSpawners removeObject:spawnTouch];
             [self trySpawnRainAtPosition:loc];
             
@@ -651,6 +775,8 @@ static const float fDelay = 0.2;
     [mySprite body]->SetLinearDamping(-6.0);
     [mySprite prepareAnimationNamed:@"balls" fromSHScene:@"game_images"];
     
+    NSLog(@"direction:%f,%f", [mySprite body]->GetLinearVelocity().x, [mySprite body]->GetLinearVelocity().y);
+    
     if (!ballSprites) {
         ballSprites = [[NSMutableArray alloc]init];
     }
@@ -667,7 +793,8 @@ static const float fDelay = 0.2;
     CGPoint spawnPos = CGPointMake([[loc objectForKey:@"x"] floatValue], [[loc objectForKey:@"y"] floatValue]);
     
     // Get the start area
-    LHSprite* spriteStartArea = [[loader spritesWithTag:START_AREA] objectAtIndex:0];
+    NSArray* startAreas = [loader spritesWithTag:START_AREA];
+    LHSprite* spriteStartArea = [startAreas objectAtIndex:0];
     
     if (spriteStartArea == nil) {
         return false;

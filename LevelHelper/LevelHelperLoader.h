@@ -71,8 +71,16 @@ enum LevelHelper_TAG
 	BLOCK_BLUE 			= 7,
 	BLOCK_END 			= 8,
 	GOAL_YELLOW 			= 9,
-	START_AREA 			= 10,
-	NUMBER_OF_TAGS 	= 11
+	GOAL_RED 			= 10,
+	GOAL_GREEN 			= 11,
+	GOAL_BLUE 			= 12,
+	STAR_YELLOW 			= 13,
+	STAR_RED 			= 14,
+	STAR_GREEN 			= 15,
+	STAR_BLUE 			= 16,
+	STAR_BLACK 			= 17,
+	START_AREA 			= 18,
+	NUMBER_OF_TAGS 	= 19
 };
 
 CGSize  LHSizeFromString(NSString* val);

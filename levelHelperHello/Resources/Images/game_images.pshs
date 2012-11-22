@@ -24,7 +24,7 @@
 			<key>MaxSheetSize</key>
 			<integer>1024</integer>
 			<key>NpotSize</key>
-			<string>{504, 676}</string>
+			<string>{508, 728}</string>
 			<key>Padding</key>
 			<integer>8</integer>
 			<key>PixelFormat</key>
@@ -41,38 +41,6 @@
 			<dict>
 				<key>ball_blue</key>
 				<dict>
-					<key>DocumentSecurityImageBookmark</key>
-					<data>
-					Ym9vawgDAAAAAAQQMAAAAJ3HN4HSMS8Fs0sy
-					5ON4Me0dL1QcoMAcEGz1zMfPrNvp7AEAAAUA
-					AAABAQAAVXNlcnMAAAAIAAAAAQEAAGthcnRh
-					MDIyCAAAAAEBAABQaWN0dXJlcwwAAAABAQAA
-					cmFpbmJvdyBob2xlDQAAAAEBAABiYWxsX2Js
-					dWUucG5nAAAAFAAAAAEGAAAEAAAAFAAAACQA
-					AAA0AAAASAAAAAgAAAAEAwAAMb8AAAAAAAAI
-					AAAABAMAAIwBBQAAAAAACAAAAAQDAABWAgUA
-					AAAAAAgAAAAEAwAAMQvTBQAAAAAIAAAABAMA
-					ADcuEQYAAAAAFAAAAAEGAAB8AAAAjAAAAJwA
-					AACsAAAAvAAAAAgAAAAABAAAQbZP5GIAAAAY
-					AAAAAQIAAAEAAAAAAAAADwAAAAAAAAAAAAAA
-					AAAAAAAAAAABBQAABAAAAAMDAAAGAAAABAAA
-					AAMDAAADAAAACAAAAAQDAAADAAAAAAAAAAQA
-					AAADAwAA9QEAAAwAAAABAQAATWFjaW50b3No
-					IEhECAAAAAQDAAAAIMEMHAAAAAgAAAAABAAA
-					QbPG+AMAAAAkAAAAAQEAAEIxQTMwNkZFLTU3
-					M0UtMzA4MC04NjhDLTUwN0MyODJDQTAzRBgA
-					AAABAgAAgQAAAAEACADvPwAAAQAIAAAAAAAA
-					AAAAAQAAAAEBAAAvAAAABAAAAAMDAAAACAAo
-					5AAAAP7///8BAAAAAAAAABIAAAAEEAAAYAAA
-					AAAAAAAFEAAAzAAAAAAAAAAQEAAA+AAAAAAA
-					AABAEAAA6AAAAAAAAABUEAAAIAEAAAAAAABV
-					EAAALAEAAAAAAABWEAAAGAEAAAAAAAACIAAA
-					1AEAAAAAAAAQIAAAVAEAAAAAAAARIAAAiAEA
-					AAAAAAASIAAAaAEAAAAAAAATIAAAeAEAAAAA
-					AAAgIAAAtAEAAAAAAAAwIAAAGAEAAAAAAAAB
-					wAAAOAEAAAAAAAARwAAAFAAAAAAAAAASwAAA
-					SAEAAAAAAAAQ0AAA4AEAAAAAAAA=
-					</data>
 					<key>IsSHSprite</key>
 					<true/>
 					<key>PhysicProperties</key>
@@ -133,7 +101,7 @@
 								<key>Name</key>
 								<string>UntitledFixture</string>
 								<key>Restitution</key>
-								<real>0.60000002384185791</real>
+								<real>0.64999997615814209</real>
 								<key>ShapePoints</key>
 								<array/>
 								<key>ShapePositionOffset</key>
@@ -174,9 +142,9 @@
 						<key>FlipY</key>
 						<false/>
 						<key>Frame</key>
-						<string>{{140, 290}, {26, 26}}</string>
+						<string>{{106, 338}, {26, 26}}</string>
 						<key>Frame-HD</key>
-						<string>{{280, 580}, {52, 52}}</string>
+						<string>{{212, 676}, {52, 52}}</string>
 						<key>Image</key>
 						<string>game_images_UntitledSheet.png</string>
 						<key>Image-HD</key>
@@ -202,9 +170,9 @@
 						<key>OriginalSize</key>
 						<string>{52, 52}</string>
 						<key>Position</key>
-						<string>{280, 580}</string>
+						<string>{212, 676}</string>
 						<key>Scale</key>
-						<string>{0.34999999403953552, 0.34999999403953552}</string>
+						<string>{1, 1}</string>
 						<key>SpriteSize</key>
 						<string>{26, 26}</string>
 						<key>SpriteWasBreaked</key>
@@ -221,38 +189,6 @@
 				</dict>
 				<key>ball_darkblue</key>
 				<dict>
-					<key>DocumentSecurityImageBookmark</key>
-					<data>
-					Ym9vawwDAAAAAAQQMAAAAMpsp1fWbyhh1VKr
-					z6Utc+6IjzCx9BBzFAqlDGIpZxsO8AEAAAUA
-					AAABAQAAVXNlcnMAAAAIAAAAAQEAAGthcnRh
-					MDIyCAAAAAEBAABQaWN0dXJlcwwAAAABAQAA
-					cmFpbmJvdyBob2xlEQAAAAEBAABiYWxsX2Rh
-					cmtibHVlLnBuZwAAABQAAAABBgAABAAAABQA
-					AAAkAAAANAAAAEgAAAAIAAAABAMAADG/AAAA
-					AAAACAAAAAQDAACMAQUAAAAAAAgAAAAEAwAA
-					VgIFAAAAAAAIAAAABAMAADEL0wUAAAAACAAA
-					AAQDAAA8LhEGAAAAABQAAAABBgAAgAAAAJAA
-					AACgAAAAsAAAAMAAAAAIAAAAAAQAAEG2T+Ro
-					AAAAGAAAAAECAAABAAAAAAAAAA8AAAAAAAAA
-					AAAAAAAAAAAAAAAAAQUAAAQAAAADAwAABgAA
-					AAQAAAADAwAAAwAAAAgAAAAEAwAAAwAAAAAA
-					AAAEAAAAAwMAAPUBAAAMAAAAAQEAAE1hY2lu
-					dG9zaCBIRAgAAAAEAwAAACDBDBwAAAAIAAAA
-					AAQAAEGzxvgDAAAAJAAAAAEBAABCMUEzMDZG
-					RS01NzNFLTMwODAtODY4Qy01MDdDMjgyQ0Ew
-					M0QYAAAAAQIAAIEAAAABAAgA7z8AAAEACAAA
-					AAAAAAAAAAEAAAABAQAALwAAAAQAAAADAwAA
-					AAgAKOQAAAD+////AQAAAAAAAAASAAAABBAA
-					AGQAAAAAAAAABRAAANAAAAAAAAAAEBAAAPwA
-					AAAAAAAAQBAAAOwAAAAAAAAAVBAAACQBAAAA
-					AAAAVRAAADABAAAAAAAAVhAAABwBAAAAAAAA
-					AiAAANgBAAAAAAAAECAAAFgBAAAAAAAAESAA
-					AIwBAAAAAAAAEiAAAGwBAAAAAAAAEyAAAHwB
-					AAAAAAAAICAAALgBAAAAAAAAMCAAABwBAAAA
-					AAAAAcAAADwBAAAAAAAAEcAAABQAAAAAAAAA
-					EsAAAEwBAAAAAAAAENAAAOQBAAAAAAAA
-					</data>
 					<key>IsSHSprite</key>
 					<true/>
 					<key>PhysicProperties</key>
@@ -313,7 +249,7 @@
 								<key>Name</key>
 								<string>UntitledFixture</string>
 								<key>Restitution</key>
-								<real>0.60000002384185791</real>
+								<real>0.64999997615814209</real>
 								<key>ShapePoints</key>
 								<array/>
 								<key>ShapePositionOffset</key>
@@ -354,9 +290,9 @@
 						<key>FlipY</key>
 						<false/>
 						<key>Frame</key>
-						<string>{{196, 262}, {26, 26}}</string>
+						<string>{{228, 266}, {26, 26}}</string>
 						<key>Frame-HD</key>
-						<string>{{392, 524}, {52, 52}}</string>
+						<string>{{456, 532}, {52, 52}}</string>
 						<key>Image</key>
 						<string>game_images_UntitledSheet.png</string>
 						<key>Image-HD</key>
@@ -382,9 +318,9 @@
 						<key>OriginalSize</key>
 						<string>{52, 52}</string>
 						<key>Position</key>
-						<string>{392, 524}</string>
+						<string>{456, 532}</string>
 						<key>Scale</key>
-						<string>{0.34999999403953552, 0.34999999403953552}</string>
+						<string>{1, 1}</string>
 						<key>SpriteSize</key>
 						<string>{26, 26}</string>
 						<key>SpriteWasBreaked</key>
@@ -401,38 +337,6 @@
 				</dict>
 				<key>ball_green</key>
 				<dict>
-					<key>DocumentSecurityImageBookmark</key>
-					<data>
-					Ym9vawgDAAAAAAQQMAAAAC1Ivq2/zolkqgmu
-					5CJNXGVBwLY5BFWGUyxhA7rbo2oG7AEAAAUA
-					AAABAQAAVXNlcnMAAAAIAAAAAQEAAGthcnRh
-					MDIyCAAAAAEBAABQaWN0dXJlcwwAAAABAQAA
-					cmFpbmJvdyBob2xlDgAAAAEBAABiYWxsX2dy
-					ZWVuLnBuZwAAFAAAAAEGAAAEAAAAFAAAACQA
-					AAA0AAAASAAAAAgAAAAEAwAAMb8AAAAAAAAI
-					AAAABAMAAIwBBQAAAAAACAAAAAQDAABWAgUA
-					AAAAAAgAAAAEAwAAMQvTBQAAAAAIAAAABAMA
-					ACYuEQYAAAAAFAAAAAEGAAB8AAAAjAAAAJwA
-					AACsAAAAvAAAAAgAAAAABAAAQbZP5FMAAAAY
-					AAAAAQIAAAEAAAAAAAAADwAAAAAAAAAAAAAA
-					AAAAAAAAAAABBQAABAAAAAMDAAAGAAAABAAA
-					AAMDAAADAAAACAAAAAQDAAADAAAAAAAAAAQA
-					AAADAwAA9QEAAAwAAAABAQAATWFjaW50b3No
-					IEhECAAAAAQDAAAAIMEMHAAAAAgAAAAABAAA
-					QbPG+AMAAAAkAAAAAQEAAEIxQTMwNkZFLTU3
-					M0UtMzA4MC04NjhDLTUwN0MyODJDQTAzRBgA
-					AAABAgAAgQAAAAEACADvPwAAAQAIAAAAAAAA
-					AAAAAQAAAAEBAAAvAAAABAAAAAMDAAAACAAo
-					5AAAAP7///8BAAAAAAAAABIAAAAEEAAAYAAA
-					AAAAAAAFEAAAzAAAAAAAAAAQEAAA+AAAAAAA
-					AABAEAAA6AAAAAAAAABUEAAAIAEAAAAAAABV
-					EAAALAEAAAAAAABWEAAAGAEAAAAAAAACIAAA
-					1AEAAAAAAAAQIAAAVAEAAAAAAAARIAAAiAEA
-					AAAAAAASIAAAaAEAAAAAAAATIAAAeAEAAAAA
-					AAAgIAAAtAEAAAAAAAAwIAAAGAEAAAAAAAAB
-					wAAAOAEAAAAAAAARwAAAFAAAAAAAAAASwAAA
-					SAEAAAAAAAAQ0AAA4AEAAAAAAAA=
-					</data>
 					<key>IsSHSprite</key>
 					<true/>
 					<key>PhysicProperties</key>
@@ -493,7 +397,7 @@
 								<key>Name</key>
 								<string>UntitledFixture</string>
 								<key>Restitution</key>
-								<real>0.60000002384185791</real>
+								<real>0.64999997615814209</real>
 								<key>ShapePoints</key>
 								<array/>
 								<key>ShapePositionOffset</key>
@@ -526,7 +430,7 @@
 						<key>Color</key>
 						<string>{{1, 1}, {1, 1}}</string>
 						<key>ConvertedFromOldFormat</key>
-						<true/>
+						<false/>
 						<key>CustomClassName</key>
 						<string></string>
 						<key>FlipX</key>
@@ -534,9 +438,9 @@
 						<key>FlipY</key>
 						<false/>
 						<key>Frame</key>
-						<string>{{168, 234}, {26, 26}}</string>
+						<string>{{172, 266}, {26, 26}}</string>
 						<key>Frame-HD</key>
-						<string>{{336, 468}, {52, 52}}</string>
+						<string>{{344, 532}, {52, 52}}</string>
 						<key>Image</key>
 						<string>game_images_UntitledSheet.png</string>
 						<key>Image-HD</key>
@@ -562,9 +466,9 @@
 						<key>OriginalSize</key>
 						<string>{52, 52}</string>
 						<key>Position</key>
-						<string>{336, 468}</string>
+						<string>{344, 532}</string>
 						<key>Scale</key>
-						<string>{0.34999999403953552, 0.34999999403953552}</string>
+						<string>{1, 1}</string>
 						<key>SpriteSize</key>
 						<string>{26, 26}</string>
 						<key>SpriteWasBreaked</key>
@@ -641,7 +545,7 @@
 								<key>Name</key>
 								<string>UntitledFixture</string>
 								<key>Restitution</key>
-								<real>0.60000002384185791</real>
+								<real>0.64999997615814209</real>
 								<key>ShapePoints</key>
 								<array/>
 								<key>ShapePositionOffset</key>
@@ -682,9 +586,9 @@
 						<key>FlipY</key>
 						<false/>
 						<key>Frame</key>
-						<string>{{224, 234}, {26, 26}}</string>
+						<string>{{70, 338}, {26, 26}}</string>
 						<key>Frame-HD</key>
-						<string>{{448, 468}, {52, 52}}</string>
+						<string>{{140, 676}, {52, 52}}</string>
 						<key>Image</key>
 						<string>game_images_UntitledSheet.png</string>
 						<key>Image-HD</key>
@@ -710,9 +614,9 @@
 						<key>OriginalSize</key>
 						<string>{52, 52}</string>
 						<key>Position</key>
-						<string>{448, 468}</string>
+						<string>{140, 676}</string>
 						<key>Scale</key>
-						<string>{0.34999999403953552, 0.34999999403953552}</string>
+						<string>{1, 1}</string>
 						<key>SpriteSize</key>
 						<string>{26, 26}</string>
 						<key>SpriteWasBreaked</key>
@@ -789,7 +693,7 @@
 								<key>Name</key>
 								<string>UntitledFixture</string>
 								<key>Restitution</key>
-								<real>0.60000002384185791</real>
+								<real>0.64999997615814209</real>
 								<key>ShapePoints</key>
 								<array/>
 								<key>ShapePositionOffset</key>
@@ -830,9 +734,9 @@
 						<key>FlipY</key>
 						<false/>
 						<key>Frame</key>
-						<string>{{168, 290}, {26, 26}}</string>
+						<string>{{172, 322}, {26, 26}}</string>
 						<key>Frame-HD</key>
-						<string>{{336, 580}, {52, 52}}</string>
+						<string>{{344, 644}, {52, 52}}</string>
 						<key>Image</key>
 						<string>game_images_UntitledSheet.png</string>
 						<key>Image-HD</key>
@@ -858,9 +762,9 @@
 						<key>OriginalSize</key>
 						<string>{52, 52}</string>
 						<key>Position</key>
-						<string>{336, 580}</string>
+						<string>{344, 644}</string>
 						<key>Scale</key>
-						<string>{0.34999999403953552, 0.34999999403953552}</string>
+						<string>{1, 1}</string>
 						<key>SpriteSize</key>
 						<string>{26, 26}</string>
 						<key>SpriteWasBreaked</key>
@@ -942,7 +846,7 @@
 								<key>Name</key>
 								<string>UntitledFixture</string>
 								<key>Restitution</key>
-								<real>0.5</real>
+								<real>0.80000001192092896</real>
 								<key>ShapePoints</key>
 								<array>
 									<string>{0, 0}</string>
@@ -980,7 +884,7 @@
 						<key>Color</key>
 						<string>{{1, 1}, {1, 1}}</string>
 						<key>ConvertedFromOldFormat</key>
-						<true/>
+						<false/>
 						<key>CustomClassName</key>
 						<string></string>
 						<key>FlipX</key>
@@ -988,9 +892,9 @@
 						<key>FlipY</key>
 						<false/>
 						<key>Frame</key>
-						<string>{{140, 234}, {26, 26}}</string>
+						<string>{{172, 294}, {26, 26}}</string>
 						<key>Frame-HD</key>
-						<string>{{280, 468}, {52, 52}}</string>
+						<string>{{344, 588}, {52, 52}}</string>
 						<key>Image</key>
 						<string>game_images_UntitledSheet.png</string>
 						<key>Image-HD</key>
@@ -1016,7 +920,7 @@
 						<key>OriginalSize</key>
 						<string>{52, 52}</string>
 						<key>Position</key>
-						<string>{280, 468}</string>
+						<string>{344, 588}</string>
 						<key>Scale</key>
 						<string>{1, 1}</string>
 						<key>SpriteSize</key>
@@ -1100,7 +1004,7 @@
 								<key>Name</key>
 								<string>UntitledFixture</string>
 								<key>Restitution</key>
-								<real>0.5</real>
+								<real>0.80000001192092896</real>
 								<key>ShapePoints</key>
 								<array>
 									<string>{0, 0}</string>
@@ -1138,7 +1042,7 @@
 						<key>Color</key>
 						<string>{{1, 1}, {1, 1}}</string>
 						<key>ConvertedFromOldFormat</key>
-						<true/>
+						<false/>
 						<key>CustomClassName</key>
 						<string></string>
 						<key>FlipX</key>
@@ -1146,9 +1050,9 @@
 						<key>FlipY</key>
 						<false/>
 						<key>Frame</key>
-						<string>{{196, 234}, {26, 26}}</string>
+						<string>{{200, 266}, {26, 26}}</string>
 						<key>Frame-HD</key>
-						<string>{{392, 468}, {52, 52}}</string>
+						<string>{{400, 532}, {52, 52}}</string>
 						<key>Image</key>
 						<string>game_images_UntitledSheet.png</string>
 						<key>Image-HD</key>
@@ -1174,7 +1078,7 @@
 						<key>OriginalSize</key>
 						<string>{52, 52}</string>
 						<key>Position</key>
-						<string>{392, 468}</string>
+						<string>{400, 532}</string>
 						<key>Scale</key>
 						<string>{1, 1}</string>
 						<key>SpriteSize</key>
@@ -1193,38 +1097,6 @@
 				</dict>
 				<key>block_green</key>
 				<dict>
-					<key>DocumentSecurityImageBookmark</key>
-					<data>
-					Ym9vawgDAAAAAAQQMAAAAII8ECxI5gdPIq26
-					EgkZ/F77/zUYC588mAFrdzJnGa4h7AEAAAUA
-					AAABAQAAVXNlcnMAAAAIAAAAAQEAAGthcnRh
-					MDIyCAAAAAEBAABQaWN0dXJlcwwAAAABAQAA
-					cmFpbmJvdyBob2xlDwAAAAEBAABibG9ja19n
-					cmVlbi5wbmcAFAAAAAEGAAAEAAAAFAAAACQA
-					AAA0AAAASAAAAAgAAAAEAwAAMb8AAAAAAAAI
-					AAAABAMAAIwBBQAAAAAACAAAAAQDAABWAgUA
-					AAAAAAgAAAAEAwAAMQvTBQAAAAAIAAAABAMA
-					ANdzDwYAAAAAFAAAAAEGAAB8AAAAjAAAAJwA
-					AACsAAAAvAAAAAgAAAAABAAAQbZP3JIAAAAY
-					AAAAAQIAAAEAAAAAAAAADwAAAAAAAAAAAAAA
-					AAAAAAAAAAABBQAABAAAAAMDAAAGAAAABAAA
-					AAMDAAADAAAACAAAAAQDAAADAAAAAAAAAAQA
-					AAADAwAA9QEAAAwAAAABAQAATWFjaW50b3No
-					IEhECAAAAAQDAAAAIMEMHAAAAAgAAAAABAAA
-					QbPG+AMAAAAkAAAAAQEAAEIxQTMwNkZFLTU3
-					M0UtMzA4MC04NjhDLTUwN0MyODJDQTAzRBgA
-					AAABAgAAgQAAAAEACADvPwAAAQAIAAAAAAAA
-					AAAAAQAAAAEBAAAvAAAABAAAAAMDAAAACAAo
-					5AAAAP7///8BAAAAAAAAABIAAAAEEAAAYAAA
-					AAAAAAAFEAAAzAAAAAAAAAAQEAAA+AAAAAAA
-					AABAEAAA6AAAAAAAAABUEAAAIAEAAAAAAABV
-					EAAALAEAAAAAAABWEAAAGAEAAAAAAAACIAAA
-					1AEAAAAAAAAQIAAAVAEAAAAAAAARIAAAiAEA
-					AAAAAAASIAAAaAEAAAAAAAATIAAAeAEAAAAA
-					AAAgIAAAtAEAAAAAAAAwIAAAGAEAAAAAAAAB
-					wAAAOAEAAAAAAAARwAAAFAAAAAAAAAASwAAA
-					SAEAAAAAAAAQ0AAA4AEAAAAAAAA=
-					</data>
 					<key>IsSHSprite</key>
 					<true/>
 					<key>PhysicProperties</key>
@@ -1290,7 +1162,7 @@
 								<key>Name</key>
 								<string>UntitledFixture</string>
 								<key>Restitution</key>
-								<real>0.5</real>
+								<real>0.80000001192092896</real>
 								<key>ShapePoints</key>
 								<array>
 									<string>{0, 0}</string>
@@ -1328,7 +1200,7 @@
 						<key>Color</key>
 						<string>{{1, 1}, {1, 1}}</string>
 						<key>ConvertedFromOldFormat</key>
-						<true/>
+						<false/>
 						<key>CustomClassName</key>
 						<string></string>
 						<key>FlipX</key>
@@ -1336,9 +1208,9 @@
 						<key>FlipY</key>
 						<false/>
 						<key>Frame</key>
-						<string>{{224, 262}, {26, 26}}</string>
+						<string>{{0, 338}, {26, 26}}</string>
 						<key>Frame-HD</key>
-						<string>{{448, 524}, {52, 52}}</string>
+						<string>{{0, 676}, {52, 52}}</string>
 						<key>Image</key>
 						<string>game_images_UntitledSheet.png</string>
 						<key>Image-HD</key>
@@ -1364,7 +1236,7 @@
 						<key>OriginalSize</key>
 						<string>{52, 52}</string>
 						<key>Position</key>
-						<string>{448, 524}</string>
+						<string>{0, 676}</string>
 						<key>Scale</key>
 						<string>{1, 1}</string>
 						<key>SpriteSize</key>
@@ -1383,38 +1255,6 @@
 				</dict>
 				<key>block_red</key>
 				<dict>
-					<key>DocumentSecurityImageBookmark</key>
-					<data>
-					Ym9vawgDAAAAAAQQMAAAAObzw1ltBP390vG2
-					dLGCqadysLXBletZIdkyzxpKGint7AEAAAUA
-					AAABAQAAVXNlcnMAAAAIAAAAAQEAAGthcnRh
-					MDIyCAAAAAEBAABQaWN0dXJlcwwAAAABAQAA
-					cmFpbmJvdyBob2xlDQAAAAEBAABibG9ja19y
-					ZWQucG5nAAAAFAAAAAEGAAAEAAAAFAAAACQA
-					AAA0AAAASAAAAAgAAAAEAwAAMb8AAAAAAAAI
-					AAAABAMAAIwBBQAAAAAACAAAAAQDAABWAgUA
-					AAAAAAgAAAAEAwAAMQvTBQAAAAAIAAAABAMA
-					ALtzDwYAAAAAFAAAAAEGAAB8AAAAjAAAAJwA
-					AACsAAAAvAAAAAgAAAAABAAAQbZP3IQAAAAY
-					AAAAAQIAAAEAAAAAAAAADwAAAAAAAAAAAAAA
-					AAAAAAAAAAABBQAABAAAAAMDAAAGAAAABAAA
-					AAMDAAADAAAACAAAAAQDAAADAAAAAAAAAAQA
-					AAADAwAA9QEAAAwAAAABAQAATWFjaW50b3No
-					IEhECAAAAAQDAAAAIMEMHAAAAAgAAAAABAAA
-					QbPG+AMAAAAkAAAAAQEAAEIxQTMwNkZFLTU3
-					M0UtMzA4MC04NjhDLTUwN0MyODJDQTAzRBgA
-					AAABAgAAgQAAAAEACADvPwAAAQAIAAAAAAAA
-					AAAAAQAAAAEBAAAvAAAABAAAAAMDAAAACAAo
-					5AAAAP7///8BAAAAAAAAABIAAAAEEAAAYAAA
-					AAAAAAAFEAAAzAAAAAAAAAAQEAAA+AAAAAAA
-					AABAEAAA6AAAAAAAAABUEAAAIAEAAAAAAABV
-					EAAALAEAAAAAAABWEAAAGAEAAAAAAAACIAAA
-					1AEAAAAAAAAQIAAAVAEAAAAAAAARIAAAiAEA
-					AAAAAAASIAAAaAEAAAAAAAATIAAAeAEAAAAA
-					AAAgIAAAtAEAAAAAAAAwIAAAGAEAAAAAAAAB
-					wAAAOAEAAAAAAAARwAAAFAAAAAAAAAASwAAA
-					SAEAAAAAAAAQ0AAA4AEAAAAAAAA=
-					</data>
 					<key>IsSHSprite</key>
 					<true/>
 					<key>PhysicProperties</key>
@@ -1480,7 +1320,7 @@
 								<key>Name</key>
 								<string>UntitledFixture</string>
 								<key>Restitution</key>
-								<real>0.5</real>
+								<real>0.80000001192092896</real>
 								<key>ShapePoints</key>
 								<array>
 									<string>{0, 0}</string>
@@ -1518,7 +1358,7 @@
 						<key>Color</key>
 						<string>{{1, 1}, {1, 1}}</string>
 						<key>ConvertedFromOldFormat</key>
-						<true/>
+						<false/>
 						<key>CustomClassName</key>
 						<string></string>
 						<key>FlipX</key>
@@ -1526,9 +1366,9 @@
 						<key>FlipY</key>
 						<false/>
 						<key>Frame</key>
-						<string>{{140, 262}, {26, 26}}</string>
+						<string>{{200, 294}, {26, 26}}</string>
 						<key>Frame-HD</key>
-						<string>{{280, 524}, {52, 52}}</string>
+						<string>{{400, 588}, {52, 52}}</string>
 						<key>Image</key>
 						<string>game_images_UntitledSheet.png</string>
 						<key>Image-HD</key>
@@ -1554,7 +1394,7 @@
 						<key>OriginalSize</key>
 						<string>{52, 52}</string>
 						<key>Position</key>
-						<string>{280, 524}</string>
+						<string>{400, 588}</string>
 						<key>Scale</key>
 						<string>{1, 1}</string>
 						<key>SpriteSize</key>
@@ -1573,38 +1413,6 @@
 				</dict>
 				<key>block_yellow</key>
 				<dict>
-					<key>DocumentSecurityImageBookmark</key>
-					<data>
-					Ym9vawgDAAAAAAQQMAAAAL+3UNyvLZZ1HG/D
-					O57JZpdcln9U3D104ptRIKJyQKug7AEAAAUA
-					AAABAQAAVXNlcnMAAAAIAAAAAQEAAGthcnRh
-					MDIyCAAAAAEBAABQaWN0dXJlcwwAAAABAQAA
-					cmFpbmJvdyBob2xlEAAAAAEBAABibG9ja195
-					ZWxsb3cucG5nFAAAAAEGAAAEAAAAFAAAACQA
-					AAA0AAAASAAAAAgAAAAEAwAAMb8AAAAAAAAI
-					AAAABAMAAIwBBQAAAAAACAAAAAQDAABWAgUA
-					AAAAAAgAAAAEAwAAMQvTBQAAAAAIAAAABAMA
-					AKtzDwYAAAAAFAAAAAEGAAB8AAAAjAAAAJwA
-					AACsAAAAvAAAAAgAAAAABAAAQbZP3H0AAAAY
-					AAAAAQIAAAEAAAAAAAAADwAAAAAAAAAAAAAA
-					AAAAAAAAAAABBQAABAAAAAMDAAAGAAAABAAA
-					AAMDAAADAAAACAAAAAQDAAADAAAAAAAAAAQA
-					AAADAwAA9QEAAAwAAAABAQAATWFjaW50b3No
-					IEhECAAAAAQDAAAAIMEMHAAAAAgAAAAABAAA
-					QbPG+AMAAAAkAAAAAQEAAEIxQTMwNkZFLTU3
-					M0UtMzA4MC04NjhDLTUwN0MyODJDQTAzRBgA
-					AAABAgAAgQAAAAEACADvPwAAAQAIAAAAAAAA
-					AAAAAQAAAAEBAAAvAAAABAAAAAMDAAAACAAo
-					5AAAAP7///8BAAAAAAAAABIAAAAEEAAAYAAA
-					AAAAAAAFEAAAzAAAAAAAAAAQEAAA+AAAAAAA
-					AABAEAAA6AAAAAAAAABUEAAAIAEAAAAAAABV
-					EAAALAEAAAAAAABWEAAAGAEAAAAAAAACIAAA
-					1AEAAAAAAAAQIAAAVAEAAAAAAAARIAAAiAEA
-					AAAAAAASIAAAaAEAAAAAAAATIAAAeAEAAAAA
-					AAAgIAAAtAEAAAAAAAAwIAAAGAEAAAAAAAAB
-					wAAAOAEAAAAAAAARwAAAFAAAAAAAAAASwAAA
-					SAEAAAAAAAAQ0AAA4AEAAAAAAAA=
-					</data>
 					<key>IsSHSprite</key>
 					<true/>
 					<key>PhysicProperties</key>
@@ -1670,7 +1478,7 @@
 								<key>Name</key>
 								<string>UntitledFixture</string>
 								<key>Restitution</key>
-								<real>0.5</real>
+								<real>0.80000001192092896</real>
 								<key>ShapePoints</key>
 								<array>
 									<string>{0, 0}</string>
@@ -1708,7 +1516,7 @@
 						<key>Color</key>
 						<string>{{1, 1}, {1, 1}}</string>
 						<key>ConvertedFromOldFormat</key>
-						<true/>
+						<false/>
 						<key>CustomClassName</key>
 						<string></string>
 						<key>FlipX</key>
@@ -1716,9 +1524,9 @@
 						<key>FlipY</key>
 						<false/>
 						<key>Frame</key>
-						<string>{{168, 262}, {26, 26}}</string>
+						<string>{{140, 330}, {26, 26}}</string>
 						<key>Frame-HD</key>
-						<string>{{336, 524}, {52, 52}}</string>
+						<string>{{280, 660}, {52, 52}}</string>
 						<key>Image</key>
 						<string>game_images_UntitledSheet.png</string>
 						<key>Image-HD</key>
@@ -1744,7 +1552,7 @@
 						<key>OriginalSize</key>
 						<string>{52, 52}</string>
 						<key>Position</key>
-						<string>{336, 524}</string>
+						<string>{280, 660}</string>
 						<key>Scale</key>
 						<string>{1, 1}</string>
 						<key>SpriteSize</key>
@@ -1817,9 +1625,9 @@
 						<key>FlipY</key>
 						<false/>
 						<key>Frame</key>
-						<string>{{184, 0}, {33, 33}}</string>
+						<string>{{184, 36}, {33, 33}}</string>
 						<key>Frame-HD</key>
-						<string>{{368, 0}, {66, 66}}</string>
+						<string>{{368, 72}, {66, 66}}</string>
 						<key>Image</key>
 						<string>game_images_UntitledSheet.png</string>
 						<key>Image-HD</key>
@@ -1845,7 +1653,7 @@
 						<key>OriginalSize</key>
 						<string>{66, 66}</string>
 						<key>Position</key>
-						<string>{368, 0}</string>
+						<string>{368, 72}</string>
 						<key>Scale</key>
 						<string>{1, 1}</string>
 						<key>SpriteSize</key>
@@ -1918,9 +1726,9 @@
 						<key>FlipY</key>
 						<false/>
 						<key>Frame</key>
-						<string>{{106, 234}, {33, 33}}</string>
+						<string>{{0, 164}, {33, 33}}</string>
 						<key>Frame-HD</key>
-						<string>{{212, 468}, {66, 66}}</string>
+						<string>{{0, 328}, {66, 66}}</string>
 						<key>Image</key>
 						<string>game_images_UntitledSheet.png</string>
 						<key>Image-HD</key>
@@ -1946,7 +1754,7 @@
 						<key>OriginalSize</key>
 						<string>{66, 66}</string>
 						<key>Position</key>
-						<string>{212, 468}</string>
+						<string>{0, 328}</string>
 						<key>Scale</key>
 						<string>{1, 1}</string>
 						<key>SpriteSize</key>
@@ -1965,38 +1773,6 @@
 				</dict>
 				<key>goal_blue_2</key>
 				<dict>
-					<key>DocumentSecurityImageBookmark</key>
-					<data>
-					Ym9vawgDAAAAAAQQMAAAALWLizgYCRGqhUPR
-					BeQFzepRdVKEStqNaKAyuZ6ic5uK7AEAAAUA
-					AAABAQAAVXNlcnMAAAAIAAAAAQEAAGthcnRh
-					MDIyCAAAAAEBAABQaWN0dXJlcwwAAAABAQAA
-					cmFpbmJvdyBob2xlDwAAAAEBAABnb2FsX2Js
-					dWVfMi5wbmcAFAAAAAEGAAAEAAAAFAAAACQA
-					AAA0AAAASAAAAAgAAAAEAwAAMb8AAAAAAAAI
-					AAAABAMAAIwBBQAAAAAACAAAAAQDAABWAgUA
-					AAAAAAgAAAAEAwAAMQvTBQAAAAAIAAAABAMA
-					ACwiEgYAAAAAFAAAAAEGAAB8AAAAjAAAAJwA
-					AACsAAAAvAAAAAgAAAAABAAAQbZR8tsAAAAY
-					AAAAAQIAAAEAAAAAAAAADwAAAAAAAAAAAAAA
-					AAAAAAAAAAABBQAABAAAAAMDAAAGAAAABAAA
-					AAMDAAADAAAACAAAAAQDAAADAAAAAAAAAAQA
-					AAADAwAA9QEAAAwAAAABAQAATWFjaW50b3No
-					IEhECAAAAAQDAAAAIMEMHAAAAAgAAAAABAAA
-					QbPG+AMAAAAkAAAAAQEAAEIxQTMwNkZFLTU3
-					M0UtMzA4MC04NjhDLTUwN0MyODJDQTAzRBgA
-					AAABAgAAgQAAAAEACADvPwAAAQAIAAAAAAAA
-					AAAAAQAAAAEBAAAvAAAABAAAAAMDAAAACAAo
-					5AAAAP7///8BAAAAAAAAABIAAAAEEAAAYAAA
-					AAAAAAAFEAAAzAAAAAAAAAAQEAAA+AAAAAAA
-					AABAEAAA6AAAAAAAAABUEAAAIAEAAAAAAABV
-					EAAALAEAAAAAAABWEAAAGAEAAAAAAAACIAAA
-					1AEAAAAAAAAQIAAAVAEAAAAAAAARIAAAiAEA
-					AAAAAAASIAAAaAEAAAAAAAATIAAAeAEAAAAA
-					AAAgIAAAtAEAAAAAAAAwIAAAGAEAAAAAAAAB
-					wAAAOAEAAAAAAAARwAAAFAAAAAAAAAASwAAA
-					SAEAAAAAAAAQ0AAA4AEAAAAAAAA=
-					</data>
 					<key>IsSHSprite</key>
 					<true/>
 					<key>PhysicProperties</key>
@@ -2051,9 +1827,9 @@
 						<key>FlipY</key>
 						<false/>
 						<key>Frame</key>
-						<string>{{176, 164}, {33, 33}}</string>
+						<string>{{0, 268}, {33, 33}}</string>
 						<key>Frame-HD</key>
-						<string>{{352, 328}, {66, 66}}</string>
+						<string>{{0, 536}, {66, 66}}</string>
 						<key>Image</key>
 						<string>game_images_UntitledSheet.png</string>
 						<key>Image-HD</key>
@@ -2079,7 +1855,7 @@
 						<key>OriginalSize</key>
 						<string>{66, 66}</string>
 						<key>Position</key>
-						<string>{352, 328}</string>
+						<string>{0, 536}</string>
 						<key>Scale</key>
 						<string>{1, 1}</string>
 						<key>SpriteSize</key>
@@ -2098,38 +1874,6 @@
 				</dict>
 				<key>goal_blue_3</key>
 				<dict>
-					<key>DocumentSecurityImageBookmark</key>
-					<data>
-					Ym9vawgDAAAAAAQQMAAAAKCnAZJURCNjahsz
-					SGDcrXFOAk8A0KukInH7VvKw92wP7AEAAAUA
-					AAABAQAAVXNlcnMAAAAIAAAAAQEAAGthcnRh
-					MDIyCAAAAAEBAABQaWN0dXJlcwwAAAABAQAA
-					cmFpbmJvdyBob2xlDwAAAAEBAABnb2FsX2Js
-					dWVfMy5wbmcAFAAAAAEGAAAEAAAAFAAAACQA
-					AAA0AAAASAAAAAgAAAAEAwAAMb8AAAAAAAAI
-					AAAABAMAAIwBBQAAAAAACAAAAAQDAABWAgUA
-					AAAAAAgAAAAEAwAAMQvTBQAAAAAIAAAABAMA
-					ADEiEgYAAAAAFAAAAAEGAAB8AAAAjAAAAJwA
-					AACsAAAAvAAAAAgAAAAABAAAQbZR8t8AAAAY
-					AAAAAQIAAAEAAAAAAAAADwAAAAAAAAAAAAAA
-					AAAAAAAAAAABBQAABAAAAAMDAAAGAAAABAAA
-					AAMDAAADAAAACAAAAAQDAAADAAAAAAAAAAQA
-					AAADAwAA9QEAAAwAAAABAQAATWFjaW50b3No
-					IEhECAAAAAQDAAAAIMEMHAAAAAgAAAAABAAA
-					QbPG+AMAAAAkAAAAAQEAAEIxQTMwNkZFLTU3
-					M0UtMzA4MC04NjhDLTUwN0MyODJDQTAzRBgA
-					AAABAgAAgQAAAAEACADvPwAAAQAIAAAAAAAA
-					AAAAAQAAAAEBAAAvAAAABAAAAAMDAAAACAAo
-					5AAAAP7///8BAAAAAAAAABIAAAAEEAAAYAAA
-					AAAAAAAFEAAAzAAAAAAAAAAQEAAA+AAAAAAA
-					AABAEAAA6AAAAAAAAABUEAAAIAEAAAAAAABV
-					EAAALAEAAAAAAABWEAAAGAEAAAAAAAACIAAA
-					1AEAAAAAAAAQIAAAVAEAAAAAAAARIAAAiAEA
-					AAAAAAASIAAAaAEAAAAAAAATIAAAeAEAAAAA
-					AAAgIAAAtAEAAAAAAAAwIAAAGAEAAAAAAAAB
-					wAAAOAEAAAAAAAARwAAAFAAAAAAAAAASwAAA
-					SAEAAAAAAAAQ0AAA4AEAAAAAAAA=
-					</data>
 					<key>IsSHSprite</key>
 					<true/>
 					<key>PhysicProperties</key>
@@ -2184,9 +1928,9 @@
 						<key>FlipY</key>
 						<false/>
 						<key>Frame</key>
-						<string>{{70, 234}, {33, 33}}</string>
+						<string>{{140, 128}, {33, 33}}</string>
 						<key>Frame-HD</key>
-						<string>{{140, 468}, {66, 66}}</string>
+						<string>{{280, 256}, {66, 66}}</string>
 						<key>Image</key>
 						<string>game_images_UntitledSheet.png</string>
 						<key>Image-HD</key>
@@ -2212,7 +1956,7 @@
 						<key>OriginalSize</key>
 						<string>{66, 66}</string>
 						<key>Position</key>
-						<string>{140, 468}</string>
+						<string>{280, 256}</string>
 						<key>Scale</key>
 						<string>{1, 1}</string>
 						<key>SpriteSize</key>
@@ -2231,38 +1975,6 @@
 				</dict>
 				<key>goal_blue_4</key>
 				<dict>
-					<key>DocumentSecurityImageBookmark</key>
-					<data>
-					Ym9vawgDAAAAAAQQMAAAAFl6hxHv3LPlYOWU
-					7z1Q0pMq6gPfKN3K2/C53qi+d1CR7AEAAAUA
-					AAABAQAAVXNlcnMAAAAIAAAAAQEAAGthcnRh
-					MDIyCAAAAAEBAABQaWN0dXJlcwwAAAABAQAA
-					cmFpbmJvdyBob2xlDwAAAAEBAABnb2FsX2Js
-					dWVfNC5wbmcAFAAAAAEGAAAEAAAAFAAAACQA
-					AAA0AAAASAAAAAgAAAAEAwAAMb8AAAAAAAAI
-					AAAABAMAAIwBBQAAAAAACAAAAAQDAABWAgUA
-					AAAAAAgAAAAEAwAAMQvTBQAAAAAIAAAABAMA
-					AFEiEgYAAAAAFAAAAAEGAAB8AAAAjAAAAJwA
-					AACsAAAAvAAAAAgAAAAABAAAQbZR8v4AAAAY
-					AAAAAQIAAAEAAAAAAAAADwAAAAAAAAAAAAAA
-					AAAAAAAAAAABBQAABAAAAAMDAAAGAAAABAAA
-					AAMDAAADAAAACAAAAAQDAAADAAAAAAAAAAQA
-					AAADAwAA9QEAAAwAAAABAQAATWFjaW50b3No
-					IEhECAAAAAQDAAAAIMEMHAAAAAgAAAAABAAA
-					QbPG+AMAAAAkAAAAAQEAAEIxQTMwNkZFLTU3
-					M0UtMzA4MC04NjhDLTUwN0MyODJDQTAzRBgA
-					AAABAgAAgQAAAAEACADvPwAAAQAIAAAAAAAA
-					AAAAAQAAAAEBAAAvAAAABAAAAAMDAAAACAAo
-					5AAAAP7///8BAAAAAAAAABIAAAAEEAAAYAAA
-					AAAAAAAFEAAAzAAAAAAAAAAQEAAA+AAAAAAA
-					AABAEAAA6AAAAAAAAABUEAAAIAEAAAAAAABV
-					EAAALAEAAAAAAABWEAAAGAEAAAAAAAACIAAA
-					1AEAAAAAAAAQIAAAVAEAAAAAAAARIAAAiAEA
-					AAAAAAASIAAAaAEAAAAAAAATIAAAeAEAAAAA
-					AAAgIAAAtAEAAAAAAAAwIAAAGAEAAAAAAAAB
-					wAAAOAEAAAAAAAARwAAAFAAAAAAAAAASwAAA
-					SAEAAAAAAAAQ0AAA4AEAAAAAAAA=
-					</data>
 					<key>IsSHSprite</key>
 					<true/>
 					<key>PhysicProperties</key>
@@ -2317,9 +2029,9 @@
 						<key>FlipY</key>
 						<false/>
 						<key>Frame</key>
-						<string>{{106, 128}, {33, 33}}</string>
+						<string>{{36, 268}, {33, 33}}</string>
 						<key>Frame-HD</key>
-						<string>{{212, 256}, {66, 66}}</string>
+						<string>{{72, 536}, {66, 66}}</string>
 						<key>Image</key>
 						<string>game_images_UntitledSheet.png</string>
 						<key>Image-HD</key>
@@ -2345,7 +2057,7 @@
 						<key>OriginalSize</key>
 						<string>{66, 66}</string>
 						<key>Position</key>
-						<string>{212, 256}</string>
+						<string>{72, 536}</string>
 						<key>Scale</key>
 						<string>{1, 1}</string>
 						<key>SpriteSize</key>
@@ -2364,38 +2076,6 @@
 				</dict>
 				<key>goal_blue_5</key>
 				<dict>
-					<key>DocumentSecurityImageBookmark</key>
-					<data>
-					Ym9vawgDAAAAAAQQMAAAABOMrsouYwVuS7Zu
-					CGbBMQ4d8qU1pT+ndZM7g8WQqg9K7AEAAAUA
-					AAABAQAAVXNlcnMAAAAIAAAAAQEAAGthcnRh
-					MDIyCAAAAAEBAABQaWN0dXJlcwwAAAABAQAA
-					cmFpbmJvdyBob2xlDwAAAAEBAABnb2FsX2Js
-					dWVfNS5wbmcAFAAAAAEGAAAEAAAAFAAAACQA
-					AAA0AAAASAAAAAgAAAAEAwAAMb8AAAAAAAAI
-					AAAABAMAAIwBBQAAAAAACAAAAAQDAABWAgUA
-					AAAAAAgAAAAEAwAAMQvTBQAAAAAIAAAABAMA
-					AGAiEgYAAAAAFAAAAAEGAAB8AAAAjAAAAJwA
-					AACsAAAAvAAAAAgAAAAABAAAQbZR8wcAAAAY
-					AAAAAQIAAAEAAAAAAAAADwAAAAAAAAAAAAAA
-					AAAAAAAAAAABBQAABAAAAAMDAAAGAAAABAAA
-					AAMDAAADAAAACAAAAAQDAAADAAAAAAAAAAQA
-					AAADAwAA9QEAAAwAAAABAQAATWFjaW50b3No
-					IEhECAAAAAQDAAAAIMEMHAAAAAgAAAAABAAA
-					QbPG+AMAAAAkAAAAAQEAAEIxQTMwNkZFLTU3
-					M0UtMzA4MC04NjhDLTUwN0MyODJDQTAzRBgA
-					AAABAgAAgQAAAAEACADvPwAAAQAIAAAAAAAA
-					AAAAAQAAAAEBAAAvAAAABAAAAAMDAAAACAAo
-					5AAAAP7///8BAAAAAAAAABIAAAAEEAAAYAAA
-					AAAAAAAFEAAAzAAAAAAAAAAQEAAA+AAAAAAA
-					AABAEAAA6AAAAAAAAABUEAAAIAEAAAAAAABV
-					EAAALAEAAAAAAABWEAAAGAEAAAAAAAACIAAA
-					1AEAAAAAAAAQIAAAVAEAAAAAAAARIAAAiAEA
-					AAAAAAASIAAAaAEAAAAAAAATIAAAeAEAAAAA
-					AAAgIAAAtAEAAAAAAAAwIAAAGAEAAAAAAAAB
-					wAAAOAEAAAAAAAARwAAAFAAAAAAAAAASwAAA
-					SAEAAAAAAAAQ0AAA4AEAAAAAAAA=
-					</data>
 					<key>IsSHSprite</key>
 					<true/>
 					<key>PhysicProperties</key>
@@ -2450,9 +2130,9 @@
 						<key>FlipY</key>
 						<false/>
 						<key>Frame</key>
-						<string>{{140, 94}, {33, 33}}</string>
+						<string>{{70, 304}, {33, 33}}</string>
 						<key>Frame-HD</key>
-						<string>{{280, 188}, {66, 66}}</string>
+						<string>{{140, 608}, {66, 66}}</string>
 						<key>Image</key>
 						<string>game_images_UntitledSheet.png</string>
 						<key>Image-HD</key>
@@ -2478,7 +2158,7 @@
 						<key>OriginalSize</key>
 						<string>{66, 66}</string>
 						<key>Position</key>
-						<string>{280, 188}</string>
+						<string>{140, 608}</string>
 						<key>Scale</key>
 						<string>{1, 1}</string>
 						<key>SpriteSize</key>
@@ -2497,38 +2177,6 @@
 				</dict>
 				<key>goal_blue_6</key>
 				<dict>
-					<key>DocumentSecurityImageBookmark</key>
-					<data>
-					Ym9vawgDAAAAAAQQMAAAAD3tvDnEQqitsoVp
-					F6zAFdkVOZW6/9c+Lfzlfq/K3ORs7AEAAAUA
-					AAABAQAAVXNlcnMAAAAIAAAAAQEAAGthcnRh
-					MDIyCAAAAAEBAABQaWN0dXJlcwwAAAABAQAA
-					cmFpbmJvdyBob2xlDwAAAAEBAABnb2FsX2Js
-					dWVfNi5wbmcAFAAAAAEGAAAEAAAAFAAAACQA
-					AAA0AAAASAAAAAgAAAAEAwAAMb8AAAAAAAAI
-					AAAABAMAAIwBBQAAAAAACAAAAAQDAABWAgUA
-					AAAAAAgAAAAEAwAAMQvTBQAAAAAIAAAABAMA
-					ANQiEgYAAAAAFAAAAAEGAAB8AAAAjAAAAJwA
-					AACsAAAAvAAAAAgAAAAABAAAQbZR83kAAAAY
-					AAAAAQIAAAEAAAAAAAAADwAAAAAAAAAAAAAA
-					AAAAAAAAAAABBQAABAAAAAMDAAAGAAAABAAA
-					AAMDAAADAAAACAAAAAQDAAADAAAAAAAAAAQA
-					AAADAwAA9QEAAAwAAAABAQAATWFjaW50b3No
-					IEhECAAAAAQDAAAAIMEMHAAAAAgAAAAABAAA
-					QbPG+AMAAAAkAAAAAQEAAEIxQTMwNkZFLTU3
-					M0UtMzA4MC04NjhDLTUwN0MyODJDQTAzRBgA
-					AAABAgAAgQAAAAEACADvPwAAAQAIAAAAAAAA
-					AAAAAQAAAAEBAAAvAAAABAAAAAMDAAAACAAo
-					5AAAAP7///8BAAAAAAAAABIAAAAEEAAAYAAA
-					AAAAAAAFEAAAzAAAAAAAAAAQEAAA+AAAAAAA
-					AABAEAAA6AAAAAAAAABUEAAAIAEAAAAAAABV
-					EAAALAEAAAAAAABWEAAAGAEAAAAAAAACIAAA
-					1AEAAAAAAAAQIAAAVAEAAAAAAAARIAAAiAEA
-					AAAAAAASIAAAaAEAAAAAAAATIAAAeAEAAAAA
-					AAAgIAAAtAEAAAAAAAAwIAAAGAEAAAAAAAAB
-					wAAAOAEAAAAAAAARwAAAFAAAAAAAAAASwAAA
-					SAEAAAAAAAAQ0AAA4AEAAAAAAAA=
-					</data>
 					<key>IsSHSprite</key>
 					<true/>
 					<key>PhysicProperties</key>
@@ -2583,9 +2231,9 @@
 						<key>FlipY</key>
 						<false/>
 						<key>Frame</key>
-						<string>{{0, 268}, {33, 33}}</string>
+						<string>{{106, 234}, {33, 33}}</string>
 						<key>Frame-HD</key>
-						<string>{{0, 536}, {66, 66}}</string>
+						<string>{{212, 468}, {66, 66}}</string>
 						<key>Image</key>
 						<string>game_images_UntitledSheet.png</string>
 						<key>Image-HD</key>
@@ -2611,7 +2259,7 @@
 						<key>OriginalSize</key>
 						<string>{66, 66}</string>
 						<key>Position</key>
-						<string>{0, 536}</string>
+						<string>{212, 468}</string>
 						<key>Scale</key>
 						<string>{1, 1}</string>
 						<key>SpriteSize</key>
@@ -2684,9 +2332,9 @@
 						<key>FlipY</key>
 						<false/>
 						<key>Frame</key>
-						<string>{{0, 164}, {33, 33}}</string>
+						<string>{{218, 0}, {33, 33}}</string>
 						<key>Frame-HD</key>
-						<string>{{0, 328}, {66, 66}}</string>
+						<string>{{436, 0}, {66, 66}}</string>
 						<key>Image</key>
 						<string>game_images_UntitledSheet.png</string>
 						<key>Image-HD</key>
@@ -2712,7 +2360,7 @@
 						<key>OriginalSize</key>
 						<string>{66, 66}</string>
 						<key>Position</key>
-						<string>{0, 328}</string>
+						<string>{436, 0}</string>
 						<key>Scale</key>
 						<string>{1, 1}</string>
 						<key>SpriteSize</key>
@@ -2832,9 +2480,9 @@
 						<key>FlipY</key>
 						<false/>
 						<key>Frame</key>
-						<string>{{140, 198}, {33, 33}}</string>
+						<string>{{176, 94}, {33, 33}}</string>
 						<key>Frame-HD</key>
-						<string>{{280, 396}, {66, 66}}</string>
+						<string>{{352, 188}, {66, 66}}</string>
 						<key>Image</key>
 						<string>game_images_UntitledSheet.png</string>
 						<key>Image-HD</key>
@@ -2860,7 +2508,7 @@
 						<key>OriginalSize</key>
 						<string>{66, 66}</string>
 						<key>Position</key>
-						<string>{280, 396}</string>
+						<string>{352, 188}</string>
 						<key>Scale</key>
 						<string>{1, 1}</string>
 						<key>SpriteSize</key>
@@ -2879,38 +2527,6 @@
 				</dict>
 				<key>goal_darkblue_0</key>
 				<dict>
-					<key>DocumentSecurityImageBookmark</key>
-					<data>
-					Ym9vawwDAAAAAAQQMAAAAAJcJVdK6TawFFD0
-					+tcxSwnT2dhepVHWPx7v4yM/4AAK8AEAAAUA
-					AAABAQAAVXNlcnMAAAAIAAAAAQEAAGthcnRh
-					MDIyCAAAAAEBAABQaWN0dXJlcwwAAAABAQAA
-					cmFpbmJvdyBob2xlEwAAAAEBAABnb2FsX2Rh
-					cmtibHVlXzAucG5nABQAAAABBgAABAAAABQA
-					AAAkAAAANAAAAEgAAAAIAAAABAMAADG/AAAA
-					AAAACAAAAAQDAACMAQUAAAAAAAgAAAAEAwAA
-					VgIFAAAAAAAIAAAABAMAADEL0wUAAAAACAAA
-					AAQDAAB0IhIGAAAAABQAAAABBgAAgAAAAJAA
-					AACgAAAAsAAAAMAAAAAIAAAAAAQAAEG2UfMf
-					AAAAGAAAAAECAAABAAAAAAAAAA8AAAAAAAAA
-					AAAAAAAAAAAAAAAAAQUAAAQAAAADAwAABgAA
-					AAQAAAADAwAAAwAAAAgAAAAEAwAAAwAAAAAA
-					AAAEAAAAAwMAAPUBAAAMAAAAAQEAAE1hY2lu
-					dG9zaCBIRAgAAAAEAwAAACDBDBwAAAAIAAAA
-					AAQAAEGzxvgDAAAAJAAAAAEBAABCMUEzMDZG
-					RS01NzNFLTMwODAtODY4Qy01MDdDMjgyQ0Ew
-					M0QYAAAAAQIAAIEAAAABAAgA7z8AAAEACAAA
-					AAAAAAAAAAEAAAABAQAALwAAAAQAAAADAwAA
-					AAgAKOQAAAD+////AQAAAAAAAAASAAAABBAA
-					AGQAAAAAAAAABRAAANAAAAAAAAAAEBAAAPwA
-					AAAAAAAAQBAAAOwAAAAAAAAAVBAAACQBAAAA
-					AAAAVRAAADABAAAAAAAAVhAAABwBAAAAAAAA
-					AiAAANgBAAAAAAAAECAAAFgBAAAAAAAAESAA
-					AIwBAAAAAAAAEiAAAGwBAAAAAAAAEyAAAHwB
-					AAAAAAAAICAAALgBAAAAAAAAMCAAABwBAAAA
-					AAAAAcAAADwBAAAAAAAAEcAAABQAAAAAAAAA
-					EsAAAEwBAAAAAAAAENAAAOQBAAAAAAAA
-					</data>
 					<key>IsSHSprite</key>
 					<true/>
 					<key>PhysicProperties</key>
@@ -2965,9 +2581,9 @@
 						<key>FlipY</key>
 						<false/>
 						<key>Frame</key>
-						<string>{{210, 128}, {33, 33}}</string>
+						<string>{{36, 164}, {33, 33}}</string>
 						<key>Frame-HD</key>
-						<string>{{420, 256}, {66, 66}}</string>
+						<string>{{72, 328}, {66, 66}}</string>
 						<key>Image</key>
 						<string>game_images_UntitledSheet.png</string>
 						<key>Image-HD</key>
@@ -2993,7 +2609,7 @@
 						<key>OriginalSize</key>
 						<string>{66, 66}</string>
 						<key>Position</key>
-						<string>{420, 256}</string>
+						<string>{72, 328}</string>
 						<key>Scale</key>
 						<string>{1, 1}</string>
 						<key>SpriteSize</key>
@@ -3012,38 +2628,6 @@
 				</dict>
 				<key>goal_darkblue_1</key>
 				<dict>
-					<key>DocumentSecurityImageBookmark</key>
-					<data>
-					Ym9vawwDAAAAAAQQMAAAADFm8ZY8iCxqiBYV
-					5ASXjmTYh5xAGC3lb5V/Ri2n8xvS8AEAAAUA
-					AAABAQAAVXNlcnMAAAAIAAAAAQEAAGthcnRh
-					MDIyCAAAAAEBAABQaWN0dXJlcwwAAAABAQAA
-					cmFpbmJvdyBob2xlEwAAAAEBAABnb2FsX2Rh
-					cmtibHVlXzEucG5nABQAAAABBgAABAAAABQA
-					AAAkAAAANAAAAEgAAAAIAAAABAMAADG/AAAA
-					AAAACAAAAAQDAACMAQUAAAAAAAgAAAAEAwAA
-					VgIFAAAAAAAIAAAABAMAADEL0wUAAAAACAAA
-					AAQDAAB5IhIGAAAAABQAAAABBgAAgAAAAJAA
-					AACgAAAAsAAAAMAAAAAIAAAAAAQAAEG2UfMj
-					AAAAGAAAAAECAAABAAAAAAAAAA8AAAAAAAAA
-					AAAAAAAAAAAAAAAAAQUAAAQAAAADAwAABgAA
-					AAQAAAADAwAAAwAAAAgAAAAEAwAAAwAAAAAA
-					AAAEAAAAAwMAAPUBAAAMAAAAAQEAAE1hY2lu
-					dG9zaCBIRAgAAAAEAwAAACDBDBwAAAAIAAAA
-					AAQAAEGzxvgDAAAAJAAAAAEBAABCMUEzMDZG
-					RS01NzNFLTMwODAtODY4Qy01MDdDMjgyQ0Ew
-					M0QYAAAAAQIAAIEAAAABAAgA7z8AAAEACAAA
-					AAAAAAAAAAEAAAABAQAALwAAAAQAAAADAwAA
-					AAgAKOQAAAD+////AQAAAAAAAAASAAAABBAA
-					AGQAAAAAAAAABRAAANAAAAAAAAAAEBAAAPwA
-					AAAAAAAAQBAAAOwAAAAAAAAAVBAAACQBAAAA
-					AAAAVRAAADABAAAAAAAAVhAAABwBAAAAAAAA
-					AiAAANgBAAAAAAAAECAAAFgBAAAAAAAAESAA
-					AIwBAAAAAAAAEiAAAGwBAAAAAAAAEyAAAHwB
-					AAAAAAAAICAAALgBAAAAAAAAMCAAABwBAAAA
-					AAAAAcAAADwBAAAAAAAAEcAAABQAAAAAAAAA
-					EsAAAEwBAAAAAAAAENAAAOQBAAAAAAAA
-					</data>
 					<key>IsSHSprite</key>
 					<true/>
 					<key>PhysicProperties</key>
@@ -3098,9 +2682,9 @@
 						<key>FlipY</key>
 						<false/>
 						<key>Frame</key>
-						<string>{{140, 128}, {33, 33}}</string>
+						<string>{{36, 234}, {33, 33}}</string>
 						<key>Frame-HD</key>
-						<string>{{280, 256}, {66, 66}}</string>
+						<string>{{72, 468}, {66, 66}}</string>
 						<key>Image</key>
 						<string>game_images_UntitledSheet.png</string>
 						<key>Image-HD</key>
@@ -3126,7 +2710,7 @@
 						<key>OriginalSize</key>
 						<string>{66, 66}</string>
 						<key>Position</key>
-						<string>{280, 256}</string>
+						<string>{72, 468}</string>
 						<key>Scale</key>
 						<string>{1, 1}</string>
 						<key>SpriteSize</key>
@@ -3145,38 +2729,6 @@
 				</dict>
 				<key>goal_darkblue_2</key>
 				<dict>
-					<key>DocumentSecurityImageBookmark</key>
-					<data>
-					Ym9vawwDAAAAAAQQMAAAALJrEmCiDl+elGJz
-					z5h4aQbrlg+APDcvtLF77OWOWGs98AEAAAUA
-					AAABAQAAVXNlcnMAAAAIAAAAAQEAAGthcnRh
-					MDIyCAAAAAEBAABQaWN0dXJlcwwAAAABAQAA
-					cmFpbmJvdyBob2xlEwAAAAEBAABnb2FsX2Rh
-					cmtibHVlXzIucG5nABQAAAABBgAABAAAABQA
-					AAAkAAAANAAAAEgAAAAIAAAABAMAADG/AAAA
-					AAAACAAAAAQDAACMAQUAAAAAAAgAAAAEAwAA
-					VgIFAAAAAAAIAAAABAMAADEL0wUAAAAACAAA
-					AAQDAAB+IhIGAAAAABQAAAABBgAAgAAAAJAA
-					AACgAAAAsAAAAMAAAAAIAAAAAAQAAEG2UfMn
-					AAAAGAAAAAECAAABAAAAAAAAAA8AAAAAAAAA
-					AAAAAAAAAAAAAAAAAQUAAAQAAAADAwAABgAA
-					AAQAAAADAwAAAwAAAAgAAAAEAwAAAwAAAAAA
-					AAAEAAAAAwMAAPUBAAAMAAAAAQEAAE1hY2lu
-					dG9zaCBIRAgAAAAEAwAAACDBDBwAAAAIAAAA
-					AAQAAEGzxvgDAAAAJAAAAAEBAABCMUEzMDZG
-					RS01NzNFLTMwODAtODY4Qy01MDdDMjgyQ0Ew
-					M0QYAAAAAQIAAIEAAAABAAgA7z8AAAEACAAA
-					AAAAAAAAAAEAAAABAQAALwAAAAQAAAADAwAA
-					AAgAKOQAAAD+////AQAAAAAAAAASAAAABBAA
-					AGQAAAAAAAAABRAAANAAAAAAAAAAEBAAAPwA
-					AAAAAAAAQBAAAOwAAAAAAAAAVBAAACQBAAAA
-					AAAAVRAAADABAAAAAAAAVhAAABwBAAAAAAAA
-					AiAAANgBAAAAAAAAECAAAFgBAAAAAAAAESAA
-					AIwBAAAAAAAAEiAAAGwBAAAAAAAAEyAAAHwB
-					AAAAAAAAICAAALgBAAAAAAAAMCAAABwBAAAA
-					AAAAAcAAADwBAAAAAAAAEcAAABQAAAAAAAAA
-					EsAAAEwBAAAAAAAAENAAAOQBAAAAAAAA
-					</data>
 					<key>IsSHSprite</key>
 					<true/>
 					<key>PhysicProperties</key>
@@ -3231,9 +2783,9 @@
 						<key>FlipY</key>
 						<false/>
 						<key>Frame</key>
-						<string>{{36, 198}, {33, 33}}</string>
+						<string>{{176, 164}, {33, 33}}</string>
 						<key>Frame-HD</key>
-						<string>{{72, 396}, {66, 66}}</string>
+						<string>{{352, 328}, {66, 66}}</string>
 						<key>Image</key>
 						<string>game_images_UntitledSheet.png</string>
 						<key>Image-HD</key>
@@ -3259,7 +2811,7 @@
 						<key>OriginalSize</key>
 						<string>{66, 66}</string>
 						<key>Position</key>
-						<string>{72, 396}</string>
+						<string>{352, 328}</string>
 						<key>Scale</key>
 						<string>{1, 1}</string>
 						<key>SpriteSize</key>
@@ -3278,38 +2830,6 @@
 				</dict>
 				<key>goal_darkblue_3</key>
 				<dict>
-					<key>DocumentSecurityImageBookmark</key>
-					<data>
-					Ym9vawwDAAAAAAQQMAAAAAccmOrQeJ/D4Ciq
-					JckdJp6YJNGkt6jTbGsuqvTx3DY68AEAAAUA
-					AAABAQAAVXNlcnMAAAAIAAAAAQEAAGthcnRh
-					MDIyCAAAAAEBAABQaWN0dXJlcwwAAAABAQAA
-					cmFpbmJvdyBob2xlEwAAAAEBAABnb2FsX2Rh
-					cmtibHVlXzMucG5nABQAAAABBgAABAAAABQA
-					AAAkAAAANAAAAEgAAAAIAAAABAMAADG/AAAA
-					AAAACAAAAAQDAACMAQUAAAAAAAgAAAAEAwAA
-					VgIFAAAAAAAIAAAABAMAADEL0wUAAAAACAAA
-					AAQDAACAIhIGAAAAABQAAAABBgAAgAAAAJAA
-					AACgAAAAsAAAAMAAAAAIAAAAAAQAAEG2UfMs
-					AAAAGAAAAAECAAABAAAAAAAAAA8AAAAAAAAA
-					AAAAAAAAAAAAAAAAAQUAAAQAAAADAwAABgAA
-					AAQAAAADAwAAAwAAAAgAAAAEAwAAAwAAAAAA
-					AAAEAAAAAwMAAPUBAAAMAAAAAQEAAE1hY2lu
-					dG9zaCBIRAgAAAAEAwAAACDBDBwAAAAIAAAA
-					AAQAAEGzxvgDAAAAJAAAAAEBAABCMUEzMDZG
-					RS01NzNFLTMwODAtODY4Qy01MDdDMjgyQ0Ew
-					M0QYAAAAAQIAAIEAAAABAAgA7z8AAAEACAAA
-					AAAAAAAAAAEAAAABAQAALwAAAAQAAAADAwAA
-					AAgAKOQAAAD+////AQAAAAAAAAASAAAABBAA
-					AGQAAAAAAAAABRAAANAAAAAAAAAAEBAAAPwA
-					AAAAAAAAQBAAAOwAAAAAAAAAVBAAACQBAAAA
-					AAAAVRAAADABAAAAAAAAVhAAABwBAAAAAAAA
-					AiAAANgBAAAAAAAAECAAAFgBAAAAAAAAESAA
-					AIwBAAAAAAAAEiAAAGwBAAAAAAAAEyAAAHwB
-					AAAAAAAAICAAALgBAAAAAAAAMCAAABwBAAAA
-					AAAAAcAAADwBAAAAAAAAEcAAABQAAAAAAAAA
-					EsAAAEwBAAAAAAAAENAAAOQBAAAAAAAA
-					</data>
 					<key>IsSHSprite</key>
 					<true/>
 					<key>PhysicProperties</key>
@@ -3364,9 +2884,9 @@
 						<key>FlipY</key>
 						<false/>
 						<key>Frame</key>
-						<string>{{36, 234}, {33, 33}}</string>
+						<string>{{140, 164}, {33, 33}}</string>
 						<key>Frame-HD</key>
-						<string>{{72, 468}, {66, 66}}</string>
+						<string>{{280, 328}, {66, 66}}</string>
 						<key>Image</key>
 						<string>game_images_UntitledSheet.png</string>
 						<key>Image-HD</key>
@@ -3392,7 +2912,7 @@
 						<key>OriginalSize</key>
 						<string>{66, 66}</string>
 						<key>Position</key>
-						<string>{72, 468}</string>
+						<string>{280, 328}</string>
 						<key>Scale</key>
 						<string>{1, 1}</string>
 						<key>SpriteSize</key>
@@ -3411,38 +2931,6 @@
 				</dict>
 				<key>goal_darkblue_4</key>
 				<dict>
-					<key>DocumentSecurityImageBookmark</key>
-					<data>
-					Ym9vawwDAAAAAAQQMAAAAH6kGd0KCfvj+/k2
-					/cmTYl9tqOM5l1FOjJLnLshEouaq8AEAAAUA
-					AAABAQAAVXNlcnMAAAAIAAAAAQEAAGthcnRh
-					MDIyCAAAAAEBAABQaWN0dXJlcwwAAAABAQAA
-					cmFpbmJvdyBob2xlEwAAAAEBAABnb2FsX2Rh
-					cmtibHVlXzQucG5nABQAAAABBgAABAAAABQA
-					AAAkAAAANAAAAEgAAAAIAAAABAMAADG/AAAA
-					AAAACAAAAAQDAACMAQUAAAAAAAgAAAAEAwAA
-					VgIFAAAAAAAIAAAABAMAADEL0wUAAAAACAAA
-					AAQDAACGIhIGAAAAABQAAAABBgAAgAAAAJAA
-					AACgAAAAsAAAAMAAAAAIAAAAAAQAAEG2UfMx
-					AAAAGAAAAAECAAABAAAAAAAAAA8AAAAAAAAA
-					AAAAAAAAAAAAAAAAAQUAAAQAAAADAwAABgAA
-					AAQAAAADAwAAAwAAAAgAAAAEAwAAAwAAAAAA
-					AAAEAAAAAwMAAPUBAAAMAAAAAQEAAE1hY2lu
-					dG9zaCBIRAgAAAAEAwAAACDBDBwAAAAIAAAA
-					AAQAAEGzxvgDAAAAJAAAAAEBAABCMUEzMDZG
-					RS01NzNFLTMwODAtODY4Qy01MDdDMjgyQ0Ew
-					M0QYAAAAAQIAAIEAAAABAAgA7z8AAAEACAAA
-					AAAAAAAAAAEAAAABAQAALwAAAAQAAAADAwAA
-					AAgAKOQAAAD+////AQAAAAAAAAASAAAABBAA
-					AGQAAAAAAAAABRAAANAAAAAAAAAAEBAAAPwA
-					AAAAAAAAQBAAAOwAAAAAAAAAVBAAACQBAAAA
-					AAAAVRAAADABAAAAAAAAVhAAABwBAAAAAAAA
-					AiAAANgBAAAAAAAAECAAAFgBAAAAAAAAESAA
-					AIwBAAAAAAAAEiAAAGwBAAAAAAAAEyAAAHwB
-					AAAAAAAAICAAALgBAAAAAAAAMCAAABwBAAAA
-					AAAAAcAAADwBAAAAAAAAEcAAABQAAAAAAAAA
-					EsAAAEwBAAAAAAAAENAAAOQBAAAAAAAA
-					</data>
 					<key>IsSHSprite</key>
 					<true/>
 					<key>PhysicProperties</key>
@@ -3497,9 +2985,9 @@
 						<key>FlipY</key>
 						<false/>
 						<key>Frame</key>
-						<string>{{36, 128}, {33, 33}}</string>
+						<string>{{70, 198}, {33, 33}}</string>
 						<key>Frame-HD</key>
-						<string>{{72, 256}, {66, 66}}</string>
+						<string>{{140, 396}, {66, 66}}</string>
 						<key>Image</key>
 						<string>game_images_UntitledSheet.png</string>
 						<key>Image-HD</key>
@@ -3525,7 +3013,7 @@
 						<key>OriginalSize</key>
 						<string>{66, 66}</string>
 						<key>Position</key>
-						<string>{72, 256}</string>
+						<string>{140, 396}</string>
 						<key>Scale</key>
 						<string>{1, 1}</string>
 						<key>SpriteSize</key>
@@ -3544,38 +3032,6 @@
 				</dict>
 				<key>goal_darkblue_5</key>
 				<dict>
-					<key>DocumentSecurityImageBookmark</key>
-					<data>
-					Ym9vawwDAAAAAAQQMAAAAH7/MuqmPdeN+A7J
-					nCS9SXLfGnU9uKKXIaiosuvk+11a8AEAAAUA
-					AAABAQAAVXNlcnMAAAAIAAAAAQEAAGthcnRh
-					MDIyCAAAAAEBAABQaWN0dXJlcwwAAAABAQAA
-					cmFpbmJvdyBob2xlEwAAAAEBAABnb2FsX2Rh
-					cmtibHVlXzUucG5nABQAAAABBgAABAAAABQA
-					AAAkAAAANAAAAEgAAAAIAAAABAMAADG/AAAA
-					AAAACAAAAAQDAACMAQUAAAAAAAgAAAAEAwAA
-					VgIFAAAAAAAIAAAABAMAADEL0wUAAAAACAAA
-					AAQDAACKIhIGAAAAABQAAAABBgAAgAAAAJAA
-					AACgAAAAsAAAAMAAAAAIAAAAAAQAAEG2UfM2
-					AAAAGAAAAAECAAABAAAAAAAAAA8AAAAAAAAA
-					AAAAAAAAAAAAAAAAAQUAAAQAAAADAwAABgAA
-					AAQAAAADAwAAAwAAAAgAAAAEAwAAAwAAAAAA
-					AAAEAAAAAwMAAPUBAAAMAAAAAQEAAE1hY2lu
-					dG9zaCBIRAgAAAAEAwAAACDBDBwAAAAIAAAA
-					AAQAAEGzxvgDAAAAJAAAAAEBAABCMUEzMDZG
-					RS01NzNFLTMwODAtODY4Qy01MDdDMjgyQ0Ew
-					M0QYAAAAAQIAAIEAAAABAAgA7z8AAAEACAAA
-					AAAAAAAAAAEAAAABAQAALwAAAAQAAAADAwAA
-					AAgAKOQAAAD+////AQAAAAAAAAASAAAABBAA
-					AGQAAAAAAAAABRAAANAAAAAAAAAAEBAAAPwA
-					AAAAAAAAQBAAAOwAAAAAAAAAVBAAACQBAAAA
-					AAAAVRAAADABAAAAAAAAVhAAABwBAAAAAAAA
-					AiAAANgBAAAAAAAAECAAAFgBAAAAAAAAESAA
-					AIwBAAAAAAAAEiAAAGwBAAAAAAAAEyAAAHwB
-					AAAAAAAAICAAALgBAAAAAAAAMCAAABwBAAAA
-					AAAAAcAAADwBAAAAAAAAEcAAABQAAAAAAAAA
-					EsAAAEwBAAAAAAAAENAAAOQBAAAAAAAA
-					</data>
 					<key>IsSHSprite</key>
 					<true/>
 					<key>PhysicProperties</key>
@@ -3630,9 +3086,9 @@
 						<key>FlipY</key>
 						<false/>
 						<key>Frame</key>
-						<string>{{210, 94}, {33, 33}}</string>
+						<string>{{70, 234}, {33, 33}}</string>
 						<key>Frame-HD</key>
-						<string>{{420, 188}, {66, 66}}</string>
+						<string>{{140, 468}, {66, 66}}</string>
 						<key>Image</key>
 						<string>game_images_UntitledSheet.png</string>
 						<key>Image-HD</key>
@@ -3658,7 +3114,7 @@
 						<key>OriginalSize</key>
 						<string>{66, 66}</string>
 						<key>Position</key>
-						<string>{420, 188}</string>
+						<string>{140, 468}</string>
 						<key>Scale</key>
 						<string>{1, 1}</string>
 						<key>SpriteSize</key>
@@ -3677,38 +3133,6 @@
 				</dict>
 				<key>goal_darkblue_6</key>
 				<dict>
-					<key>DocumentSecurityImageBookmark</key>
-					<data>
-					Ym9vawwDAAAAAAQQMAAAAKHZJZ/M7x3+Yxeo
-					MLYqegIfNL6gRdDcrApT+IUYcoqQ8AEAAAUA
-					AAABAQAAVXNlcnMAAAAIAAAAAQEAAGthcnRh
-					MDIyCAAAAAEBAABQaWN0dXJlcwwAAAABAQAA
-					cmFpbmJvdyBob2xlEwAAAAEBAABnb2FsX2Rh
-					cmtibHVlXzYucG5nABQAAAABBgAABAAAABQA
-					AAAkAAAANAAAAEgAAAAIAAAABAMAADG/AAAA
-					AAAACAAAAAQDAACMAQUAAAAAAAgAAAAEAwAA
-					VgIFAAAAAAAIAAAABAMAADEL0wUAAAAACAAA
-					AAQDAACXIhIGAAAAABQAAAABBgAAgAAAAJAA
-					AACgAAAAsAAAAMAAAAAIAAAAAAQAAEG2UfM7
-					AAAAGAAAAAECAAABAAAAAAAAAA8AAAAAAAAA
-					AAAAAAAAAAAAAAAAAQUAAAQAAAADAwAABgAA
-					AAQAAAADAwAAAwAAAAgAAAAEAwAAAwAAAAAA
-					AAAEAAAAAwMAAPUBAAAMAAAAAQEAAE1hY2lu
-					dG9zaCBIRAgAAAAEAwAAACDBDBwAAAAIAAAA
-					AAQAAEGzxvgDAAAAJAAAAAEBAABCMUEzMDZG
-					RS01NzNFLTMwODAtODY4Qy01MDdDMjgyQ0Ew
-					M0QYAAAAAQIAAIEAAAABAAgA7z8AAAEACAAA
-					AAAAAAAAAAEAAAABAQAALwAAAAQAAAADAwAA
-					AAgAKOQAAAD+////AQAAAAAAAAASAAAABBAA
-					AGQAAAAAAAAABRAAANAAAAAAAAAAEBAAAPwA
-					AAAAAAAAQBAAAOwAAAAAAAAAVBAAACQBAAAA
-					AAAAVRAAADABAAAAAAAAVhAAABwBAAAAAAAA
-					AiAAANgBAAAAAAAAECAAAFgBAAAAAAAAESAA
-					AIwBAAAAAAAAEiAAAGwBAAAAAAAAEyAAAHwB
-					AAAAAAAAICAAALgBAAAAAAAAMCAAABwBAAAA
-					AAAAAcAAADwBAAAAAAAAEcAAABQAAAAAAAAA
-					EsAAAEwBAAAAAAAAENAAAOQBAAAAAAAA
-					</data>
 					<key>IsSHSprite</key>
 					<true/>
 					<key>PhysicProperties</key>
@@ -3763,9 +3187,9 @@
 						<key>FlipY</key>
 						<false/>
 						<key>Frame</key>
-						<string>{{176, 94}, {33, 33}}</string>
+						<string>{{70, 268}, {33, 33}}</string>
 						<key>Frame-HD</key>
-						<string>{{352, 188}, {66, 66}}</string>
+						<string>{{140, 536}, {66, 66}}</string>
 						<key>Image</key>
 						<string>game_images_UntitledSheet.png</string>
 						<key>Image-HD</key>
@@ -3791,7 +3215,7 @@
 						<key>OriginalSize</key>
 						<string>{66, 66}</string>
 						<key>Position</key>
-						<string>{352, 188}</string>
+						<string>{140, 536}</string>
 						<key>Scale</key>
 						<string>{1, 1}</string>
 						<key>SpriteSize</key>
@@ -3810,38 +3234,6 @@
 				</dict>
 				<key>goal_darkblue_7</key>
 				<dict>
-					<key>DocumentSecurityImageBookmark</key>
-					<data>
-					Ym9vawwDAAAAAAQQMAAAAAnZCQ6PztKqGZcc
-					1Dq8I/ve6nuRd5ObH8cNGyoK+P6p8AEAAAUA
-					AAABAQAAVXNlcnMAAAAIAAAAAQEAAGthcnRh
-					MDIyCAAAAAEBAABQaWN0dXJlcwwAAAABAQAA
-					cmFpbmJvdyBob2xlEwAAAAEBAABnb2FsX2Rh
-					cmtibHVlXzcucG5nABQAAAABBgAABAAAABQA
-					AAAkAAAANAAAAEgAAAAIAAAABAMAADG/AAAA
-					AAAACAAAAAQDAACMAQUAAAAAAAgAAAAEAwAA
-					VgIFAAAAAAAIAAAABAMAADEL0wUAAAAACAAA
-					AAQDAACeIhIGAAAAABQAAAABBgAAgAAAAJAA
-					AACgAAAAsAAAAMAAAAAIAAAAAAQAAEG2UfNB
-					AAAAGAAAAAECAAABAAAAAAAAAA8AAAAAAAAA
-					AAAAAAAAAAAAAAAAAQUAAAQAAAADAwAABgAA
-					AAQAAAADAwAAAwAAAAgAAAAEAwAAAwAAAAAA
-					AAAEAAAAAwMAAPUBAAAMAAAAAQEAAE1hY2lu
-					dG9zaCBIRAgAAAAEAwAAACDBDBwAAAAIAAAA
-					AAQAAEGzxvgDAAAAJAAAAAEBAABCMUEzMDZG
-					RS01NzNFLTMwODAtODY4Qy01MDdDMjgyQ0Ew
-					M0QYAAAAAQIAAIEAAAABAAgA7z8AAAEACAAA
-					AAAAAAAAAAEAAAABAQAALwAAAAQAAAADAwAA
-					AAgAKOQAAAD+////AQAAAAAAAAASAAAABBAA
-					AGQAAAAAAAAABRAAANAAAAAAAAAAEBAAAPwA
-					AAAAAAAAQBAAAOwAAAAAAAAAVBAAACQBAAAA
-					AAAAVRAAADABAAAAAAAAVhAAABwBAAAAAAAA
-					AiAAANgBAAAAAAAAECAAAFgBAAAAAAAAESAA
-					AIwBAAAAAAAAEiAAAGwBAAAAAAAAEyAAAHwB
-					AAAAAAAAICAAALgBAAAAAAAAMCAAABwBAAAA
-					AAAAAcAAADwBAAAAAAAAEcAAABQAAAAAAAAA
-					EsAAAEwBAAAAAAAAENAAAOQBAAAAAAAA
-					</data>
 					<key>IsSHSprite</key>
 					<true/>
 					<key>PhysicProperties</key>
@@ -3896,9 +3288,9 @@
 						<key>FlipY</key>
 						<false/>
 						<key>Frame</key>
-						<string>{{106, 94}, {33, 33}}</string>
+						<string>{{106, 198}, {33, 33}}</string>
 						<key>Frame-HD</key>
-						<string>{{212, 188}, {66, 66}}</string>
+						<string>{{212, 396}, {66, 66}}</string>
 						<key>Image</key>
 						<string>game_images_UntitledSheet.png</string>
 						<key>Image-HD</key>
@@ -3924,7 +3316,7 @@
 						<key>OriginalSize</key>
 						<string>{66, 66}</string>
 						<key>Position</key>
-						<string>{212, 188}</string>
+						<string>{212, 396}</string>
 						<key>Scale</key>
 						<string>{1, 1}</string>
 						<key>SpriteSize</key>
@@ -3943,38 +3335,6 @@
 				</dict>
 				<key>goal_darkblue_8</key>
 				<dict>
-					<key>DocumentSecurityImageBookmark</key>
-					<data>
-					Ym9vawwDAAAAAAQQMAAAAF7LygqoS9RR8L+X
-					PvjN+wmbP38LAkMhmgV0LobPbFMv8AEAAAUA
-					AAABAQAAVXNlcnMAAAAIAAAAAQEAAGthcnRh
-					MDIyCAAAAAEBAABQaWN0dXJlcwwAAAABAQAA
-					cmFpbmJvdyBob2xlEwAAAAEBAABnb2FsX2Rh
-					cmtibHVlXzgucG5nABQAAAABBgAABAAAABQA
-					AAAkAAAANAAAAEgAAAAIAAAABAMAADG/AAAA
-					AAAACAAAAAQDAACMAQUAAAAAAAgAAAAEAwAA
-					VgIFAAAAAAAIAAAABAMAADEL0wUAAAAACAAA
-					AAQDAACjIhIGAAAAABQAAAABBgAAgAAAAJAA
-					AACgAAAAsAAAAMAAAAAIAAAAAAQAAEG2UfNF
-					AAAAGAAAAAECAAABAAAAAAAAAA8AAAAAAAAA
-					AAAAAAAAAAAAAAAAAQUAAAQAAAADAwAABgAA
-					AAQAAAADAwAAAwAAAAgAAAAEAwAAAwAAAAAA
-					AAAEAAAAAwMAAPUBAAAMAAAAAQEAAE1hY2lu
-					dG9zaCBIRAgAAAAEAwAAACDBDBwAAAAIAAAA
-					AAQAAEGzxvgDAAAAJAAAAAEBAABCMUEzMDZG
-					RS01NzNFLTMwODAtODY4Qy01MDdDMjgyQ0Ew
-					M0QYAAAAAQIAAIEAAAABAAgA7z8AAAEACAAA
-					AAAAAAAAAAEAAAABAQAALwAAAAQAAAADAwAA
-					AAgAKOQAAAD+////AQAAAAAAAAASAAAABBAA
-					AGQAAAAAAAAABRAAANAAAAAAAAAAEBAAAPwA
-					AAAAAAAAQBAAAOwAAAAAAAAAVBAAACQBAAAA
-					AAAAVRAAADABAAAAAAAAVhAAABwBAAAAAAAA
-					AiAAANgBAAAAAAAAECAAAFgBAAAAAAAAESAA
-					AIwBAAAAAAAAEiAAAGwBAAAAAAAAEyAAAHwB
-					AAAAAAAAICAAALgBAAAAAAAAMCAAABwBAAAA
-					AAAAAcAAADwBAAAAAAAAEcAAABQAAAAAAAAA
-					EsAAAEwBAAAAAAAAENAAAOQBAAAAAAAA
-					</data>
 					<key>IsSHSprite</key>
 					<true/>
 					<key>PhysicProperties</key>
@@ -4029,9 +3389,9 @@
 						<key>FlipY</key>
 						<false/>
 						<key>Frame</key>
-						<string>{{70, 94}, {33, 33}}</string>
+						<string>{{140, 198}, {33, 33}}</string>
 						<key>Frame-HD</key>
-						<string>{{140, 188}, {66, 66}}</string>
+						<string>{{280, 396}, {66, 66}}</string>
 						<key>Image</key>
 						<string>game_images_UntitledSheet.png</string>
 						<key>Image-HD</key>
@@ -4057,7 +3417,7 @@
 						<key>OriginalSize</key>
 						<string>{66, 66}</string>
 						<key>Position</key>
-						<string>{140, 188}</string>
+						<string>{280, 396}</string>
 						<key>Scale</key>
 						<string>{1, 1}</string>
 						<key>SpriteSize</key>
@@ -4076,38 +3436,6 @@
 				</dict>
 				<key>goal_green_0</key>
 				<dict>
-					<key>DocumentSecurityImageBookmark</key>
-					<data>
-					Ym9vawgDAAAAAAQQMAAAAPCfRQcivQpyOMPw
-					DwnLOgLGi4E7TFX+R1+roh3NCrdF7AEAAAUA
-					AAABAQAAVXNlcnMAAAAIAAAAAQEAAGthcnRh
-					MDIyCAAAAAEBAABQaWN0dXJlcwwAAAABAQAA
-					cmFpbmJvdyBob2xlEAAAAAEBAABnb2FsX2dy
-					ZWVuXzAucG5nFAAAAAEGAAAEAAAAFAAAACQA
-					AAA0AAAASAAAAAgAAAAEAwAAMb8AAAAAAAAI
-					AAAABAMAAIwBBQAAAAAACAAAAAQDAABWAgUA
-					AAAAAAgAAAAEAwAAMQvTBQAAAAAIAAAABAMA
-					AHwcEgYAAAAAFAAAAAEGAAB8AAAAjAAAAJwA
-					AACsAAAAvAAAAAgAAAAABAAAQbZR8ZEAAAAY
-					AAAAAQIAAAEAAAAAAAAADwAAAAAAAAAAAAAA
-					AAAAAAAAAAABBQAABAAAAAMDAAAGAAAABAAA
-					AAMDAAADAAAACAAAAAQDAAADAAAAAAAAAAQA
-					AAADAwAA9QEAAAwAAAABAQAATWFjaW50b3No
-					IEhECAAAAAQDAAAAIMEMHAAAAAgAAAAABAAA
-					QbPG+AMAAAAkAAAAAQEAAEIxQTMwNkZFLTU3
-					M0UtMzA4MC04NjhDLTUwN0MyODJDQTAzRBgA
-					AAABAgAAgQAAAAEACADvPwAAAQAIAAAAAAAA
-					AAAAAQAAAAEBAAAvAAAABAAAAAMDAAAACAAo
-					5AAAAP7///8BAAAAAAAAABIAAAAEEAAAYAAA
-					AAAAAAAFEAAAzAAAAAAAAAAQEAAA+AAAAAAA
-					AABAEAAA6AAAAAAAAABUEAAAIAEAAAAAAABV
-					EAAALAEAAAAAAABWEAAAGAEAAAAAAAACIAAA
-					1AEAAAAAAAAQIAAAVAEAAAAAAAARIAAAiAEA
-					AAAAAAASIAAAaAEAAAAAAAATIAAAeAEAAAAA
-					AAAgIAAAtAEAAAAAAAAwIAAAGAEAAAAAAAAB
-					wAAAOAEAAAAAAAARwAAAFAAAAAAAAAASwAAA
-					SAEAAAAAAAAQ0AAA4AEAAAAAAAA=
-					</data>
 					<key>IsSHSprite</key>
 					<true/>
 					<key>PhysicProperties</key>
@@ -4162,9 +3490,9 @@
 						<key>FlipY</key>
 						<false/>
 						<key>Frame</key>
-						<string>{{210, 164}, {33, 33}}</string>
+						<string>{{0, 234}, {33, 33}}</string>
 						<key>Frame-HD</key>
-						<string>{{420, 328}, {66, 66}}</string>
+						<string>{{0, 468}, {66, 66}}</string>
 						<key>Image</key>
 						<string>game_images_UntitledSheet.png</string>
 						<key>Image-HD</key>
@@ -4190,7 +3518,7 @@
 						<key>OriginalSize</key>
 						<string>{66, 66}</string>
 						<key>Position</key>
-						<string>{420, 328}</string>
+						<string>{0, 468}</string>
 						<key>Scale</key>
 						<string>{1, 1}</string>
 						<key>SpriteSize</key>
@@ -4209,38 +3537,6 @@
 				</dict>
 				<key>goal_green_1</key>
 				<dict>
-					<key>DocumentSecurityImageBookmark</key>
-					<data>
-					Ym9vawgDAAAAAAQQMAAAAGvd+M+jDZaPTe5s
-					KOy+rPDHskUd+RIeEbmAEqan2pZS7AEAAAUA
-					AAABAQAAVXNlcnMAAAAIAAAAAQEAAGthcnRh
-					MDIyCAAAAAEBAABQaWN0dXJlcwwAAAABAQAA
-					cmFpbmJvdyBob2xlEAAAAAEBAABnb2FsX2dy
-					ZWVuXzEucG5nFAAAAAEGAAAEAAAAFAAAACQA
-					AAA0AAAASAAAAAgAAAAEAwAAMb8AAAAAAAAI
-					AAAABAMAAIwBBQAAAAAACAAAAAQDAABWAgUA
-					AAAAAAgAAAAEAwAAMQvTBQAAAAAIAAAABAMA
-					AIgcEgYAAAAAFAAAAAEGAAB8AAAAjAAAAJwA
-					AACsAAAAvAAAAAgAAAAABAAAQbZR8ZgAAAAY
-					AAAAAQIAAAEAAAAAAAAADwAAAAAAAAAAAAAA
-					AAAAAAAAAAABBQAABAAAAAMDAAAGAAAABAAA
-					AAMDAAADAAAACAAAAAQDAAADAAAAAAAAAAQA
-					AAADAwAA9QEAAAwAAAABAQAATWFjaW50b3No
-					IEhECAAAAAQDAAAAIMEMHAAAAAgAAAAABAAA
-					QbPG+AMAAAAkAAAAAQEAAEIxQTMwNkZFLTU3
-					M0UtMzA4MC04NjhDLTUwN0MyODJDQTAzRBgA
-					AAABAgAAgQAAAAEACADvPwAAAQAIAAAAAAAA
-					AAAAAQAAAAEBAAAvAAAABAAAAAMDAAAACAAo
-					5AAAAP7///8BAAAAAAAAABIAAAAEEAAAYAAA
-					AAAAAAAFEAAAzAAAAAAAAAAQEAAA+AAAAAAA
-					AABAEAAA6AAAAAAAAABUEAAAIAEAAAAAAABV
-					EAAALAEAAAAAAABWEAAAGAEAAAAAAAACIAAA
-					1AEAAAAAAAAQIAAAVAEAAAAAAAARIAAAiAEA
-					AAAAAAASIAAAaAEAAAAAAAATIAAAeAEAAAAA
-					AAAgIAAAtAEAAAAAAAAwIAAAGAEAAAAAAAAB
-					wAAAOAEAAAAAAAARwAAAFAAAAAAAAAASwAAA
-					SAEAAAAAAAAQ0AAA4AEAAAAAAAA=
-					</data>
 					<key>IsSHSprite</key>
 					<true/>
 					<key>PhysicProperties</key>
@@ -4295,9 +3591,9 @@
 						<key>FlipY</key>
 						<false/>
 						<key>Frame</key>
-						<string>{{70, 198}, {33, 33}}</string>
+						<string>{{176, 128}, {33, 33}}</string>
 						<key>Frame-HD</key>
-						<string>{{140, 396}, {66, 66}}</string>
+						<string>{{352, 256}, {66, 66}}</string>
 						<key>Image</key>
 						<string>game_images_UntitledSheet.png</string>
 						<key>Image-HD</key>
@@ -4323,7 +3619,7 @@
 						<key>OriginalSize</key>
 						<string>{66, 66}</string>
 						<key>Position</key>
-						<string>{140, 396}</string>
+						<string>{352, 256}</string>
 						<key>Scale</key>
 						<string>{1, 1}</string>
 						<key>SpriteSize</key>
@@ -4342,38 +3638,6 @@
 				</dict>
 				<key>goal_green_2</key>
 				<dict>
-					<key>DocumentSecurityImageBookmark</key>
-					<data>
-					Ym9vawgDAAAAAAQQMAAAAKggxeZ4QHyiutl7
-					K60qPmMfzkLvBQ+OYa5mOU418lRj7AEAAAUA
-					AAABAQAAVXNlcnMAAAAIAAAAAQEAAGthcnRh
-					MDIyCAAAAAEBAABQaWN0dXJlcwwAAAABAQAA
-					cmFpbmJvdyBob2xlEAAAAAEBAABnb2FsX2dy
-					ZWVuXzIucG5nFAAAAAEGAAAEAAAAFAAAACQA
-					AAA0AAAASAAAAAgAAAAEAwAAMb8AAAAAAAAI
-					AAAABAMAAIwBBQAAAAAACAAAAAQDAABWAgUA
-					AAAAAAgAAAAEAwAAMQvTBQAAAAAIAAAABAMA
-					AI4cEgYAAAAAFAAAAAEGAAB8AAAAjAAAAJwA
-					AACsAAAAvAAAAAgAAAAABAAAQbZR8ZwAAAAY
-					AAAAAQIAAAEAAAAAAAAADwAAAAAAAAAAAAAA
-					AAAAAAAAAAABBQAABAAAAAMDAAAGAAAABAAA
-					AAMDAAADAAAACAAAAAQDAAADAAAAAAAAAAQA
-					AAADAwAA9QEAAAwAAAABAQAATWFjaW50b3No
-					IEhECAAAAAQDAAAAIMEMHAAAAAgAAAAABAAA
-					QbPG+AMAAAAkAAAAAQEAAEIxQTMwNkZFLTU3
-					M0UtMzA4MC04NjhDLTUwN0MyODJDQTAzRBgA
-					AAABAgAAgQAAAAEACADvPwAAAQAIAAAAAAAA
-					AAAAAQAAAAEBAAAvAAAABAAAAAMDAAAACAAo
-					5AAAAP7///8BAAAAAAAAABIAAAAEEAAAYAAA
-					AAAAAAAFEAAAzAAAAAAAAAAQEAAA+AAAAAAA
-					AABAEAAA6AAAAAAAAABUEAAAIAEAAAAAAABV
-					EAAALAEAAAAAAABWEAAAGAEAAAAAAAACIAAA
-					1AEAAAAAAAAQIAAAVAEAAAAAAAARIAAAiAEA
-					AAAAAAASIAAAaAEAAAAAAAATIAAAeAEAAAAA
-					AAAgIAAAtAEAAAAAAAAwIAAAGAEAAAAAAAAB
-					wAAAOAEAAAAAAAARwAAAFAAAAAAAAAASwAAA
-					SAEAAAAAAAAQ0AAA4AEAAAAAAAA=
-					</data>
 					<key>IsSHSprite</key>
 					<true/>
 					<key>PhysicProperties</key>
@@ -4428,9 +3692,9 @@
 						<key>FlipY</key>
 						<false/>
 						<key>Frame</key>
-						<string>{{36, 94}, {33, 33}}</string>
+						<string>{{176, 198}, {33, 33}}</string>
 						<key>Frame-HD</key>
-						<string>{{72, 188}, {66, 66}}</string>
+						<string>{{352, 396}, {66, 66}}</string>
 						<key>Image</key>
 						<string>game_images_UntitledSheet.png</string>
 						<key>Image-HD</key>
@@ -4456,7 +3720,7 @@
 						<key>OriginalSize</key>
 						<string>{66, 66}</string>
 						<key>Position</key>
-						<string>{72, 188}</string>
+						<string>{352, 396}</string>
 						<key>Scale</key>
 						<string>{1, 1}</string>
 						<key>SpriteSize</key>
@@ -4529,9 +3793,9 @@
 						<key>FlipY</key>
 						<false/>
 						<key>Frame</key>
-						<string>{{218, 0}, {33, 33}}</string>
+						<string>{{218, 36}, {33, 33}}</string>
 						<key>Frame-HD</key>
-						<string>{{436, 0}, {66, 66}}</string>
+						<string>{{436, 72}, {66, 66}}</string>
 						<key>Image</key>
 						<string>game_images_UntitledSheet.png</string>
 						<key>Image-HD</key>
@@ -4557,7 +3821,7 @@
 						<key>OriginalSize</key>
 						<string>{66, 66}</string>
 						<key>Position</key>
-						<string>{436, 0}</string>
+						<string>{436, 72}</string>
 						<key>Scale</key>
 						<string>{1, 1}</string>
 						<key>SpriteSize</key>
@@ -4576,38 +3840,6 @@
 				</dict>
 				<key>goal_green_4</key>
 				<dict>
-					<key>DocumentSecurityImageBookmark</key>
-					<data>
-					Ym9vawgDAAAAAAQQMAAAAB+q/FV3myQsK7Bv
-					rMClV1Cy5q6iEBxcb9rLOVTNFEX27AEAAAUA
-					AAABAQAAVXNlcnMAAAAIAAAAAQEAAGthcnRh
-					MDIyCAAAAAEBAABQaWN0dXJlcwwAAAABAQAA
-					cmFpbmJvdyBob2xlEAAAAAEBAABnb2FsX2dy
-					ZWVuXzQucG5nFAAAAAEGAAAEAAAAFAAAACQA
-					AAA0AAAASAAAAAgAAAAEAwAAMb8AAAAAAAAI
-					AAAABAMAAIwBBQAAAAAACAAAAAQDAABWAgUA
-					AAAAAAgAAAAEAwAAMQvTBQAAAAAIAAAABAMA
-					AJscEgYAAAAAFAAAAAEGAAB8AAAAjAAAAJwA
-					AACsAAAAvAAAAAgAAAAABAAAQbZR8aUAAAAY
-					AAAAAQIAAAEAAAAAAAAADwAAAAAAAAAAAAAA
-					AAAAAAAAAAABBQAABAAAAAMDAAAGAAAABAAA
-					AAMDAAADAAAACAAAAAQDAAADAAAAAAAAAAQA
-					AAADAwAA9QEAAAwAAAABAQAATWFjaW50b3No
-					IEhECAAAAAQDAAAAIMEMHAAAAAgAAAAABAAA
-					QbPG+AMAAAAkAAAAAQEAAEIxQTMwNkZFLTU3
-					M0UtMzA4MC04NjhDLTUwN0MyODJDQTAzRBgA
-					AAABAgAAgQAAAAEACADvPwAAAQAIAAAAAAAA
-					AAAAAQAAAAEBAAAvAAAABAAAAAMDAAAACAAo
-					5AAAAP7///8BAAAAAAAAABIAAAAEEAAAYAAA
-					AAAAAAAFEAAAzAAAAAAAAAAQEAAA+AAAAAAA
-					AABAEAAA6AAAAAAAAABUEAAAIAEAAAAAAABV
-					EAAALAEAAAAAAABWEAAAGAEAAAAAAAACIAAA
-					1AEAAAAAAAAQIAAAVAEAAAAAAAARIAAAiAEA
-					AAAAAAASIAAAaAEAAAAAAAATIAAAeAEAAAAA
-					AAAgIAAAtAEAAAAAAAAwIAAAGAEAAAAAAAAB
-					wAAAOAEAAAAAAAARwAAAFAAAAAAAAAASwAAA
-					SAEAAAAAAAAQ0AAA4AEAAAAAAAA=
-					</data>
 					<key>IsSHSprite</key>
 					<true/>
 					<key>PhysicProperties</key>
@@ -4662,9 +3894,9 @@
 						<key>FlipY</key>
 						<false/>
 						<key>Frame</key>
-						<string>{{140, 164}, {33, 33}}</string>
+						<string>{{0, 304}, {33, 33}}</string>
 						<key>Frame-HD</key>
-						<string>{{280, 328}, {66, 66}}</string>
+						<string>{{0, 608}, {66, 66}}</string>
 						<key>Image</key>
 						<string>game_images_UntitledSheet.png</string>
 						<key>Image-HD</key>
@@ -4690,7 +3922,7 @@
 						<key>OriginalSize</key>
 						<string>{66, 66}</string>
 						<key>Position</key>
-						<string>{280, 328}</string>
+						<string>{0, 608}</string>
 						<key>Scale</key>
 						<string>{1, 1}</string>
 						<key>SpriteSize</key>
@@ -4709,38 +3941,6 @@
 				</dict>
 				<key>goal_green_5</key>
 				<dict>
-					<key>DocumentSecurityImageBookmark</key>
-					<data>
-					Ym9vawgDAAAAAAQQMAAAAOWc9WwPYj7hzI6w
-					1xJtcnCQNpLFBNKDBIwoz2GSUxi/7AEAAAUA
-					AAABAQAAVXNlcnMAAAAIAAAAAQEAAGthcnRh
-					MDIyCAAAAAEBAABQaWN0dXJlcwwAAAABAQAA
-					cmFpbmJvdyBob2xlEAAAAAEBAABnb2FsX2dy
-					ZWVuXzUucG5nFAAAAAEGAAAEAAAAFAAAACQA
-					AAA0AAAASAAAAAgAAAAEAwAAMb8AAAAAAAAI
-					AAAABAMAAIwBBQAAAAAACAAAAAQDAABWAgUA
-					AAAAAAgAAAAEAwAAMQvTBQAAAAAIAAAABAMA
-					AKAcEgYAAAAAFAAAAAEGAAB8AAAAjAAAAJwA
-					AACsAAAAvAAAAAgAAAAABAAAQbZR8aoAAAAY
-					AAAAAQIAAAEAAAAAAAAADwAAAAAAAAAAAAAA
-					AAAAAAAAAAABBQAABAAAAAMDAAAGAAAABAAA
-					AAMDAAADAAAACAAAAAQDAAADAAAAAAAAAAQA
-					AAADAwAA9QEAAAwAAAABAQAATWFjaW50b3No
-					IEhECAAAAAQDAAAAIMEMHAAAAAgAAAAABAAA
-					QbPG+AMAAAAkAAAAAQEAAEIxQTMwNkZFLTU3
-					M0UtMzA4MC04NjhDLTUwN0MyODJDQTAzRBgA
-					AAABAgAAgQAAAAEACADvPwAAAQAIAAAAAAAA
-					AAAAAQAAAAEBAAAvAAAABAAAAAMDAAAACAAo
-					5AAAAP7///8BAAAAAAAAABIAAAAEEAAAYAAA
-					AAAAAAAFEAAAzAAAAAAAAAAQEAAA+AAAAAAA
-					AABAEAAA6AAAAAAAAABUEAAAIAEAAAAAAABV
-					EAAALAEAAAAAAABWEAAAGAEAAAAAAAACIAAA
-					1AEAAAAAAAAQIAAAVAEAAAAAAAARIAAAiAEA
-					AAAAAAASIAAAaAEAAAAAAAATIAAAeAEAAAAA
-					AAAgIAAAtAEAAAAAAAAwIAAAGAEAAAAAAAAB
-					wAAAOAEAAAAAAAARwAAAFAAAAAAAAAASwAAA
-					SAEAAAAAAAAQ0AAA4AEAAAAAAAA=
-					</data>
 					<key>IsSHSprite</key>
 					<true/>
 					<key>PhysicProperties</key>
@@ -4795,9 +3995,9 @@
 						<key>FlipY</key>
 						<false/>
 						<key>Frame</key>
-						<string>{{176, 128}, {33, 33}}</string>
+						<string>{{36, 198}, {33, 33}}</string>
 						<key>Frame-HD</key>
-						<string>{{352, 256}, {66, 66}}</string>
+						<string>{{72, 396}, {66, 66}}</string>
 						<key>Image</key>
 						<string>game_images_UntitledSheet.png</string>
 						<key>Image-HD</key>
@@ -4823,7 +4023,7 @@
 						<key>OriginalSize</key>
 						<string>{66, 66}</string>
 						<key>Position</key>
-						<string>{352, 256}</string>
+						<string>{72, 396}</string>
 						<key>Scale</key>
 						<string>{1, 1}</string>
 						<key>SpriteSize</key>
@@ -4842,38 +4042,6 @@
 				</dict>
 				<key>goal_green_6</key>
 				<dict>
-					<key>DocumentSecurityImageBookmark</key>
-					<data>
-					Ym9vawgDAAAAAAQQMAAAACAJfVy+aNWATrQ4
-					KXwYiQWBTSpD8yZZQTfLF/7SeTRk7AEAAAUA
-					AAABAQAAVXNlcnMAAAAIAAAAAQEAAGthcnRh
-					MDIyCAAAAAEBAABQaWN0dXJlcwwAAAABAQAA
-					cmFpbmJvdyBob2xlEAAAAAEBAABnb2FsX2dy
-					ZWVuXzYucG5nFAAAAAEGAAAEAAAAFAAAACQA
-					AAA0AAAASAAAAAgAAAAEAwAAMb8AAAAAAAAI
-					AAAABAMAAIwBBQAAAAAACAAAAAQDAABWAgUA
-					AAAAAAgAAAAEAwAAMQvTBQAAAAAIAAAABAMA
-					AKUcEgYAAAAAFAAAAAEGAAB8AAAAjAAAAJwA
-					AACsAAAAvAAAAAgAAAAABAAAQbZR8bAAAAAY
-					AAAAAQIAAAEAAAAAAAAADwAAAAAAAAAAAAAA
-					AAAAAAAAAAABBQAABAAAAAMDAAAGAAAABAAA
-					AAMDAAADAAAACAAAAAQDAAADAAAAAAAAAAQA
-					AAADAwAA9QEAAAwAAAABAQAATWFjaW50b3No
-					IEhECAAAAAQDAAAAIMEMHAAAAAgAAAAABAAA
-					QbPG+AMAAAAkAAAAAQEAAEIxQTMwNkZFLTU3
-					M0UtMzA4MC04NjhDLTUwN0MyODJDQTAzRBgA
-					AAABAgAAgQAAAAEACADvPwAAAQAIAAAAAAAA
-					AAAAAQAAAAEBAAAvAAAABAAAAAMDAAAACAAo
-					5AAAAP7///8BAAAAAAAAABIAAAAEEAAAYAAA
-					AAAAAAAFEAAAzAAAAAAAAAAQEAAA+AAAAAAA
-					AABAEAAA6AAAAAAAAABUEAAAIAEAAAAAAABV
-					EAAALAEAAAAAAABWEAAAGAEAAAAAAAACIAAA
-					1AEAAAAAAAAQIAAAVAEAAAAAAAARIAAAiAEA
-					AAAAAAASIAAAaAEAAAAAAAATIAAAeAEAAAAA
-					AAAgIAAAtAEAAAAAAAAwIAAAGAEAAAAAAAAB
-					wAAAOAEAAAAAAAARwAAAFAAAAAAAAAASwAAA
-					SAEAAAAAAAAQ0AAA4AEAAAAAAAA=
-					</data>
 					<key>IsSHSprite</key>
 					<true/>
 					<key>PhysicProperties</key>
@@ -4928,9 +4096,9 @@
 						<key>FlipY</key>
 						<false/>
 						<key>Frame</key>
-						<string>{{0, 304}, {33, 33}}</string>
+						<string>{{210, 198}, {33, 33}}</string>
 						<key>Frame-HD</key>
-						<string>{{0, 608}, {66, 66}}</string>
+						<string>{{420, 396}, {66, 66}}</string>
 						<key>Image</key>
 						<string>game_images_UntitledSheet.png</string>
 						<key>Image-HD</key>
@@ -4956,7 +4124,7 @@
 						<key>OriginalSize</key>
 						<string>{66, 66}</string>
 						<key>Position</key>
-						<string>{0, 608}</string>
+						<string>{420, 396}</string>
 						<key>Scale</key>
 						<string>{1, 1}</string>
 						<key>SpriteSize</key>
@@ -5029,9 +4197,9 @@
 						<key>FlipY</key>
 						<false/>
 						<key>Frame</key>
-						<string>{{210, 198}, {33, 33}}</string>
+						<string>{{106, 94}, {33, 33}}</string>
 						<key>Frame-HD</key>
-						<string>{{420, 396}, {66, 66}}</string>
+						<string>{{212, 188}, {66, 66}}</string>
 						<key>Image</key>
 						<string>game_images_UntitledSheet.png</string>
 						<key>Image-HD</key>
@@ -5057,7 +4225,7 @@
 						<key>OriginalSize</key>
 						<string>{66, 66}</string>
 						<key>Position</key>
-						<string>{420, 396}</string>
+						<string>{212, 188}</string>
 						<key>Scale</key>
 						<string>{1, 1}</string>
 						<key>SpriteSize</key>
@@ -5076,38 +4244,6 @@
 				</dict>
 				<key>goal_green_8</key>
 				<dict>
-					<key>DocumentSecurityImageBookmark</key>
-					<data>
-					Ym9vawgDAAAAAAQQMAAAAFNC/xu+X1KXEycF
-					DJjwqJAtG8aSjyJYGThpllpwuz5x7AEAAAUA
-					AAABAQAAVXNlcnMAAAAIAAAAAQEAAGthcnRh
-					MDIyCAAAAAEBAABQaWN0dXJlcwwAAAABAQAA
-					cmFpbmJvdyBob2xlEAAAAAEBAABnb2FsX2dy
-					ZWVuXzgucG5nFAAAAAEGAAAEAAAAFAAAACQA
-					AAA0AAAASAAAAAgAAAAEAwAAMb8AAAAAAAAI
-					AAAABAMAAIwBBQAAAAAACAAAAAQDAABWAgUA
-					AAAAAAgAAAAEAwAAMQvTBQAAAAAIAAAABAMA
-					AK4cEgYAAAAAFAAAAAEGAAB8AAAAjAAAAJwA
-					AACsAAAAvAAAAAgAAAAABAAAQbZR8bkAAAAY
-					AAAAAQIAAAEAAAAAAAAADwAAAAAAAAAAAAAA
-					AAAAAAAAAAABBQAABAAAAAMDAAAGAAAABAAA
-					AAMDAAADAAAACAAAAAQDAAADAAAAAAAAAAQA
-					AAADAwAA9QEAAAwAAAABAQAATWFjaW50b3No
-					IEhECAAAAAQDAAAAIMEMHAAAAAgAAAAABAAA
-					QbPG+AMAAAAkAAAAAQEAAEIxQTMwNkZFLTU3
-					M0UtMzA4MC04NjhDLTUwN0MyODJDQTAzRBgA
-					AAABAgAAgQAAAAEACADvPwAAAQAIAAAAAAAA
-					AAAAAQAAAAEBAAAvAAAABAAAAAMDAAAACAAo
-					5AAAAP7///8BAAAAAAAAABIAAAAEEAAAYAAA
-					AAAAAAAFEAAAzAAAAAAAAAAQEAAA+AAAAAAA
-					AABAEAAA6AAAAAAAAABUEAAAIAEAAAAAAABV
-					EAAALAEAAAAAAABWEAAAGAEAAAAAAAACIAAA
-					1AEAAAAAAAAQIAAAVAEAAAAAAAARIAAAiAEA
-					AAAAAAASIAAAaAEAAAAAAAATIAAAeAEAAAAA
-					AAAgIAAAtAEAAAAAAAAwIAAAGAEAAAAAAAAB
-					wAAAOAEAAAAAAAARwAAAFAAAAAAAAAASwAAA
-					SAEAAAAAAAAQ0AAA4AEAAAAAAAA=
-					</data>
 					<key>IsSHSprite</key>
 					<true/>
 					<key>PhysicProperties</key>
@@ -5162,9 +4298,9 @@
 						<key>FlipY</key>
 						<false/>
 						<key>Frame</key>
-						<string>{{70, 304}, {33, 33}}</string>
+						<string>{{70, 128}, {33, 33}}</string>
 						<key>Frame-HD</key>
-						<string>{{140, 608}, {66, 66}}</string>
+						<string>{{140, 256}, {66, 66}}</string>
 						<key>Image</key>
 						<string>game_images_UntitledSheet.png</string>
 						<key>Image-HD</key>
@@ -5190,7 +4326,7 @@
 						<key>OriginalSize</key>
 						<string>{66, 66}</string>
 						<key>Position</key>
-						<string>{140, 608}</string>
+						<string>{140, 256}</string>
 						<key>Scale</key>
 						<string>{1, 1}</string>
 						<key>SpriteSize</key>
@@ -5209,38 +4345,6 @@
 				</dict>
 				<key>goal_red_0</key>
 				<dict>
-					<key>DocumentSecurityImageBookmark</key>
-					<data>
-					Ym9vawgDAAAAAAQQMAAAAHyAMfvVeHs1+ezG
-					mH6B+eylT5br5I/ZfCCpy53EmXjP7AEAAAUA
-					AAABAQAAVXNlcnMAAAAIAAAAAQEAAGthcnRh
-					MDIyCAAAAAEBAABQaWN0dXJlcwwAAAABAQAA
-					cmFpbmJvdyBob2xlDgAAAAEBAABnb2FsX3Jl
-					ZF8wLnBuZwAAFAAAAAEGAAAEAAAAFAAAACQA
-					AAA0AAAASAAAAAgAAAAEAwAAMb8AAAAAAAAI
-					AAAABAMAAIwBBQAAAAAACAAAAAQDAABWAgUA
-					AAAAAAgAAAAEAwAAMQvTBQAAAAAIAAAABAMA
-					APEhEgYAAAAAFAAAAAEGAAB8AAAAjAAAAJwA
-					AACsAAAAvAAAAAgAAAAABAAAQbZR8pwAAAAY
-					AAAAAQIAAAEAAAAAAAAADwAAAAAAAAAAAAAA
-					AAAAAAAAAAABBQAABAAAAAMDAAAGAAAABAAA
-					AAMDAAADAAAACAAAAAQDAAADAAAAAAAAAAQA
-					AAADAwAA9QEAAAwAAAABAQAATWFjaW50b3No
-					IEhECAAAAAQDAAAAIMEMHAAAAAgAAAAABAAA
-					QbPG+AMAAAAkAAAAAQEAAEIxQTMwNkZFLTU3
-					M0UtMzA4MC04NjhDLTUwN0MyODJDQTAzRBgA
-					AAABAgAAgQAAAAEACADvPwAAAQAIAAAAAAAA
-					AAAAAQAAAAEBAAAvAAAABAAAAAMDAAAACAAo
-					5AAAAP7///8BAAAAAAAAABIAAAAEEAAAYAAA
-					AAAAAAAFEAAAzAAAAAAAAAAQEAAA+AAAAAAA
-					AABAEAAA6AAAAAAAAABUEAAAIAEAAAAAAABV
-					EAAALAEAAAAAAABWEAAAGAEAAAAAAAACIAAA
-					1AEAAAAAAAAQIAAAVAEAAAAAAAARIAAAiAEA
-					AAAAAAASIAAAaAEAAAAAAAATIAAAeAEAAAAA
-					AAAgIAAAtAEAAAAAAAAwIAAAGAEAAAAAAAAB
-					wAAAOAEAAAAAAAARwAAAFAAAAAAAAAASwAAA
-					SAEAAAAAAAAQ0AAA4AEAAAAAAAA=
-					</data>
 					<key>IsSHSprite</key>
 					<true/>
 					<key>PhysicProperties</key>
@@ -5295,9 +4399,9 @@
 						<key>FlipY</key>
 						<false/>
 						<key>Frame</key>
-						<string>{{0, 234}, {33, 33}}</string>
+						<string>{{106, 268}, {33, 33}}</string>
 						<key>Frame-HD</key>
-						<string>{{0, 468}, {66, 66}}</string>
+						<string>{{212, 536}, {66, 66}}</string>
 						<key>Image</key>
 						<string>game_images_UntitledSheet.png</string>
 						<key>Image-HD</key>
@@ -5323,7 +4427,7 @@
 						<key>OriginalSize</key>
 						<string>{66, 66}</string>
 						<key>Position</key>
-						<string>{0, 468}</string>
+						<string>{212, 536}</string>
 						<key>Scale</key>
 						<string>{1, 1}</string>
 						<key>SpriteSize</key>
@@ -5342,38 +4446,6 @@
 				</dict>
 				<key>goal_red_1</key>
 				<dict>
-					<key>DocumentSecurityImageBookmark</key>
-					<data>
-					Ym9vawgDAAAAAAQQMAAAAFYLhatMAlL2nbKJ
-					00FA32e6NsoTF3HFLS7gex7gZI3F7AEAAAUA
-					AAABAQAAVXNlcnMAAAAIAAAAAQEAAGthcnRh
-					MDIyCAAAAAEBAABQaWN0dXJlcwwAAAABAQAA
-					cmFpbmJvdyBob2xlDgAAAAEBAABnb2FsX3Jl
-					ZF8xLnBuZwAAFAAAAAEGAAAEAAAAFAAAACQA
-					AAA0AAAASAAAAAgAAAAEAwAAMb8AAAAAAAAI
-					AAAABAMAAIwBBQAAAAAACAAAAAQDAABWAgUA
-					AAAAAAgAAAAEAwAAMQvTBQAAAAAIAAAABAMA
-					APQhEgYAAAAAFAAAAAEGAAB8AAAAjAAAAJwA
-					AACsAAAAvAAAAAgAAAAABAAAQbZR8qEAAAAY
-					AAAAAQIAAAEAAAAAAAAADwAAAAAAAAAAAAAA
-					AAAAAAAAAAABBQAABAAAAAMDAAAGAAAABAAA
-					AAMDAAADAAAACAAAAAQDAAADAAAAAAAAAAQA
-					AAADAwAA9QEAAAwAAAABAQAATWFjaW50b3No
-					IEhECAAAAAQDAAAAIMEMHAAAAAgAAAAABAAA
-					QbPG+AMAAAAkAAAAAQEAAEIxQTMwNkZFLTU3
-					M0UtMzA4MC04NjhDLTUwN0MyODJDQTAzRBgA
-					AAABAgAAgQAAAAEACADvPwAAAQAIAAAAAAAA
-					AAAAAQAAAAEBAAAvAAAABAAAAAMDAAAACAAo
-					5AAAAP7///8BAAAAAAAAABIAAAAEEAAAYAAA
-					AAAAAAAFEAAAzAAAAAAAAAAQEAAA+AAAAAAA
-					AABAEAAA6AAAAAAAAABUEAAAIAEAAAAAAABV
-					EAAALAEAAAAAAABWEAAAGAEAAAAAAAACIAAA
-					1AEAAAAAAAAQIAAAVAEAAAAAAAARIAAAiAEA
-					AAAAAAASIAAAaAEAAAAAAAATIAAAeAEAAAAA
-					AAAgIAAAtAEAAAAAAAAwIAAAGAEAAAAAAAAB
-					wAAAOAEAAAAAAAARwAAAFAAAAAAAAAASwAAA
-					SAEAAAAAAAAQ0AAA4AEAAAAAAAA=
-					</data>
 					<key>IsSHSprite</key>
 					<true/>
 					<key>PhysicProperties</key>
@@ -5428,9 +4500,9 @@
 						<key>FlipY</key>
 						<false/>
 						<key>Frame</key>
-						<string>{{0, 198}, {33, 33}}</string>
+						<string>{{106, 304}, {33, 33}}</string>
 						<key>Frame-HD</key>
-						<string>{{0, 396}, {66, 66}}</string>
+						<string>{{212, 608}, {66, 66}}</string>
 						<key>Image</key>
 						<string>game_images_UntitledSheet.png</string>
 						<key>Image-HD</key>
@@ -5456,7 +4528,7 @@
 						<key>OriginalSize</key>
 						<string>{66, 66}</string>
 						<key>Position</key>
-						<string>{0, 396}</string>
+						<string>{212, 608}</string>
 						<key>Scale</key>
 						<string>{1, 1}</string>
 						<key>SpriteSize</key>
@@ -5529,9 +4601,9 @@
 						<key>FlipY</key>
 						<false/>
 						<key>Frame</key>
-						<string>{{0, 128}, {33, 33}}</string>
+						<string>{{184, 0}, {33, 33}}</string>
 						<key>Frame-HD</key>
-						<string>{{0, 256}, {66, 66}}</string>
+						<string>{{368, 0}, {66, 66}}</string>
 						<key>Image</key>
 						<string>game_images_UntitledSheet.png</string>
 						<key>Image-HD</key>
@@ -5557,7 +4629,7 @@
 						<key>OriginalSize</key>
 						<string>{66, 66}</string>
 						<key>Position</key>
-						<string>{0, 256}</string>
+						<string>{368, 0}</string>
 						<key>Scale</key>
 						<string>{1, 1}</string>
 						<key>SpriteSize</key>
@@ -5630,9 +4702,9 @@
 						<key>FlipY</key>
 						<false/>
 						<key>Frame</key>
-						<string>{{218, 36}, {33, 33}}</string>
+						<string>{{36, 94}, {33, 33}}</string>
 						<key>Frame-HD</key>
-						<string>{{436, 72}, {66, 66}}</string>
+						<string>{{72, 188}, {66, 66}}</string>
 						<key>Image</key>
 						<string>game_images_UntitledSheet.png</string>
 						<key>Image-HD</key>
@@ -5658,7 +4730,7 @@
 						<key>OriginalSize</key>
 						<string>{66, 66}</string>
 						<key>Position</key>
-						<string>{436, 72}</string>
+						<string>{72, 188}</string>
 						<key>Scale</key>
 						<string>{1, 1}</string>
 						<key>SpriteSize</key>
@@ -5731,9 +4803,9 @@
 						<key>FlipY</key>
 						<false/>
 						<key>Frame</key>
-						<string>{{106, 304}, {33, 33}}</string>
+						<string>{{210, 94}, {33, 33}}</string>
 						<key>Frame-HD</key>
-						<string>{{212, 608}, {66, 66}}</string>
+						<string>{{420, 188}, {66, 66}}</string>
 						<key>Image</key>
 						<string>game_images_UntitledSheet.png</string>
 						<key>Image-HD</key>
@@ -5759,7 +4831,7 @@
 						<key>OriginalSize</key>
 						<string>{66, 66}</string>
 						<key>Position</key>
-						<string>{212, 608}</string>
+						<string>{420, 188}</string>
 						<key>Scale</key>
 						<string>{1, 1}</string>
 						<key>SpriteSize</key>
@@ -5778,38 +4850,6 @@
 				</dict>
 				<key>goal_red_6</key>
 				<dict>
-					<key>DocumentSecurityImageBookmark</key>
-					<data>
-					Ym9vawgDAAAAAAQQMAAAAFHAFv9oJnQxTq7U
-					vvAJh4M3MsrESVb0YP9xEAbkUxI47AEAAAUA
-					AAABAQAAVXNlcnMAAAAIAAAAAQEAAGthcnRh
-					MDIyCAAAAAEBAABQaWN0dXJlcwwAAAABAQAA
-					cmFpbmJvdyBob2xlDgAAAAEBAABnb2FsX3Jl
-					ZF82LnBuZwAAFAAAAAEGAAAEAAAAFAAAACQA
-					AAA0AAAASAAAAAgAAAAEAwAAMb8AAAAAAAAI
-					AAAABAMAAIwBBQAAAAAACAAAAAQDAABWAgUA
-					AAAAAAgAAAAEAwAAMQvTBQAAAAAIAAAABAMA
-					AAkiEgYAAAAAFAAAAAEGAAB8AAAAjAAAAJwA
-					AACsAAAAvAAAAAgAAAAABAAAQbZR8rcAAAAY
-					AAAAAQIAAAEAAAAAAAAADwAAAAAAAAAAAAAA
-					AAAAAAAAAAABBQAABAAAAAMDAAAGAAAABAAA
-					AAMDAAADAAAACAAAAAQDAAADAAAAAAAAAAQA
-					AAADAwAA9QEAAAwAAAABAQAATWFjaW50b3No
-					IEhECAAAAAQDAAAAIMEMHAAAAAgAAAAABAAA
-					QbPG+AMAAAAkAAAAAQEAAEIxQTMwNkZFLTU3
-					M0UtMzA4MC04NjhDLTUwN0MyODJDQTAzRBgA
-					AAABAgAAgQAAAAEACADvPwAAAQAIAAAAAAAA
-					AAAAAQAAAAEBAAAvAAAABAAAAAMDAAAACAAo
-					5AAAAP7///8BAAAAAAAAABIAAAAEEAAAYAAA
-					AAAAAAAFEAAAzAAAAAAAAAAQEAAA+AAAAAAA
-					AABAEAAA6AAAAAAAAABUEAAAIAEAAAAAAABV
-					EAAALAEAAAAAAABWEAAAGAEAAAAAAAACIAAA
-					1AEAAAAAAAAQIAAAVAEAAAAAAAARIAAAiAEA
-					AAAAAAASIAAAaAEAAAAAAAATIAAAeAEAAAAA
-					AAAgIAAAtAEAAAAAAAAwIAAAGAEAAAAAAAAB
-					wAAAOAEAAAAAAAARwAAAFAAAAAAAAAASwAAA
-					SAEAAAAAAAAQ0AAA4AEAAAAAAAA=
-					</data>
 					<key>IsSHSprite</key>
 					<true/>
 					<key>PhysicProperties</key>
@@ -5864,9 +4904,9 @@
 						<key>FlipY</key>
 						<false/>
 						<key>Frame</key>
-						<string>{{106, 198}, {33, 33}}</string>
+						<string>{{0, 198}, {33, 33}}</string>
 						<key>Frame-HD</key>
-						<string>{{212, 396}, {66, 66}}</string>
+						<string>{{0, 396}, {66, 66}}</string>
 						<key>Image</key>
 						<string>game_images_UntitledSheet.png</string>
 						<key>Image-HD</key>
@@ -5892,7 +4932,7 @@
 						<key>OriginalSize</key>
 						<string>{66, 66}</string>
 						<key>Position</key>
-						<string>{212, 396}</string>
+						<string>{0, 396}</string>
 						<key>Scale</key>
 						<string>{1, 1}</string>
 						<key>SpriteSize</key>
@@ -5911,38 +4951,6 @@
 				</dict>
 				<key>goal_red_7</key>
 				<dict>
-					<key>DocumentSecurityImageBookmark</key>
-					<data>
-					Ym9vawgDAAAAAAQQMAAAAF8ct5aoi1v9XSXw
-					guFZTK6n/lMEBFsyBmh7nUNEdx9X7AEAAAUA
-					AAABAQAAVXNlcnMAAAAIAAAAAQEAAGthcnRh
-					MDIyCAAAAAEBAABQaWN0dXJlcwwAAAABAQAA
-					cmFpbmJvdyBob2xlDgAAAAEBAABnb2FsX3Jl
-					ZF83LnBuZwAAFAAAAAEGAAAEAAAAFAAAACQA
-					AAA0AAAASAAAAAgAAAAEAwAAMb8AAAAAAAAI
-					AAAABAMAAIwBBQAAAAAACAAAAAQDAABWAgUA
-					AAAAAAgAAAAEAwAAMQvTBQAAAAAIAAAABAMA
-					AA0iEgYAAAAAFAAAAAEGAAB8AAAAjAAAAJwA
-					AACsAAAAvAAAAAgAAAAABAAAQbZR8rwAAAAY
-					AAAAAQIAAAEAAAAAAAAADwAAAAAAAAAAAAAA
-					AAAAAAAAAAABBQAABAAAAAMDAAAGAAAABAAA
-					AAMDAAADAAAACAAAAAQDAAADAAAAAAAAAAQA
-					AAADAwAA9QEAAAwAAAABAQAATWFjaW50b3No
-					IEhECAAAAAQDAAAAIMEMHAAAAAgAAAAABAAA
-					QbPG+AMAAAAkAAAAAQEAAEIxQTMwNkZFLTU3
-					M0UtMzA4MC04NjhDLTUwN0MyODJDQTAzRBgA
-					AAABAgAAgQAAAAEACADvPwAAAQAIAAAAAAAA
-					AAAAAQAAAAEBAAAvAAAABAAAAAMDAAAACAAo
-					5AAAAP7///8BAAAAAAAAABIAAAAEEAAAYAAA
-					AAAAAAAFEAAAzAAAAAAAAAAQEAAA+AAAAAAA
-					AABAEAAA6AAAAAAAAABUEAAAIAEAAAAAAABV
-					EAAALAEAAAAAAABWEAAAGAEAAAAAAAACIAAA
-					1AEAAAAAAAAQIAAAVAEAAAAAAAARIAAAiAEA
-					AAAAAAASIAAAaAEAAAAAAAATIAAAeAEAAAAA
-					AAAgIAAAtAEAAAAAAAAwIAAAGAEAAAAAAAAB
-					wAAAOAEAAAAAAAARwAAAFAAAAAAAAAASwAAA
-					SAEAAAAAAAAQ0AAA4AEAAAAAAAA=
-					</data>
 					<key>IsSHSprite</key>
 					<true/>
 					<key>PhysicProperties</key>
@@ -5997,9 +5005,9 @@
 						<key>FlipY</key>
 						<false/>
 						<key>Frame</key>
-						<string>{{106, 164}, {33, 33}}</string>
+						<string>{{36, 128}, {33, 33}}</string>
 						<key>Frame-HD</key>
-						<string>{{212, 328}, {66, 66}}</string>
+						<string>{{72, 256}, {66, 66}}</string>
 						<key>Image</key>
 						<string>game_images_UntitledSheet.png</string>
 						<key>Image-HD</key>
@@ -6025,7 +5033,7 @@
 						<key>OriginalSize</key>
 						<string>{66, 66}</string>
 						<key>Position</key>
-						<string>{212, 328}</string>
+						<string>{72, 256}</string>
 						<key>Scale</key>
 						<string>{1, 1}</string>
 						<key>SpriteSize</key>
@@ -6044,38 +5052,6 @@
 				</dict>
 				<key>goal_red_8</key>
 				<dict>
-					<key>DocumentSecurityImageBookmark</key>
-					<data>
-					Ym9vawgDAAAAAAQQMAAAAHAkPoMRiuYx06q1
-					J6m1lPlwFxccWCmklcpUBYROjS/P7AEAAAUA
-					AAABAQAAVXNlcnMAAAAIAAAAAQEAAGthcnRh
-					MDIyCAAAAAEBAABQaWN0dXJlcwwAAAABAQAA
-					cmFpbmJvdyBob2xlDgAAAAEBAABnb2FsX3Jl
-					ZF84LnBuZwAAFAAAAAEGAAAEAAAAFAAAACQA
-					AAA0AAAASAAAAAgAAAAEAwAAMb8AAAAAAAAI
-					AAAABAMAAIwBBQAAAAAACAAAAAQDAABWAgUA
-					AAAAAAgAAAAEAwAAMQvTBQAAAAAIAAAABAMA
-					ABYiEgYAAAAAFAAAAAEGAAB8AAAAjAAAAJwA
-					AACsAAAAvAAAAAgAAAAABAAAQbZR8sEAAAAY
-					AAAAAQIAAAEAAAAAAAAADwAAAAAAAAAAAAAA
-					AAAAAAAAAAABBQAABAAAAAMDAAAGAAAABAAA
-					AAMDAAADAAAACAAAAAQDAAADAAAAAAAAAAQA
-					AAADAwAA9QEAAAwAAAABAQAATWFjaW50b3No
-					IEhECAAAAAQDAAAAIMEMHAAAAAgAAAAABAAA
-					QbPG+AMAAAAkAAAAAQEAAEIxQTMwNkZFLTU3
-					M0UtMzA4MC04NjhDLTUwN0MyODJDQTAzRBgA
-					AAABAgAAgQAAAAEACADvPwAAAQAIAAAAAAAA
-					AAAAAQAAAAEBAAAvAAAABAAAAAMDAAAACAAo
-					5AAAAP7///8BAAAAAAAAABIAAAAEEAAAYAAA
-					AAAAAAAFEAAAzAAAAAAAAAAQEAAA+AAAAAAA
-					AABAEAAA6AAAAAAAAABUEAAAIAEAAAAAAABV
-					EAAALAEAAAAAAABWEAAAGAEAAAAAAAACIAAA
-					1AEAAAAAAAAQIAAAVAEAAAAAAAARIAAAiAEA
-					AAAAAAASIAAAaAEAAAAAAAATIAAAeAEAAAAA
-					AAAgIAAAtAEAAAAAAAAwIAAAGAEAAAAAAAAB
-					wAAAOAEAAAAAAAARwAAAFAAAAAAAAAASwAAA
-					SAEAAAAAAAAQ0AAA4AEAAAAAAAA=
-					</data>
 					<key>IsSHSprite</key>
 					<true/>
 					<key>PhysicProperties</key>
@@ -6130,9 +5106,9 @@
 						<key>FlipY</key>
 						<false/>
 						<key>Frame</key>
-						<string>{{70, 268}, {33, 33}}</string>
+						<string>{{106, 128}, {33, 33}}</string>
 						<key>Frame-HD</key>
-						<string>{{140, 536}, {66, 66}}</string>
+						<string>{{212, 256}, {66, 66}}</string>
 						<key>Image</key>
 						<string>game_images_UntitledSheet.png</string>
 						<key>Image-HD</key>
@@ -6158,7 +5134,7 @@
 						<key>OriginalSize</key>
 						<string>{66, 66}</string>
 						<key>Position</key>
-						<string>{140, 536}</string>
+						<string>{212, 256}</string>
 						<key>Scale</key>
 						<string>{1, 1}</string>
 						<key>SpriteSize</key>
@@ -6177,38 +5153,6 @@
 				</dict>
 				<key>goal_yellow_0</key>
 				<dict>
-					<key>DocumentSecurityImageBookmark</key>
-					<data>
-					Ym9vawwDAAAAAAQQMAAAAK6cdsJeUUgepOQ6
-					5wdKIR/V9nGVqoBXM+mRsEveZq8m8AEAAAUA
-					AAABAQAAVXNlcnMAAAAIAAAAAQEAAGthcnRh
-					MDIyCAAAAAEBAABQaWN0dXJlcwwAAAABAQAA
-					cmFpbmJvdyBob2xlEQAAAAEBAABnb2FsX3ll
-					bGxvd18wLnBuZwAAABQAAAABBgAABAAAABQA
-					AAAkAAAANAAAAEgAAAAIAAAABAMAADG/AAAA
-					AAAACAAAAAQDAACMAQUAAAAAAAgAAAAEAwAA
-					VgIFAAAAAAAIAAAABAMAADEL0wUAAAAACAAA
-					AAQDAADOGxIGAAAAABQAAAABBgAAgAAAAJAA
-					AACgAAAAsAAAAMAAAAAIAAAAAAQAAEG2UfFB
-					AAAAGAAAAAECAAABAAAAAAAAAA8AAAAAAAAA
-					AAAAAAAAAAAAAAAAAQUAAAQAAAADAwAABgAA
-					AAQAAAADAwAAAwAAAAgAAAAEAwAAAwAAAAAA
-					AAAEAAAAAwMAAPUBAAAMAAAAAQEAAE1hY2lu
-					dG9zaCBIRAgAAAAEAwAAACDBDBwAAAAIAAAA
-					AAQAAEGzxvgDAAAAJAAAAAEBAABCMUEzMDZG
-					RS01NzNFLTMwODAtODY4Qy01MDdDMjgyQ0Ew
-					M0QYAAAAAQIAAIEAAAABAAgA7z8AAAEACAAA
-					AAAAAAAAAAEAAAABAQAALwAAAAQAAAADAwAA
-					AAgAKOQAAAD+////AQAAAAAAAAASAAAABBAA
-					AGQAAAAAAAAABRAAANAAAAAAAAAAEBAAAPwA
-					AAAAAAAAQBAAAOwAAAAAAAAAVBAAACQBAAAA
-					AAAAVRAAADABAAAAAAAAVhAAABwBAAAAAAAA
-					AiAAANgBAAAAAAAAECAAAFgBAAAAAAAAESAA
-					AIwBAAAAAAAAEiAAAGwBAAAAAAAAEyAAAHwB
-					AAAAAAAAICAAALgBAAAAAAAAMCAAABwBAAAA
-					AAAAAcAAADwBAAAAAAAAEcAAABQAAAAAAAAA
-					EsAAAEwBAAAAAAAAENAAAOQBAAAAAAAA
-					</data>
 					<key>IsSHSprite</key>
 					<true/>
 					<key>PhysicProperties</key>
@@ -6310,9 +5254,9 @@
 						<key>FlipY</key>
 						<false/>
 						<key>Frame</key>
-						<string>{{70, 164}, {33, 33}}</string>
+						<string>{{210, 128}, {33, 33}}</string>
 						<key>Frame-HD</key>
-						<string>{{140, 328}, {66, 66}}</string>
+						<string>{{420, 256}, {66, 66}}</string>
 						<key>Image</key>
 						<string>game_images_UntitledSheet.png</string>
 						<key>Image-HD</key>
@@ -6338,7 +5282,7 @@
 						<key>OriginalSize</key>
 						<string>{66, 66}</string>
 						<key>Position</key>
-						<string>{140, 328}</string>
+						<string>{420, 256}</string>
 						<key>Scale</key>
 						<string>{1, 1}</string>
 						<key>SpriteSize</key>
@@ -6458,9 +5402,9 @@
 						<key>FlipY</key>
 						<false/>
 						<key>Frame</key>
-						<string>{{184, 36}, {33, 33}}</string>
+						<string>{{0, 94}, {33, 33}}</string>
 						<key>Frame-HD</key>
-						<string>{{368, 72}, {66, 66}}</string>
+						<string>{{0, 188}, {66, 66}}</string>
 						<key>Image</key>
 						<string>game_images_UntitledSheet.png</string>
 						<key>Image-HD</key>
@@ -6486,7 +5430,7 @@
 						<key>OriginalSize</key>
 						<string>{66, 66}</string>
 						<key>Position</key>
-						<string>{368, 72}</string>
+						<string>{0, 188}</string>
 						<key>Scale</key>
 						<string>{1, 1}</string>
 						<key>SpriteSize</key>
@@ -6505,38 +5449,6 @@
 				</dict>
 				<key>goal_yellow_2</key>
 				<dict>
-					<key>DocumentSecurityImageBookmark</key>
-					<data>
-					Ym9vawwDAAAAAAQQMAAAAH1HXzR9oixbdeV8
-					vyEF3vXVhkyePRDDmmtwZnYYJmSq8AEAAAUA
-					AAABAQAAVXNlcnMAAAAIAAAAAQEAAGthcnRh
-					MDIyCAAAAAEBAABQaWN0dXJlcwwAAAABAQAA
-					cmFpbmJvdyBob2xlEQAAAAEBAABnb2FsX3ll
-					bGxvd18yLnBuZwAAABQAAAABBgAABAAAABQA
-					AAAkAAAANAAAAEgAAAAIAAAABAMAADG/AAAA
-					AAAACAAAAAQDAACMAQUAAAAAAAgAAAAEAwAA
-					VgIFAAAAAAAIAAAABAMAADEL0wUAAAAACAAA
-					AAQDAADfGxIGAAAAABQAAAABBgAAgAAAAJAA
-					AACgAAAAsAAAAMAAAAAIAAAAAAQAAEG2UfFO
-					AAAAGAAAAAECAAABAAAAAAAAAA8AAAAAAAAA
-					AAAAAAAAAAAAAAAAAQUAAAQAAAADAwAABgAA
-					AAQAAAADAwAAAwAAAAgAAAAEAwAAAwAAAAAA
-					AAAEAAAAAwMAAPUBAAAMAAAAAQEAAE1hY2lu
-					dG9zaCBIRAgAAAAEAwAAACDBDBwAAAAIAAAA
-					AAQAAEGzxvgDAAAAJAAAAAEBAABCMUEzMDZG
-					RS01NzNFLTMwODAtODY4Qy01MDdDMjgyQ0Ew
-					M0QYAAAAAQIAAIEAAAABAAgA7z8AAAEACAAA
-					AAAAAAAAAAEAAAABAQAALwAAAAQAAAADAwAA
-					AAgAKOQAAAD+////AQAAAAAAAAASAAAABBAA
-					AGQAAAAAAAAABRAAANAAAAAAAAAAEBAAAPwA
-					AAAAAAAAQBAAAOwAAAAAAAAAVBAAACQBAAAA
-					AAAAVRAAADABAAAAAAAAVhAAABwBAAAAAAAA
-					AiAAANgBAAAAAAAAECAAAFgBAAAAAAAAESAA
-					AIwBAAAAAAAAEiAAAGwBAAAAAAAAEyAAAHwB
-					AAAAAAAAICAAALgBAAAAAAAAMCAAABwBAAAA
-					AAAAAcAAADwBAAAAAAAAEcAAABQAAAAAAAAA
-					EsAAAEwBAAAAAAAAENAAAOQBAAAAAAAA
-					</data>
 					<key>IsSHSprite</key>
 					<true/>
 					<key>PhysicProperties</key>
@@ -6638,9 +5550,9 @@
 						<key>FlipY</key>
 						<false/>
 						<key>Frame</key>
-						<string>{{36, 304}, {33, 33}}</string>
+						<string>{{70, 164}, {33, 33}}</string>
 						<key>Frame-HD</key>
-						<string>{{72, 608}, {66, 66}}</string>
+						<string>{{140, 328}, {66, 66}}</string>
 						<key>Image</key>
 						<string>game_images_UntitledSheet.png</string>
 						<key>Image-HD</key>
@@ -6666,7 +5578,7 @@
 						<key>OriginalSize</key>
 						<string>{66, 66}</string>
 						<key>Position</key>
-						<string>{72, 608}</string>
+						<string>{140, 328}</string>
 						<key>Scale</key>
 						<string>{1, 1}</string>
 						<key>SpriteSize</key>
@@ -6786,9 +5698,9 @@
 						<key>FlipY</key>
 						<false/>
 						<key>Frame</key>
-						<string>{{0, 94}, {33, 33}}</string>
+						<string>{{70, 94}, {33, 33}}</string>
 						<key>Frame-HD</key>
-						<string>{{0, 188}, {66, 66}}</string>
+						<string>{{140, 188}, {66, 66}}</string>
 						<key>Image</key>
 						<string>game_images_UntitledSheet.png</string>
 						<key>Image-HD</key>
@@ -6814,7 +5726,7 @@
 						<key>OriginalSize</key>
 						<string>{66, 66}</string>
 						<key>Position</key>
-						<string>{0, 188}</string>
+						<string>{140, 188}</string>
 						<key>Scale</key>
 						<string>{1, 1}</string>
 						<key>SpriteSize</key>
@@ -6833,38 +5745,6 @@
 				</dict>
 				<key>goal_yellow_4</key>
 				<dict>
-					<key>DocumentSecurityImageBookmark</key>
-					<data>
-					Ym9vawwDAAAAAAQQMAAAAIq0RG7ERBS8+pT/
-					RLAyxmfbUaBKwSK4AxkEXiK/6KMF8AEAAAUA
-					AAABAQAAVXNlcnMAAAAIAAAAAQEAAGthcnRh
-					MDIyCAAAAAEBAABQaWN0dXJlcwwAAAABAQAA
-					cmFpbmJvdyBob2xlEQAAAAEBAABnb2FsX3ll
-					bGxvd180LnBuZwAAABQAAAABBgAABAAAABQA
-					AAAkAAAANAAAAEgAAAAIAAAABAMAADG/AAAA
-					AAAACAAAAAQDAACMAQUAAAAAAAgAAAAEAwAA
-					VgIFAAAAAAAIAAAABAMAADEL0wUAAAAACAAA
-					AAQDAAAPHBIGAAAAABQAAAABBgAAgAAAAJAA
-					AACgAAAAsAAAAMAAAAAIAAAAAAQAAEG2UfFh
-					AAAAGAAAAAECAAABAAAAAAAAAA8AAAAAAAAA
-					AAAAAAAAAAAAAAAAAQUAAAQAAAADAwAABgAA
-					AAQAAAADAwAAAwAAAAgAAAAEAwAAAwAAAAAA
-					AAAEAAAAAwMAAPUBAAAMAAAAAQEAAE1hY2lu
-					dG9zaCBIRAgAAAAEAwAAACDBDBwAAAAIAAAA
-					AAQAAEGzxvgDAAAAJAAAAAEBAABCMUEzMDZG
-					RS01NzNFLTMwODAtODY4Qy01MDdDMjgyQ0Ew
-					M0QYAAAAAQIAAIEAAAABAAgA7z8AAAEACAAA
-					AAAAAAAAAAEAAAABAQAALwAAAAQAAAADAwAA
-					AAgAKOQAAAD+////AQAAAAAAAAASAAAABBAA
-					AGQAAAAAAAAABRAAANAAAAAAAAAAEBAAAPwA
-					AAAAAAAAQBAAAOwAAAAAAAAAVBAAACQBAAAA
-					AAAAVRAAADABAAAAAAAAVhAAABwBAAAAAAAA
-					AiAAANgBAAAAAAAAECAAAFgBAAAAAAAAESAA
-					AIwBAAAAAAAAEiAAAGwBAAAAAAAAEyAAAHwB
-					AAAAAAAAICAAALgBAAAAAAAAMCAAABwBAAAA
-					AAAAAcAAADwBAAAAAAAAEcAAABQAAAAAAAAA
-					EsAAAEwBAAAAAAAAENAAAOQBAAAAAAAA
-					</data>
 					<key>IsSHSprite</key>
 					<true/>
 					<key>PhysicProperties</key>
@@ -6966,9 +5846,9 @@
 						<key>FlipY</key>
 						<false/>
 						<key>Frame</key>
-						<string>{{70, 128}, {33, 33}}</string>
+						<string>{{36, 304}, {33, 33}}</string>
 						<key>Frame-HD</key>
-						<string>{{140, 256}, {66, 66}}</string>
+						<string>{{72, 608}, {66, 66}}</string>
 						<key>Image</key>
 						<string>game_images_UntitledSheet.png</string>
 						<key>Image-HD</key>
@@ -6994,7 +5874,7 @@
 						<key>OriginalSize</key>
 						<string>{66, 66}</string>
 						<key>Position</key>
-						<string>{140, 256}</string>
+						<string>{72, 608}</string>
 						<key>Scale</key>
 						<string>{1, 1}</string>
 						<key>SpriteSize</key>
@@ -7114,9 +5994,9 @@
 						<key>FlipY</key>
 						<false/>
 						<key>Frame</key>
-						<string>{{176, 198}, {33, 33}}</string>
+						<string>{{140, 94}, {33, 33}}</string>
 						<key>Frame-HD</key>
-						<string>{{352, 396}, {66, 66}}</string>
+						<string>{{280, 188}, {66, 66}}</string>
 						<key>Image</key>
 						<string>game_images_UntitledSheet.png</string>
 						<key>Image-HD</key>
@@ -7142,7 +6022,7 @@
 						<key>OriginalSize</key>
 						<string>{66, 66}</string>
 						<key>Position</key>
-						<string>{352, 396}</string>
+						<string>{280, 188}</string>
 						<key>Scale</key>
 						<string>{1, 1}</string>
 						<key>SpriteSize</key>
@@ -7161,38 +6041,6 @@
 				</dict>
 				<key>goal_yellow_6</key>
 				<dict>
-					<key>DocumentSecurityImageBookmark</key>
-					<data>
-					Ym9vawwDAAAAAAQQMAAAAGNSFVHMaaqv6FDj
-					99JFN9B9b+IEvaqw3TqRqgJJ5H7b8AEAAAUA
-					AAABAQAAVXNlcnMAAAAIAAAAAQEAAGthcnRh
-					MDIyCAAAAAEBAABQaWN0dXJlcwwAAAABAQAA
-					cmFpbmJvdyBob2xlEQAAAAEBAABnb2FsX3ll
-					bGxvd182LnBuZwAAABQAAAABBgAABAAAABQA
-					AAAkAAAANAAAAEgAAAAIAAAABAMAADG/AAAA
-					AAAACAAAAAQDAACMAQUAAAAAAAgAAAAEAwAA
-					VgIFAAAAAAAIAAAABAMAADEL0wUAAAAACAAA
-					AAQDAAAmHBIGAAAAABQAAAABBgAAgAAAAJAA
-					AACgAAAAsAAAAMAAAAAIAAAAAAQAAEG2UfFu
-					AAAAGAAAAAECAAABAAAAAAAAAA8AAAAAAAAA
-					AAAAAAAAAAAAAAAAAQUAAAQAAAADAwAABgAA
-					AAQAAAADAwAAAwAAAAgAAAAEAwAAAwAAAAAA
-					AAAEAAAAAwMAAPUBAAAMAAAAAQEAAE1hY2lu
-					dG9zaCBIRAgAAAAEAwAAACDBDBwAAAAIAAAA
-					AAQAAEGzxvgDAAAAJAAAAAEBAABCMUEzMDZG
-					RS01NzNFLTMwODAtODY4Qy01MDdDMjgyQ0Ew
-					M0QYAAAAAQIAAIEAAAABAAgA7z8AAAEACAAA
-					AAAAAAAAAAEAAAABAQAALwAAAAQAAAADAwAA
-					AAgAKOQAAAD+////AQAAAAAAAAASAAAABBAA
-					AGQAAAAAAAAABRAAANAAAAAAAAAAEBAAAPwA
-					AAAAAAAAQBAAAOwAAAAAAAAAVBAAACQBAAAA
-					AAAAVRAAADABAAAAAAAAVhAAABwBAAAAAAAA
-					AiAAANgBAAAAAAAAECAAAFgBAAAAAAAAESAA
-					AIwBAAAAAAAAEiAAAGwBAAAAAAAAEyAAAHwB
-					AAAAAAAAICAAALgBAAAAAAAAMCAAABwBAAAA
-					AAAAAcAAADwBAAAAAAAAEcAAABQAAAAAAAAA
-					EsAAAEwBAAAAAAAAENAAAOQBAAAAAAAA
-					</data>
 					<key>IsSHSprite</key>
 					<true/>
 					<key>PhysicProperties</key>
@@ -7294,9 +6142,9 @@
 						<key>FlipY</key>
 						<false/>
 						<key>Frame</key>
-						<string>{{36, 268}, {33, 33}}</string>
+						<string>{{106, 164}, {33, 33}}</string>
 						<key>Frame-HD</key>
-						<string>{{72, 536}, {66, 66}}</string>
+						<string>{{212, 328}, {66, 66}}</string>
 						<key>Image</key>
 						<string>game_images_UntitledSheet.png</string>
 						<key>Image-HD</key>
@@ -7322,7 +6170,7 @@
 						<key>OriginalSize</key>
 						<string>{66, 66}</string>
 						<key>Position</key>
-						<string>{72, 536}</string>
+						<string>{212, 328}</string>
 						<key>Scale</key>
 						<string>{1, 1}</string>
 						<key>SpriteSize</key>
@@ -7442,9 +6290,9 @@
 						<key>FlipY</key>
 						<false/>
 						<key>Frame</key>
-						<string>{{106, 268}, {33, 33}}</string>
+						<string>{{0, 128}, {33, 33}}</string>
 						<key>Frame-HD</key>
-						<string>{{212, 536}, {66, 66}}</string>
+						<string>{{0, 256}, {66, 66}}</string>
 						<key>Image</key>
 						<string>game_images_UntitledSheet.png</string>
 						<key>Image-HD</key>
@@ -7470,7 +6318,7 @@
 						<key>OriginalSize</key>
 						<string>{66, 66}</string>
 						<key>Position</key>
-						<string>{212, 536}</string>
+						<string>{0, 256}</string>
 						<key>Scale</key>
 						<string>{1, 1}</string>
 						<key>SpriteSize</key>
@@ -7489,38 +6337,6 @@
 				</dict>
 				<key>goal_yellow_8</key>
 				<dict>
-					<key>DocumentSecurityImageBookmark</key>
-					<data>
-					Ym9vawwDAAAAAAQQMAAAAOQGPPfTho0haDit
-					8/9gKbDhSk8lHUO3HZwjOBe/DSlG8AEAAAUA
-					AAABAQAAVXNlcnMAAAAIAAAAAQEAAGthcnRh
-					MDIyCAAAAAEBAABQaWN0dXJlcwwAAAABAQAA
-					cmFpbmJvdyBob2xlEQAAAAEBAABnb2FsX3ll
-					bGxvd184LnBuZwAAABQAAAABBgAABAAAABQA
-					AAAkAAAANAAAAEgAAAAIAAAABAMAADG/AAAA
-					AAAACAAAAAQDAACMAQUAAAAAAAgAAAAEAwAA
-					VgIFAAAAAAAIAAAABAMAADEL0wUAAAAACAAA
-					AAQDAABXHBIGAAAAABQAAAABBgAAgAAAAJAA
-					AACgAAAAsAAAAMAAAAAIAAAAAAQAAEG2UfF9
-					AAAAGAAAAAECAAABAAAAAAAAAA8AAAAAAAAA
-					AAAAAAAAAAAAAAAAAQUAAAQAAAADAwAABgAA
-					AAQAAAADAwAAAwAAAAgAAAAEAwAAAwAAAAAA
-					AAAEAAAAAwMAAPUBAAAMAAAAAQEAAE1hY2lu
-					dG9zaCBIRAgAAAAEAwAAACDBDBwAAAAIAAAA
-					AAQAAEGzxvgDAAAAJAAAAAEBAABCMUEzMDZG
-					RS01NzNFLTMwODAtODY4Qy01MDdDMjgyQ0Ew
-					M0QYAAAAAQIAAIEAAAABAAgA7z8AAAEACAAA
-					AAAAAAAAAAEAAAABAQAALwAAAAQAAAADAwAA
-					AAgAKOQAAAD+////AQAAAAAAAAASAAAABBAA
-					AGQAAAAAAAAABRAAANAAAAAAAAAAEBAAAPwA
-					AAAAAAAAQBAAAOwAAAAAAAAAVBAAACQBAAAA
-					AAAAVRAAADABAAAAAAAAVhAAABwBAAAAAAAA
-					AiAAANgBAAAAAAAAECAAAFgBAAAAAAAAESAA
-					AIwBAAAAAAAAEiAAAGwBAAAAAAAAEyAAAHwB
-					AAAAAAAAICAAALgBAAAAAAAAMCAAABwBAAAA
-					AAAAAcAAADwBAAAAAAAAEcAAABQAAAAAAAAA
-					EsAAAEwBAAAAAAAAENAAAOQBAAAAAAAA
-					</data>
 					<key>IsSHSprite</key>
 					<true/>
 					<key>PhysicProperties</key>
@@ -7622,9 +6438,9 @@
 						<key>FlipY</key>
 						<false/>
 						<key>Frame</key>
-						<string>{{36, 164}, {33, 33}}</string>
+						<string>{{210, 164}, {33, 33}}</string>
 						<key>Frame-HD</key>
-						<string>{{72, 328}, {66, 66}}</string>
+						<string>{{420, 328}, {66, 66}}</string>
 						<key>Image</key>
 						<string>game_images_UntitledSheet.png</string>
 						<key>Image-HD</key>
@@ -7650,7 +6466,7 @@
 						<key>OriginalSize</key>
 						<string>{66, 66}</string>
 						<key>Position</key>
-						<string>{72, 328}</string>
+						<string>{420, 328}</string>
 						<key>Scale</key>
 						<string>{1, 1}</string>
 						<key>SpriteSize</key>
@@ -7667,40 +6483,748 @@
 						<integer>0</integer>
 					</dict>
 				</dict>
+				<key>star_blue</key>
+				<dict>
+					<key>IsSHSprite</key>
+					<true/>
+					<key>PhysicProperties</key>
+					<dict>
+						<key>AngularDamping</key>
+						<real>0.0</real>
+						<key>AngularVelocity</key>
+						<real>0.0</real>
+						<key>CanSleep</key>
+						<true/>
+						<key>FixedRot</key>
+						<false/>
+						<key>GravityScale</key>
+						<real>1</real>
+						<key>HandledBySH</key>
+						<true/>
+						<key>IsBullet</key>
+						<false/>
+						<key>LinearDamping</key>
+						<real>0.0</real>
+						<key>LinearVelocity</key>
+						<string>{0, 0}</string>
+						<key>SH_ComplexShapes</key>
+						<array>
+							<dict>
+								<key>Angle</key>
+								<integer>0</integer>
+								<key>Category</key>
+								<integer>1</integer>
+								<key>Density</key>
+								<real>0.20000000298023224</real>
+								<key>Fixture</key>
+								<array>
+									<array/>
+								</array>
+								<key>Friction</key>
+								<real>0.20000000298023224</real>
+								<key>Group</key>
+								<integer>0</integer>
+								<key>Height</key>
+								<real>60</real>
+								<key>HolesPoints</key>
+								<array/>
+								<key>IsCircle</key>
+								<true/>
+								<key>IsRectangle</key>
+								<false/>
+								<key>IsSensor</key>
+								<true/>
+								<key>LHHeight</key>
+								<real>30</real>
+								<key>LHShapePositionOffset</key>
+								<string>{0, 0}</string>
+								<key>LHWidth</key>
+								<real>30</real>
+								<key>Mask</key>
+								<integer>65535</integer>
+								<key>Name</key>
+								<string>UntitledFixture</string>
+								<key>Restitution</key>
+								<real>0.20000000298023224</real>
+								<key>ShapePoints</key>
+								<array/>
+								<key>ShapePositionOffset</key>
+								<string>{30, 30}</string>
+								<key>Tag</key>
+								<integer>0</integer>
+								<key>Width</key>
+								<real>60</real>
+							</dict>
+						</array>
+						<key>Type</key>
+						<integer>0</integer>
+					</dict>
+					<key>SHSheetName</key>
+					<string>UntitledSheet</string>
+					<key>SHSpriteName</key>
+					<string>star_blue</string>
+					<key>SheetImage</key>
+					<string>game_images_UntitledSheet.png</string>
+					<key>SheetImage-HD</key>
+					<string>game_images_UntitledSheet-hd.png</string>
+					<key>TextureProperties</key>
+					<dict>
+						<key>Angle</key>
+						<integer>0</integer>
+						<key>Border</key>
+						<integer>0</integer>
+						<key>CanBeTrimmed</key>
+						<true/>
+						<key>Color</key>
+						<string>{{1, 1}, {1, 1}}</string>
+						<key>ConvertedFromOldFormat</key>
+						<false/>
+						<key>CustomClassName</key>
+						<string></string>
+						<key>FlipX</key>
+						<false/>
+						<key>FlipY</key>
+						<false/>
+						<key>Frame</key>
+						<string>{{204, 234}, {30, 30}}</string>
+						<key>Frame-HD</key>
+						<string>{{408, 468}, {60, 60}}</string>
+						<key>Image</key>
+						<string>game_images_UntitledSheet.png</string>
+						<key>Image-HD</key>
+						<string>game_images_UntitledSheet-hd.png</string>
+						<key>IsCropped</key>
+						<false/>
+						<key>IsDrawable</key>
+						<true/>
+						<key>IsRotated</key>
+						<false/>
+						<key>IsTrimmed</key>
+						<false/>
+						<key>Name</key>
+						<string>star_blue</string>
+						<key>Opacity</key>
+						<real>1</real>
+						<key>OriginalImage</key>
+						<string>/Users/karta022/Pictures/rainbow hole/star_blue.png</string>
+						<key>OriginalImage_RelativePath</key>
+						<string>../../../../../Pictures/rainbow%20hole/star_blue.png/</string>
+						<key>OriginalRect</key>
+						<string>{{0, 0}, {60, 60}}</string>
+						<key>OriginalSize</key>
+						<string>{60, 60}</string>
+						<key>Position</key>
+						<string>{408, 468}</string>
+						<key>Scale</key>
+						<string>{1, 1}</string>
+						<key>SpriteSize</key>
+						<string>{30, 30}</string>
+						<key>SpriteWasBreaked</key>
+						<false/>
+						<key>Tag</key>
+						<integer>0</integer>
+						<key>TextureOffset</key>
+						<string>{0, 0}</string>
+						<key>UsesBatchRendering</key>
+						<true/>
+						<key>ZOrder</key>
+						<integer>0</integer>
+					</dict>
+				</dict>
+				<key>star_darkblue</key>
+				<dict>
+					<key>IsSHSprite</key>
+					<true/>
+					<key>PhysicProperties</key>
+					<dict>
+						<key>AngularDamping</key>
+						<real>0.0</real>
+						<key>AngularVelocity</key>
+						<real>0.0</real>
+						<key>CanSleep</key>
+						<true/>
+						<key>FixedRot</key>
+						<false/>
+						<key>GravityScale</key>
+						<real>1</real>
+						<key>HandledBySH</key>
+						<true/>
+						<key>IsBullet</key>
+						<false/>
+						<key>LinearDamping</key>
+						<real>0.0</real>
+						<key>LinearVelocity</key>
+						<string>{0, 0}</string>
+						<key>SH_ComplexShapes</key>
+						<array>
+							<dict>
+								<key>Angle</key>
+								<integer>0</integer>
+								<key>Category</key>
+								<integer>1</integer>
+								<key>Density</key>
+								<real>0.20000000298023224</real>
+								<key>Fixture</key>
+								<array>
+									<array/>
+								</array>
+								<key>Friction</key>
+								<real>0.20000000298023224</real>
+								<key>Group</key>
+								<integer>0</integer>
+								<key>Height</key>
+								<real>60</real>
+								<key>HolesPoints</key>
+								<array/>
+								<key>IsCircle</key>
+								<true/>
+								<key>IsRectangle</key>
+								<false/>
+								<key>IsSensor</key>
+								<true/>
+								<key>LHHeight</key>
+								<real>30</real>
+								<key>LHShapePositionOffset</key>
+								<string>{0, 0}</string>
+								<key>LHWidth</key>
+								<real>30</real>
+								<key>Mask</key>
+								<integer>65535</integer>
+								<key>Name</key>
+								<string>UntitledFixture</string>
+								<key>Restitution</key>
+								<real>0.20000000298023224</real>
+								<key>ShapePoints</key>
+								<array/>
+								<key>ShapePositionOffset</key>
+								<string>{30, 30}</string>
+								<key>Tag</key>
+								<integer>0</integer>
+								<key>Width</key>
+								<real>60</real>
+							</dict>
+						</array>
+						<key>Type</key>
+						<integer>0</integer>
+					</dict>
+					<key>SHSheetName</key>
+					<string>UntitledSheet</string>
+					<key>SHSpriteName</key>
+					<string>star_darkblue</string>
+					<key>SheetImage</key>
+					<string>game_images_UntitledSheet.png</string>
+					<key>SheetImage-HD</key>
+					<string>game_images_UntitledSheet-hd.png</string>
+					<key>TextureProperties</key>
+					<dict>
+						<key>Angle</key>
+						<integer>0</integer>
+						<key>Border</key>
+						<integer>0</integer>
+						<key>CanBeTrimmed</key>
+						<true/>
+						<key>Color</key>
+						<string>{{1, 1}, {1, 1}}</string>
+						<key>ConvertedFromOldFormat</key>
+						<false/>
+						<key>CustomClassName</key>
+						<string></string>
+						<key>FlipX</key>
+						<false/>
+						<key>FlipY</key>
+						<false/>
+						<key>Frame</key>
+						<string>{{172, 234}, {30, 30}}</string>
+						<key>Frame-HD</key>
+						<string>{{344, 468}, {60, 60}}</string>
+						<key>Image</key>
+						<string>game_images_UntitledSheet.png</string>
+						<key>Image-HD</key>
+						<string>game_images_UntitledSheet-hd.png</string>
+						<key>IsCropped</key>
+						<false/>
+						<key>IsDrawable</key>
+						<true/>
+						<key>IsRotated</key>
+						<false/>
+						<key>IsTrimmed</key>
+						<false/>
+						<key>Name</key>
+						<string>star_darkblue</string>
+						<key>Opacity</key>
+						<real>1</real>
+						<key>OriginalImage</key>
+						<string>/Users/karta022/Pictures/rainbow hole/star_darkblue.png</string>
+						<key>OriginalImage_RelativePath</key>
+						<string>../../../../../Pictures/rainbow%20hole/star_darkblue.png/</string>
+						<key>OriginalRect</key>
+						<string>{{0, 0}, {60, 60}}</string>
+						<key>OriginalSize</key>
+						<string>{60, 60}</string>
+						<key>Position</key>
+						<string>{344, 468}</string>
+						<key>Scale</key>
+						<string>{1, 1}</string>
+						<key>SpriteSize</key>
+						<string>{30, 30}</string>
+						<key>SpriteWasBreaked</key>
+						<false/>
+						<key>Tag</key>
+						<integer>0</integer>
+						<key>TextureOffset</key>
+						<string>{0, 0}</string>
+						<key>UsesBatchRendering</key>
+						<true/>
+						<key>ZOrder</key>
+						<integer>0</integer>
+					</dict>
+				</dict>
+				<key>star_green</key>
+				<dict>
+					<key>IsSHSprite</key>
+					<true/>
+					<key>PhysicProperties</key>
+					<dict>
+						<key>AngularDamping</key>
+						<real>0.0</real>
+						<key>AngularVelocity</key>
+						<real>0.0</real>
+						<key>CanSleep</key>
+						<true/>
+						<key>FixedRot</key>
+						<false/>
+						<key>GravityScale</key>
+						<real>1</real>
+						<key>HandledBySH</key>
+						<true/>
+						<key>IsBullet</key>
+						<false/>
+						<key>LinearDamping</key>
+						<real>0.0</real>
+						<key>LinearVelocity</key>
+						<string>{0, 0}</string>
+						<key>SH_ComplexShapes</key>
+						<array>
+							<dict>
+								<key>Angle</key>
+								<integer>0</integer>
+								<key>Category</key>
+								<integer>1</integer>
+								<key>Density</key>
+								<real>0.20000000298023224</real>
+								<key>Fixture</key>
+								<array>
+									<array/>
+								</array>
+								<key>Friction</key>
+								<real>0.20000000298023224</real>
+								<key>Group</key>
+								<integer>0</integer>
+								<key>Height</key>
+								<real>60</real>
+								<key>HolesPoints</key>
+								<array/>
+								<key>IsCircle</key>
+								<true/>
+								<key>IsRectangle</key>
+								<false/>
+								<key>IsSensor</key>
+								<true/>
+								<key>LHHeight</key>
+								<real>30</real>
+								<key>LHShapePositionOffset</key>
+								<string>{0, 0}</string>
+								<key>LHWidth</key>
+								<real>30</real>
+								<key>Mask</key>
+								<integer>65535</integer>
+								<key>Name</key>
+								<string>UntitledFixture</string>
+								<key>Restitution</key>
+								<real>0.20000000298023224</real>
+								<key>ShapePoints</key>
+								<array/>
+								<key>ShapePositionOffset</key>
+								<string>{30, 30}</string>
+								<key>Tag</key>
+								<integer>0</integer>
+								<key>Width</key>
+								<real>60</real>
+							</dict>
+						</array>
+						<key>Type</key>
+						<integer>0</integer>
+					</dict>
+					<key>SHSheetName</key>
+					<string>UntitledSheet</string>
+					<key>SHSpriteName</key>
+					<string>star_green</string>
+					<key>SheetImage</key>
+					<string>game_images_UntitledSheet.png</string>
+					<key>SheetImage-HD</key>
+					<string>game_images_UntitledSheet-hd.png</string>
+					<key>TextureProperties</key>
+					<dict>
+						<key>Angle</key>
+						<integer>0</integer>
+						<key>Border</key>
+						<integer>0</integer>
+						<key>CanBeTrimmed</key>
+						<true/>
+						<key>Color</key>
+						<string>{{1, 1}, {1, 1}}</string>
+						<key>ConvertedFromOldFormat</key>
+						<false/>
+						<key>CustomClassName</key>
+						<string></string>
+						<key>FlipX</key>
+						<false/>
+						<key>FlipY</key>
+						<false/>
+						<key>Frame</key>
+						<string>{{140, 234}, {30, 30}}</string>
+						<key>Frame-HD</key>
+						<string>{{280, 468}, {60, 60}}</string>
+						<key>Image</key>
+						<string>game_images_UntitledSheet.png</string>
+						<key>Image-HD</key>
+						<string>game_images_UntitledSheet-hd.png</string>
+						<key>IsCropped</key>
+						<false/>
+						<key>IsDrawable</key>
+						<true/>
+						<key>IsRotated</key>
+						<false/>
+						<key>IsTrimmed</key>
+						<false/>
+						<key>Name</key>
+						<string>star_green</string>
+						<key>Opacity</key>
+						<real>1</real>
+						<key>OriginalImage</key>
+						<string>/Users/karta022/Pictures/rainbow hole/star_green.png</string>
+						<key>OriginalImage_RelativePath</key>
+						<string>../../../../../Pictures/rainbow%20hole/star_green.png/</string>
+						<key>OriginalRect</key>
+						<string>{{0, 0}, {60, 60}}</string>
+						<key>OriginalSize</key>
+						<string>{60, 60}</string>
+						<key>Position</key>
+						<string>{280, 468}</string>
+						<key>Scale</key>
+						<string>{1, 1}</string>
+						<key>SpriteSize</key>
+						<string>{30, 30}</string>
+						<key>SpriteWasBreaked</key>
+						<false/>
+						<key>Tag</key>
+						<integer>0</integer>
+						<key>TextureOffset</key>
+						<string>{0, 0}</string>
+						<key>UsesBatchRendering</key>
+						<true/>
+						<key>ZOrder</key>
+						<integer>0</integer>
+					</dict>
+				</dict>
+				<key>star_red</key>
+				<dict>
+					<key>IsSHSprite</key>
+					<true/>
+					<key>PhysicProperties</key>
+					<dict>
+						<key>AngularDamping</key>
+						<real>0.0</real>
+						<key>AngularVelocity</key>
+						<real>0.0</real>
+						<key>CanSleep</key>
+						<true/>
+						<key>FixedRot</key>
+						<false/>
+						<key>GravityScale</key>
+						<real>1</real>
+						<key>HandledBySH</key>
+						<true/>
+						<key>IsBullet</key>
+						<false/>
+						<key>LinearDamping</key>
+						<real>0.0</real>
+						<key>LinearVelocity</key>
+						<string>{0, 0}</string>
+						<key>SH_ComplexShapes</key>
+						<array>
+							<dict>
+								<key>Angle</key>
+								<integer>0</integer>
+								<key>Category</key>
+								<integer>1</integer>
+								<key>Density</key>
+								<real>0.20000000298023224</real>
+								<key>Fixture</key>
+								<array>
+									<array/>
+								</array>
+								<key>Friction</key>
+								<real>0.20000000298023224</real>
+								<key>Group</key>
+								<integer>0</integer>
+								<key>Height</key>
+								<real>60</real>
+								<key>HolesPoints</key>
+								<array/>
+								<key>IsCircle</key>
+								<true/>
+								<key>IsRectangle</key>
+								<false/>
+								<key>IsSensor</key>
+								<true/>
+								<key>LHHeight</key>
+								<real>30</real>
+								<key>LHShapePositionOffset</key>
+								<string>{0, 0}</string>
+								<key>LHWidth</key>
+								<real>30</real>
+								<key>Mask</key>
+								<integer>65535</integer>
+								<key>Name</key>
+								<string>UntitledFixture</string>
+								<key>Restitution</key>
+								<real>0.20000000298023224</real>
+								<key>ShapePoints</key>
+								<array/>
+								<key>ShapePositionOffset</key>
+								<string>{30, 30}</string>
+								<key>Tag</key>
+								<integer>0</integer>
+								<key>Width</key>
+								<real>60</real>
+							</dict>
+						</array>
+						<key>Type</key>
+						<integer>0</integer>
+					</dict>
+					<key>SHSheetName</key>
+					<string>UntitledSheet</string>
+					<key>SHSpriteName</key>
+					<string>star_red</string>
+					<key>SheetImage</key>
+					<string>game_images_UntitledSheet.png</string>
+					<key>SheetImage-HD</key>
+					<string>game_images_UntitledSheet-hd.png</string>
+					<key>TextureProperties</key>
+					<dict>
+						<key>Angle</key>
+						<integer>0</integer>
+						<key>Border</key>
+						<integer>0</integer>
+						<key>CanBeTrimmed</key>
+						<true/>
+						<key>Color</key>
+						<string>{{1, 1}, {1, 1}}</string>
+						<key>ConvertedFromOldFormat</key>
+						<false/>
+						<key>CustomClassName</key>
+						<string></string>
+						<key>FlipX</key>
+						<false/>
+						<key>FlipY</key>
+						<false/>
+						<key>Frame</key>
+						<string>{{140, 298}, {30, 30}}</string>
+						<key>Frame-HD</key>
+						<string>{{280, 596}, {60, 60}}</string>
+						<key>Image</key>
+						<string>game_images_UntitledSheet.png</string>
+						<key>Image-HD</key>
+						<string>game_images_UntitledSheet-hd.png</string>
+						<key>IsCropped</key>
+						<false/>
+						<key>IsDrawable</key>
+						<true/>
+						<key>IsRotated</key>
+						<false/>
+						<key>IsTrimmed</key>
+						<false/>
+						<key>Name</key>
+						<string>star_red</string>
+						<key>Opacity</key>
+						<real>1</real>
+						<key>OriginalImage</key>
+						<string>/Users/karta022/Pictures/rainbow hole/star_red.png</string>
+						<key>OriginalImage_RelativePath</key>
+						<string>../../../../../Pictures/rainbow%20hole/star_red.png/</string>
+						<key>OriginalRect</key>
+						<string>{{0, 0}, {60, 60}}</string>
+						<key>OriginalSize</key>
+						<string>{60, 60}</string>
+						<key>Position</key>
+						<string>{280, 596}</string>
+						<key>Scale</key>
+						<string>{1, 1}</string>
+						<key>SpriteSize</key>
+						<string>{30, 30}</string>
+						<key>SpriteWasBreaked</key>
+						<false/>
+						<key>Tag</key>
+						<integer>0</integer>
+						<key>TextureOffset</key>
+						<string>{0, 0}</string>
+						<key>UsesBatchRendering</key>
+						<true/>
+						<key>ZOrder</key>
+						<integer>0</integer>
+					</dict>
+				</dict>
+				<key>star_yellow</key>
+				<dict>
+					<key>IsSHSprite</key>
+					<true/>
+					<key>PhysicProperties</key>
+					<dict>
+						<key>AngularDamping</key>
+						<real>0.0</real>
+						<key>AngularVelocity</key>
+						<real>0.0</real>
+						<key>CanSleep</key>
+						<true/>
+						<key>FixedRot</key>
+						<false/>
+						<key>GravityScale</key>
+						<real>1</real>
+						<key>HandledBySH</key>
+						<true/>
+						<key>IsBullet</key>
+						<false/>
+						<key>LinearDamping</key>
+						<real>0.0</real>
+						<key>LinearVelocity</key>
+						<string>{0, 0}</string>
+						<key>SH_ComplexShapes</key>
+						<array>
+							<dict>
+								<key>Angle</key>
+								<integer>0</integer>
+								<key>Category</key>
+								<integer>1</integer>
+								<key>Density</key>
+								<real>0.20000000298023224</real>
+								<key>Fixture</key>
+								<array>
+									<array/>
+								</array>
+								<key>Friction</key>
+								<real>0.20000000298023224</real>
+								<key>Group</key>
+								<integer>0</integer>
+								<key>Height</key>
+								<real>60</real>
+								<key>HolesPoints</key>
+								<array/>
+								<key>IsCircle</key>
+								<true/>
+								<key>IsRectangle</key>
+								<false/>
+								<key>IsSensor</key>
+								<true/>
+								<key>LHHeight</key>
+								<real>30</real>
+								<key>LHShapePositionOffset</key>
+								<string>{0, 0}</string>
+								<key>LHWidth</key>
+								<real>30</real>
+								<key>Mask</key>
+								<integer>65535</integer>
+								<key>Name</key>
+								<string>UntitledFixture</string>
+								<key>Restitution</key>
+								<real>0.20000000298023224</real>
+								<key>ShapePoints</key>
+								<array/>
+								<key>ShapePositionOffset</key>
+								<string>{30, 30}</string>
+								<key>Tag</key>
+								<integer>0</integer>
+								<key>Width</key>
+								<real>60</real>
+							</dict>
+						</array>
+						<key>Type</key>
+						<integer>0</integer>
+					</dict>
+					<key>SHSheetName</key>
+					<string>UntitledSheet</string>
+					<key>SHSpriteName</key>
+					<string>star_yellow</string>
+					<key>SheetImage</key>
+					<string>game_images_UntitledSheet.png</string>
+					<key>SheetImage-HD</key>
+					<string>game_images_UntitledSheet-hd.png</string>
+					<key>TextureProperties</key>
+					<dict>
+						<key>Angle</key>
+						<integer>0</integer>
+						<key>Border</key>
+						<integer>0</integer>
+						<key>CanBeTrimmed</key>
+						<true/>
+						<key>Color</key>
+						<string>{{1, 1}, {1, 1}}</string>
+						<key>ConvertedFromOldFormat</key>
+						<false/>
+						<key>CustomClassName</key>
+						<string></string>
+						<key>FlipX</key>
+						<false/>
+						<key>FlipY</key>
+						<false/>
+						<key>Frame</key>
+						<string>{{140, 266}, {30, 30}}</string>
+						<key>Frame-HD</key>
+						<string>{{280, 532}, {60, 60}}</string>
+						<key>Image</key>
+						<string>game_images_UntitledSheet.png</string>
+						<key>Image-HD</key>
+						<string>game_images_UntitledSheet-hd.png</string>
+						<key>IsCropped</key>
+						<false/>
+						<key>IsDrawable</key>
+						<true/>
+						<key>IsRotated</key>
+						<false/>
+						<key>IsTrimmed</key>
+						<false/>
+						<key>Name</key>
+						<string>star_yellow</string>
+						<key>Opacity</key>
+						<real>1</real>
+						<key>OriginalImage</key>
+						<string>/Users/karta022/Pictures/rainbow hole/star_yellow.png</string>
+						<key>OriginalImage_RelativePath</key>
+						<string>../../../../../Pictures/rainbow%20hole/star_yellow.png/</string>
+						<key>OriginalRect</key>
+						<string>{{0, 0}, {60, 60}}</string>
+						<key>OriginalSize</key>
+						<string>{60, 60}</string>
+						<key>Position</key>
+						<string>{280, 532}</string>
+						<key>Scale</key>
+						<string>{1, 1}</string>
+						<key>SpriteSize</key>
+						<string>{30, 30}</string>
+						<key>SpriteWasBreaked</key>
+						<false/>
+						<key>Tag</key>
+						<integer>0</integer>
+						<key>TextureOffset</key>
+						<string>{0, 0}</string>
+						<key>UsesBatchRendering</key>
+						<true/>
+						<key>ZOrder</key>
+						<integer>0</integer>
+					</dict>
+				</dict>
 				<key>start_area_blue</key>
 				<dict>
-					<key>DocumentSecurityImageBookmark</key>
-					<data>
-					Ym9vawwDAAAAAAQQMAAAABrewQyyLgQbaqji
-					Blj5bDNLtEGHRWnNLBeaUW9Svs1r8AEAAAUA
-					AAABAQAAVXNlcnMAAAAIAAAAAQEAAGthcnRh
-					MDIyCAAAAAEBAABQaWN0dXJlcwwAAAABAQAA
-					cmFpbmJvdyBob2xlEwAAAAEBAABzdGFydF9h
-					cmVhX2JsdWUucG5nABQAAAABBgAABAAAABQA
-					AAAkAAAANAAAAEgAAAAIAAAABAMAADG/AAAA
-					AAAACAAAAAQDAACMAQUAAAAAAAgAAAAEAwAA
-					VgIFAAAAAAAIAAAABAMAADEL0wUAAAAACAAA
-					AAQDAAC+0RIGAAAAABQAAAABBgAAgAAAAJAA
-					AACgAAAAsAAAAMAAAAAIAAAAAAQAAEG2Uxcl
-					AAAAGAAAAAECAAABAAAAAAAAAA8AAAAAAAAA
-					AAAAAAAAAAAAAAAAAQUAAAQAAAADAwAABgAA
-					AAQAAAADAwAAAwAAAAgAAAAEAwAAAwAAAAAA
-					AAAEAAAAAwMAAPUBAAAMAAAAAQEAAE1hY2lu
-					dG9zaCBIRAgAAAAEAwAAACDBDBwAAAAIAAAA
-					AAQAAEGzxvgDAAAAJAAAAAEBAABCMUEzMDZG
-					RS01NzNFLTMwODAtODY4Qy01MDdDMjgyQ0Ew
-					M0QYAAAAAQIAAIEAAAABAAgA7z8AAAEACAAA
-					AAAAAAAAAAEAAAABAQAALwAAAAQAAAADAwAA
-					AAgAKOQAAAD+////AQAAAAAAAAASAAAABBAA
-					AGQAAAAAAAAABRAAANAAAAAAAAAAEBAAAPwA
-					AAAAAAAAQBAAAOwAAAAAAAAAVBAAACQBAAAA
-					AAAAVRAAADABAAAAAAAAVhAAABwBAAAAAAAA
-					AiAAANgBAAAAAAAAECAAAFgBAAAAAAAAESAA
-					AIwBAAAAAAAAEiAAAGwBAAAAAAAAEyAAAHwB
-					AAAAAAAAICAAALgBAAAAAAAAMCAAABwBAAAA
-					AAAAAcAAADwBAAAAAAAAEcAAABQAAAAAAAAA
-					EsAAAEwBAAAAAAAAENAAAOQBAAAAAAAA
-					</data>
 					<key>IsSHSprite</key>
 					<true/>
 					<key>PhysicProperties</key>
@@ -7802,38 +7326,6 @@
 				</dict>
 				<key>start_area_green</key>
 				<dict>
-					<key>DocumentSecurityImageBookmark</key>
-					<data>
-					Ym9vawwDAAAAAAQQMAAAAH9YNvQW5hhmYgkh
-					EV5IuuzW+8MrI9cHpFCnRGkwN0wT8AEAAAUA
-					AAABAQAAVXNlcnMAAAAIAAAAAQEAAGthcnRh
-					MDIyCAAAAAEBAABQaWN0dXJlcwwAAAABAQAA
-					cmFpbmJvdyBob2xlFAAAAAEBAABzdGFydF9h
-					cmVhX2dyZWVuLnBuZxQAAAABBgAABAAAABQA
-					AAAkAAAANAAAAEgAAAAIAAAABAMAADG/AAAA
-					AAAACAAAAAQDAACMAQUAAAAAAAgAAAAEAwAA
-					VgIFAAAAAAAIAAAABAMAADEL0wUAAAAACAAA
-					AAQDAACSxhIGAAAAABQAAAABBgAAgAAAAJAA
-					AACgAAAAsAAAAMAAAAAIAAAAAAQAAEG2UxPQ
-					AAAAGAAAAAECAAABAAAAAAAAAA8AAAAAAAAA
-					AAAAAAAAAAAAAAAAAQUAAAQAAAADAwAABgAA
-					AAQAAAADAwAAAwAAAAgAAAAEAwAAAwAAAAAA
-					AAAEAAAAAwMAAPUBAAAMAAAAAQEAAE1hY2lu
-					dG9zaCBIRAgAAAAEAwAAACDBDBwAAAAIAAAA
-					AAQAAEGzxvgDAAAAJAAAAAEBAABCMUEzMDZG
-					RS01NzNFLTMwODAtODY4Qy01MDdDMjgyQ0Ew
-					M0QYAAAAAQIAAIEAAAABAAgA7z8AAAEACAAA
-					AAAAAAAAAAEAAAABAQAALwAAAAQAAAADAwAA
-					AAgAKOQAAAD+////AQAAAAAAAAASAAAABBAA
-					AGQAAAAAAAAABRAAANAAAAAAAAAAEBAAAPwA
-					AAAAAAAAQBAAAOwAAAAAAAAAVBAAACQBAAAA
-					AAAAVRAAADABAAAAAAAAVhAAABwBAAAAAAAA
-					AiAAANgBAAAAAAAAECAAAFgBAAAAAAAAESAA
-					AIwBAAAAAAAAEiAAAGwBAAAAAAAAEyAAAHwB
-					AAAAAAAAICAAALgBAAAAAAAAMCAAABwBAAAA
-					AAAAAcAAADwBAAAAAAAAEcAAABQAAAAAAAAA
-					EsAAAEwBAAAAAAAAENAAAOQBAAAAAAAA
-					</data>
 					<key>IsSHSprite</key>
 					<true/>
 					<key>PhysicProperties</key>
@@ -7935,38 +7427,6 @@
 				</dict>
 				<key>trajectory</key>
 				<dict>
-					<key>DocumentSecurityImageBookmark</key>
-					<data>
-					Ym9vawwDAAAAAAQQMAAAAMpsp1fWbyhh1VKr
-					z6Utc+6IjzCx9BBzFAqlDGIpZxsO8AEAAAUA
-					AAABAQAAVXNlcnMAAAAIAAAAAQEAAGthcnRh
-					MDIyCAAAAAEBAABQaWN0dXJlcwwAAAABAQAA
-					cmFpbmJvdyBob2xlEQAAAAEBAABiYWxsX2Rh
-					cmtibHVlLnBuZwAAABQAAAABBgAABAAAABQA
-					AAAkAAAANAAAAEgAAAAIAAAABAMAADG/AAAA
-					AAAACAAAAAQDAACMAQUAAAAAAAgAAAAEAwAA
-					VgIFAAAAAAAIAAAABAMAADEL0wUAAAAACAAA
-					AAQDAAA8LhEGAAAAABQAAAABBgAAgAAAAJAA
-					AACgAAAAsAAAAMAAAAAIAAAAAAQAAEG2T+Ro
-					AAAAGAAAAAECAAABAAAAAAAAAA8AAAAAAAAA
-					AAAAAAAAAAAAAAAAAQUAAAQAAAADAwAABgAA
-					AAQAAAADAwAAAwAAAAgAAAAEAwAAAwAAAAAA
-					AAAEAAAAAwMAAPUBAAAMAAAAAQEAAE1hY2lu
-					dG9zaCBIRAgAAAAEAwAAACDBDBwAAAAIAAAA
-					AAQAAEGzxvgDAAAAJAAAAAEBAABCMUEzMDZG
-					RS01NzNFLTMwODAtODY4Qy01MDdDMjgyQ0Ew
-					M0QYAAAAAQIAAIEAAAABAAgA7z8AAAEACAAA
-					AAAAAAAAAAEAAAABAQAALwAAAAQAAAADAwAA
-					AAgAKOQAAAD+////AQAAAAAAAAASAAAABBAA
-					AGQAAAAAAAAABRAAANAAAAAAAAAAEBAAAPwA
-					AAAAAAAAQBAAAOwAAAAAAAAAVBAAACQBAAAA
-					AAAAVRAAADABAAAAAAAAVhAAABwBAAAAAAAA
-					AiAAANgBAAAAAAAAECAAAFgBAAAAAAAAESAA
-					AIwBAAAAAAAAEiAAAGwBAAAAAAAAEyAAAHwB
-					AAAAAAAAICAAALgBAAAAAAAAMCAAABwBAAAA
-					AAAAAcAAADwBAAAAAAAAEcAAABQAAAAAAAAA
-					EsAAAEwBAAAAAAAAENAAAOQBAAAAAAAA
-					</data>
 					<key>IsSHSprite</key>
 					<true/>
 					<key>PhysicProperties</key>
@@ -8021,9 +7481,9 @@
 						<key>FlipY</key>
 						<false/>
 						<key>Frame</key>
-						<string>{{196, 290}, {26, 26}}</string>
+						<string>{{36, 338}, {26, 26}}</string>
 						<key>Frame-HD</key>
-						<string>{{392, 580}, {52, 52}}</string>
+						<string>{{72, 676}, {52, 52}}</string>
 						<key>Image</key>
 						<string>game_images_UntitledSheet.png</string>
 						<key>Image-HD</key>
@@ -8049,7 +7509,7 @@
 						<key>OriginalSize</key>
 						<string>{52, 52}</string>
 						<key>Position</key>
-						<string>{392, 580}</string>
+						<string>{72, 676}</string>
 						<key>Scale</key>
 						<string>{1, 1}</string>
 						<key>SpriteSize</key>
@@ -8084,11 +7544,13 @@
 			<array>
 				<dict>
 					<key>Frame</key>
-					<string>{{140, 290}, {26, 26}}</string>
+					<string>{{106, 338}, {26, 26}}</string>
 					<key>Frame-HD</key>
-					<string>{{280, 580}, {52, 52}}</string>
+					<string>{{212, 676}, {52, 52}}</string>
 					<key>IsRotated</key>
 					<false/>
+					<key>OriginalImage</key>
+					<string>/Users/karta022/Pictures/rainbow hole/ball_blue.png</string>
 					<key>SpriteSize</key>
 					<string>{26, 26}</string>
 					<key>TextureOffset</key>
@@ -8104,11 +7566,13 @@
 				</dict>
 				<dict>
 					<key>Frame</key>
-					<string>{{196, 262}, {26, 26}}</string>
+					<string>{{228, 266}, {26, 26}}</string>
 					<key>Frame-HD</key>
-					<string>{{392, 524}, {52, 52}}</string>
+					<string>{{456, 532}, {52, 52}}</string>
 					<key>IsRotated</key>
 					<false/>
+					<key>OriginalImage</key>
+					<string>/Users/karta022/Pictures/rainbow hole/ball_darkblue.png</string>
 					<key>SpriteSize</key>
 					<string>{26, 26}</string>
 					<key>TextureOffset</key>
@@ -8124,11 +7588,13 @@
 				</dict>
 				<dict>
 					<key>Frame</key>
-					<string>{{168, 234}, {26, 26}}</string>
+					<string>{{172, 266}, {26, 26}}</string>
 					<key>Frame-HD</key>
-					<string>{{336, 468}, {52, 52}}</string>
+					<string>{{344, 532}, {52, 52}}</string>
 					<key>IsRotated</key>
 					<false/>
+					<key>OriginalImage</key>
+					<string>/Users/karta022/Pictures/rainbow hole/ball_green.png</string>
 					<key>SpriteSize</key>
 					<string>{26, 26}</string>
 					<key>TextureOffset</key>
@@ -8144,11 +7610,13 @@
 				</dict>
 				<dict>
 					<key>Frame</key>
-					<string>{{224, 234}, {26, 26}}</string>
+					<string>{{70, 338}, {26, 26}}</string>
 					<key>Frame-HD</key>
-					<string>{{448, 468}, {52, 52}}</string>
+					<string>{{140, 676}, {52, 52}}</string>
 					<key>IsRotated</key>
 					<false/>
+					<key>OriginalImage</key>
+					<string>/Users/karta022/Pictures/rainbow hole/ball_red.png</string>
 					<key>SpriteSize</key>
 					<string>{26, 26}</string>
 					<key>TextureOffset</key>
@@ -8164,11 +7632,13 @@
 				</dict>
 				<dict>
 					<key>Frame</key>
-					<string>{{168, 290}, {26, 26}}</string>
+					<string>{{172, 322}, {26, 26}}</string>
 					<key>Frame-HD</key>
-					<string>{{336, 580}, {52, 52}}</string>
+					<string>{{344, 644}, {52, 52}}</string>
 					<key>IsRotated</key>
 					<false/>
+					<key>OriginalImage</key>
+					<string>/Users/karta022/Pictures/rainbow hole/ball_yellow.png</string>
 					<key>SpriteSize</key>
 					<string>{26, 26}</string>
 					<key>TextureOffset</key>
@@ -8205,11 +7675,13 @@
 			<array>
 				<dict>
 					<key>Frame</key>
-					<string>{{70, 164}, {33, 33}}</string>
+					<string>{{210, 128}, {33, 33}}</string>
 					<key>Frame-HD</key>
-					<string>{{140, 328}, {66, 66}}</string>
+					<string>{{420, 256}, {66, 66}}</string>
 					<key>IsRotated</key>
 					<false/>
+					<key>OriginalImage</key>
+					<string>/Users/karta022/Pictures/rainbow hole/goal_yellow_0.png</string>
 					<key>SpriteSize</key>
 					<string>{33, 33}</string>
 					<key>TextureOffset</key>
@@ -8225,11 +7697,13 @@
 				</dict>
 				<dict>
 					<key>Frame</key>
-					<string>{{184, 36}, {33, 33}}</string>
+					<string>{{0, 94}, {33, 33}}</string>
 					<key>Frame-HD</key>
-					<string>{{368, 72}, {66, 66}}</string>
+					<string>{{0, 188}, {66, 66}}</string>
 					<key>IsRotated</key>
 					<false/>
+					<key>OriginalImage</key>
+					<string>/Users/karta022/Pictures/rainbow hole/goal_yellow_1.png</string>
 					<key>SpriteSize</key>
 					<string>{33, 33}</string>
 					<key>TextureOffset</key>
@@ -8245,11 +7719,13 @@
 				</dict>
 				<dict>
 					<key>Frame</key>
-					<string>{{36, 304}, {33, 33}}</string>
+					<string>{{70, 164}, {33, 33}}</string>
 					<key>Frame-HD</key>
-					<string>{{72, 608}, {66, 66}}</string>
+					<string>{{140, 328}, {66, 66}}</string>
 					<key>IsRotated</key>
 					<false/>
+					<key>OriginalImage</key>
+					<string>/Users/karta022/Pictures/rainbow hole/goal_yellow_2.png</string>
 					<key>SpriteSize</key>
 					<string>{33, 33}</string>
 					<key>TextureOffset</key>
@@ -8265,11 +7741,13 @@
 				</dict>
 				<dict>
 					<key>Frame</key>
-					<string>{{0, 94}, {33, 33}}</string>
+					<string>{{70, 94}, {33, 33}}</string>
 					<key>Frame-HD</key>
-					<string>{{0, 188}, {66, 66}}</string>
+					<string>{{140, 188}, {66, 66}}</string>
 					<key>IsRotated</key>
 					<false/>
+					<key>OriginalImage</key>
+					<string>/Users/karta022/Pictures/rainbow hole/goal_yellow_3.png</string>
 					<key>SpriteSize</key>
 					<string>{33, 33}</string>
 					<key>TextureOffset</key>
@@ -8285,11 +7763,13 @@
 				</dict>
 				<dict>
 					<key>Frame</key>
-					<string>{{70, 128}, {33, 33}}</string>
+					<string>{{36, 304}, {33, 33}}</string>
 					<key>Frame-HD</key>
-					<string>{{140, 256}, {66, 66}}</string>
+					<string>{{72, 608}, {66, 66}}</string>
 					<key>IsRotated</key>
 					<false/>
+					<key>OriginalImage</key>
+					<string>/Users/karta022/Pictures/rainbow hole/goal_yellow_4.png</string>
 					<key>SpriteSize</key>
 					<string>{33, 33}</string>
 					<key>TextureOffset</key>
@@ -8305,11 +7785,13 @@
 				</dict>
 				<dict>
 					<key>Frame</key>
-					<string>{{176, 198}, {33, 33}}</string>
+					<string>{{140, 94}, {33, 33}}</string>
 					<key>Frame-HD</key>
-					<string>{{352, 396}, {66, 66}}</string>
+					<string>{{280, 188}, {66, 66}}</string>
 					<key>IsRotated</key>
 					<false/>
+					<key>OriginalImage</key>
+					<string>/Users/karta022/Pictures/rainbow hole/goal_yellow_5.png</string>
 					<key>SpriteSize</key>
 					<string>{33, 33}</string>
 					<key>TextureOffset</key>
@@ -8325,11 +7807,13 @@
 				</dict>
 				<dict>
 					<key>Frame</key>
-					<string>{{36, 268}, {33, 33}}</string>
+					<string>{{106, 164}, {33, 33}}</string>
 					<key>Frame-HD</key>
-					<string>{{72, 536}, {66, 66}}</string>
+					<string>{{212, 328}, {66, 66}}</string>
 					<key>IsRotated</key>
 					<false/>
+					<key>OriginalImage</key>
+					<string>/Users/karta022/Pictures/rainbow hole/goal_yellow_6.png</string>
 					<key>SpriteSize</key>
 					<string>{33, 33}</string>
 					<key>TextureOffset</key>
@@ -8345,11 +7829,13 @@
 				</dict>
 				<dict>
 					<key>Frame</key>
-					<string>{{106, 268}, {33, 33}}</string>
+					<string>{{0, 128}, {33, 33}}</string>
 					<key>Frame-HD</key>
-					<string>{{212, 536}, {66, 66}}</string>
+					<string>{{0, 256}, {66, 66}}</string>
 					<key>IsRotated</key>
 					<false/>
+					<key>OriginalImage</key>
+					<string>/Users/karta022/Pictures/rainbow hole/goal_yellow_7.png</string>
 					<key>SpriteSize</key>
 					<string>{33, 33}</string>
 					<key>TextureOffset</key>
@@ -8365,11 +7851,13 @@
 				</dict>
 				<dict>
 					<key>Frame</key>
-					<string>{{36, 164}, {33, 33}}</string>
+					<string>{{210, 164}, {33, 33}}</string>
 					<key>Frame-HD</key>
-					<string>{{72, 328}, {66, 66}}</string>
+					<string>{{420, 328}, {66, 66}}</string>
 					<key>IsRotated</key>
 					<false/>
+					<key>OriginalImage</key>
+					<string>/Users/karta022/Pictures/rainbow hole/goal_yellow_8.png</string>
 					<key>SpriteSize</key>
 					<string>{33, 33}</string>
 					<key>TextureOffset</key>
@@ -8399,6 +7887,137 @@
 			<key>UniqueName</key>
 			<string>goal_yellow</string>
 		</dict>
+		<dict>
+			<key>DelayPerUnit</key>
+			<real>0.40000000596046448</real>
+			<key>Frames</key>
+			<array>
+				<dict>
+					<key>Frame</key>
+					<string>{{204, 234}, {30, 30}}</string>
+					<key>Frame-HD</key>
+					<string>{{408, 468}, {60, 60}}</string>
+					<key>IsRotated</key>
+					<false/>
+					<key>OriginalImage</key>
+					<string>/Users/karta022/Pictures/rainbow hole/star_blue.png</string>
+					<key>SpriteSize</key>
+					<string>{30, 30}</string>
+					<key>TextureOffset</key>
+					<string>{0, 0}</string>
+					<key>delayPerUnit</key>
+					<real>1</real>
+					<key>notifications</key>
+					<dict/>
+					<key>offset</key>
+					<string>{0, 0}</string>
+					<key>spriteframe</key>
+					<string>star_blue</string>
+				</dict>
+				<dict>
+					<key>Frame</key>
+					<string>{{172, 234}, {30, 30}}</string>
+					<key>Frame-HD</key>
+					<string>{{344, 468}, {60, 60}}</string>
+					<key>IsRotated</key>
+					<false/>
+					<key>OriginalImage</key>
+					<string>/Users/karta022/Pictures/rainbow hole/star_darkblue.png</string>
+					<key>SpriteSize</key>
+					<string>{30, 30}</string>
+					<key>TextureOffset</key>
+					<string>{0, 0}</string>
+					<key>delayPerUnit</key>
+					<real>1</real>
+					<key>notifications</key>
+					<dict/>
+					<key>offset</key>
+					<string>{0, 0}</string>
+					<key>spriteframe</key>
+					<string>star_darkblue</string>
+				</dict>
+				<dict>
+					<key>Frame</key>
+					<string>{{140, 234}, {30, 30}}</string>
+					<key>Frame-HD</key>
+					<string>{{280, 468}, {60, 60}}</string>
+					<key>IsRotated</key>
+					<false/>
+					<key>OriginalImage</key>
+					<string>/Users/karta022/Pictures/rainbow hole/star_green.png</string>
+					<key>SpriteSize</key>
+					<string>{30, 30}</string>
+					<key>TextureOffset</key>
+					<string>{0, 0}</string>
+					<key>delayPerUnit</key>
+					<real>1</real>
+					<key>notifications</key>
+					<dict/>
+					<key>offset</key>
+					<string>{0, 0}</string>
+					<key>spriteframe</key>
+					<string>star_green</string>
+				</dict>
+				<dict>
+					<key>Frame</key>
+					<string>{{140, 298}, {30, 30}}</string>
+					<key>Frame-HD</key>
+					<string>{{280, 596}, {60, 60}}</string>
+					<key>IsRotated</key>
+					<false/>
+					<key>OriginalImage</key>
+					<string>/Users/karta022/Pictures/rainbow hole/star_red.png</string>
+					<key>SpriteSize</key>
+					<string>{30, 30}</string>
+					<key>TextureOffset</key>
+					<string>{0, 0}</string>
+					<key>delayPerUnit</key>
+					<real>1</real>
+					<key>notifications</key>
+					<dict/>
+					<key>offset</key>
+					<string>{0, 0}</string>
+					<key>spriteframe</key>
+					<string>star_red</string>
+				</dict>
+				<dict>
+					<key>Frame</key>
+					<string>{{140, 266}, {30, 30}}</string>
+					<key>Frame-HD</key>
+					<string>{{280, 532}, {60, 60}}</string>
+					<key>IsRotated</key>
+					<false/>
+					<key>OriginalImage</key>
+					<string>/Users/karta022/Pictures/rainbow hole/star_yellow.png</string>
+					<key>SpriteSize</key>
+					<string>{30, 30}</string>
+					<key>TextureOffset</key>
+					<string>{0, 0}</string>
+					<key>delayPerUnit</key>
+					<real>1</real>
+					<key>notifications</key>
+					<dict/>
+					<key>offset</key>
+					<string>{0, 0}</string>
+					<key>spriteframe</key>
+					<string>star_yellow</string>
+				</dict>
+			</array>
+			<key>Loop</key>
+			<false/>
+			<key>Repetitions</key>
+			<integer>1</integer>
+			<key>RestoreOriginalFrame</key>
+			<false/>
+			<key>SheetImage</key>
+			<string>game_images_UntitledSheet.png</string>
+			<key>SheetName</key>
+			<string>UntitledSheet</string>
+			<key>StartAtLaunch</key>
+			<false/>
+			<key>UniqueName</key>
+			<string>stars</string>
+		</dict>
 	</array>
 	<key>SaveSettings</key>
 	<dict>
@@ -8422,27 +8041,10 @@
 		<integer>14</integer>
 		<key>ResizingOptions</key>
 		<integer>1</integer>
+		<key>SaveStyle</key>
+		<integer>0</integer>
 	</dict>
-	<key>SceneFolderSandboxBookmark</key>
-	<data>
-	Ym9vawwDAAAAAAQQMAAAADzvcPJV+VYBj7OOeh2vLGc06zwFZC9OLr5I76xvS4Z7FAIA
-	AAUAAAABAQAAVXNlcnMAAAAIAAAAAQEAAGthcnRhMDIyCAAAAAEBAABQcm9qZWN0cxAA
-	AAABAQAAbGV2ZWxIZWxwZXJIZWxsbwkAAAABAQAAUmVzb3VyY2VzAAAABgAAAAEBAABJ
-	bWFnZXMAABwAAAABBgAABAAAABQAAAAkAAAANAAAADQAAABMAAAAYAAAAAgAAAAEAwAA
-	Mb8AAAAAAAAIAAAABAMAAIwBBQAAAAAACAAAAAQDAABXZwgAAAAAAAgAAAAEAwAAZYWp
-	BQAAAAAIAAAABAMAAGiFqQUAAAAACAAAAAQDAABphakFAAAAAAgAAAAEAwAAE42pBQAA
-	AAAcAAAAAQYAAJQAAACkAAAAtAAAAMQAAADUAAAA5AAAAPQAAAAIAAAAAAQAAEG2GyO4
-	AAAAGAAAAAECAAACAAAAAAAAAA8AAAAAAAAAAAAAAAAAAAAIAAAABAMAAAUAAAAAAAAA
-	BAAAAAMDAAD1AQAADAAAAAEBAABNYWNpbnRvc2ggSEQIAAAABAMAAAAgwQwcAAAACAAA
-	AAAEAABBs8b4AwAAACQAAAABAQAAQjFBMzA2RkUtNTczRS0zMDgwLTg2OEMtNTA3QzI4
-	MkNBMDNEGAAAAAECAACBAAAAAQAIAO8/AAABAAgAAAAAAAAAAAABAAAAAQEAAC8AAAAA
-	AAAAAQUAAAQAAAADAwAAAAgAKMAAAAD+////AQAAAAAAAAAPAAAABBAAAHAAAAAAAAAA
-	BRAAAAQBAAAAAAAAEBAAADgBAAAAAAAAQBAAACgBAAAAAAAAAiAAAPQBAAAAAAAAECAA
-	AHQBAAAAAAAAESAAAKgBAAAAAAAAEiAAAIgBAAAAAAAAEyAAAJgBAAAAAAAAICAAANQB
-	AAAAAAAAMCAAAAACAAAAAAAAAcAAAFgBAAAAAAAAEcAAABQAAAAAAAAAEsAAAGgBAAAA
-	AAAAENAAAAgCAAAAAAAA
-	</data>
 	<key>Version</key>
-	<string>1.8.200</string>
+	<string>1.8.213</string>
 </dict>
 </plist>

@@ -18,10 +18,10 @@
 	AAECAAACAAAAAAAAAA8AAAAAAAAAAAAAAAAAAAAMAAAAAQEAAE1hY2ludG9zaCBIRAgA
 	AAAEAwAAACDBDBwAAAAIAAAAAAQAAEGzxvgDAAAAJAAAAAEBAABCMUEzMDZGRS01NzNF
 	LTMwODAtODY4Qy01MDdDMjgyQ0EwM0QYAAAAAQIAAIEAAAABAAgA7z8AAAEACAAAAAAA
-	AAAAAAEAAAABAQAALwAAAAAAAAABBQAABAAAAAMDAAAAAQAAsQAAAAECAABiMDVjNTI2
-	NmM3YjM3NzZkODVkMWExODgyYzkwMWNhZTJiN2JjZjYyOzAwMDAwMDAwOzAwMDAwMDAw
+	AAAAAAEAAAABAQAALwAAAAAAAAABBQAABAAAAAMDAAAAAQAAsQAAAAECAABlZTM5MTk2
+	MzQyY2Y3OGUxNzRhNThlYTRlMGYzYjJhNDUxYTUxMDNjOzAwMDAwMDAwOzAwMDAwMDAw
 	MDAwMDAwMjA7Y29tLmFwcGxlLmFwcC1zYW5kYm94LnJlYWQtd3JpdGU7MDAwMDAwMDE7
-	MDEwMDAwMDM7MDAwMDAwMDAwNWE5ODU2NTsvdXNlcnMva2FydGEwMjIvcHJvamVjdHMv
+	MDEwMDAwMDI7MDAwMDAwMDAwNWE5ODU2NTsvdXNlcnMva2FydGEwMjIvcHJvamVjdHMv
 	bGV2ZWxoZWxwZXJoZWxsbwAAAACoAAAA/v///wEAAAAAAAAADQAAAAQQAABMAAAAAAAA
 	AAUQAACkAAAAAAAAABAQAADMAAAAAAAAAEAQAAC8AAAAAAAAAAIgAABsAQAAAAAAABAg
 	AADsAAAAAAAAABEgAAAgAQAAAAAAABIgAAAAAQAAAAAAABMgAAAQAQAAAAAAACAgAABM
@@ -42,7 +42,7 @@
 	<key>HDSuffix</key>
 	<string>-hd</string>
 	<key>LastLevelLoaded</key>
-	<string>/Users/karta022/Projects/levelHelperHello/levelHelperHello/Resources/Levels/level04.plhs</string>
+	<string>/Users/karta022/Projects/levelHelperHello/levelHelperHello/Resources/Levels/level06.plhs</string>
 	<key>Orientation</key>
 	<integer>0</integer>
 	<key>ProjectName</key>
@@ -78,7 +78,16 @@
 		<string>BLOCK_BLUE</string>
 		<string>BLOCK_END</string>
 		<string>GOAL_YELLOW</string>
+		<string>GOAL_RED</string>
+		<string>GOAL_GREEN</string>
+		<string>GOAL_BLUE</string>
+		<string>STAR_YELLOW</string>
+		<string>STAR_RED</string>
+		<string>STAR_GREEN</string>
+		<string>STAR_BLUE</string>
+		<string>STAR_BLACK</string>
 		<string>START_AREA</string>
+		<string>STAR</string>
 	</array>
 </dict>
 </plist>
