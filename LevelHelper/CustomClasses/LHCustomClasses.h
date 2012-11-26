@@ -3,4 +3,5 @@
 //For more info please visit: www.levelhelper.org
 
 
+#import "SpriteInfo.h"
 

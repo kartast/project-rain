@@ -121,6 +121,7 @@ NSMutableArray* allStars;
     
         
         //create a LevelHelperLoader object that has the data of the specified level
+        [LevelHelperLoader dontStretchArt];
         loader = [[LevelHelperLoader alloc] initWithContentOfFile:@"Levels/level06"];
         
         //create all objects from the level file and adds them to the cocos2d layer (self)
@@ -184,18 +185,21 @@ NSMutableArray* allStars;
     
     LHSprite* ballSprite = [contact spriteA];
     [ballSprite setFrame:1];
+    [self handleCollisionEffect:contact];
 }
 
 -(void) beginEndCollisionBetweenBallAndGreenBlock:(LHContactInfo*)contact{
     
     LHSprite* ballSprite = [contact spriteA];
     [ballSprite setFrame:2];
+    [self handleCollisionEffect:contact];
 }
 
 -(void) beginEndCollisionBetweenBallAndBlueBlock:(LHContactInfo*)contact{
     
     LHSprite* ballSprite = [contact spriteA];
     [ballSprite setFrame:0];
+    [self handleCollisionEffect:contact];
 }
 
 -(void) beginEndCollisionBetweenBallAndYellowBlock:(LHContactInfo*)contact
@@ -203,6 +207,7 @@ NSMutableArray* allStars;
 
     LHSprite* ballSprite = [contact spriteA];
     [ballSprite setFrame:4];
+    [self handleCollisionEffect:contact];
 }
 
 
@@ -210,6 +215,30 @@ NSMutableArray* allStars;
 
     LHSprite* ballSprite = [contact spriteA];
     [ballSprite setFrame:3];
+    [self handleCollisionEffect:contact];
+}
+
+-(void) handleCollisionEffect:(LHContactInfo*)contact {
+    LHSprite* ballSprite = [contact spriteA];
+    LHSprite* blockSprite = [contact spriteB];
+    
+    // Check if block is amplify block
+    bool isAmplify = [(SpriteInfo*)[blockSprite userInfo] isAmplify];
+    if (isAmplify) {
+        // amplify ball velocity twice;
+        b2Vec2 velocity = ballSprite.body->GetLinearVelocity();
+        velocity *= 0.05;
+        ballSprite.body->ApplyLinearImpulse(velocity, ballSprite.body->GetWorldCenter());
+    }
+    
+    // Check if block is absorb
+    bool isAbsorb = [(SpriteInfo*)[blockSprite userInfo] isAbsorb];
+    if (isAbsorb) {
+        b2Vec2 velocity = ballSprite.body->GetLinearVelocity();
+        velocity *= 0.6;
+//        ballSprite.body->ApplyLinearImpulse(velocity, ballSprite.body->GetWorldCenter());
+        ballSprite.body->SetLinearVelocity(velocity);
+    }
 }
 
 -(void) collisionBallAndGoalYellow:(LHContactInfo*)contact
