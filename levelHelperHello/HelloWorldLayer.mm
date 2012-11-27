@@ -22,6 +22,8 @@
 #import "b2WorldCallbacks.h"
 #import "Trajectories.h"
 
+
+
 //-------------------
 // Class TrajectoryRayCastClosestCallback
 //-------------------
@@ -81,6 +83,7 @@ NSMutableArray* allStars;
 @implementation SpawnTouches
 @synthesize touch, startPoint, endPoint;
 
+
 @end
 
 #pragma mark - HelloWorldLayer
@@ -90,6 +93,7 @@ NSMutableArray* allStars;
 @end
 
 @implementation HelloWorldLayer
+@synthesize levelName;
 
 +(CCScene *) scene
 {
@@ -106,7 +110,98 @@ NSMutableArray* allStars;
 	return scene;
 }
 
--(id) init
++(CCScene *) sceneWithLevel:(NSString*) name {
+    // 'scene' is an autorelease object.
+	CCScene *scene = [CCScene node];
+	
+	// 'layer' is an autorelease object.
+	HelloWorldLayer *layer = [[HelloWorldLayer alloc] initWithName:name];
+    layer.levelName = name;
+	
+	// add layer as a child to scene
+	[scene addChild: layer];
+	
+	// return the scene
+	return scene;
+}
+
+#pragma mark levels list selection
+NSArray *levelsList;
+- (void) scanFileToLoad {
+    NSString * resourcePath = [[NSBundle mainBundle] resourcePath];
+    NSString * levelsPath = [resourcePath stringByAppendingPathComponent:@"Levels"];
+    
+    NSError * error;
+    levelsList = [[NSFileManager defaultManager] contentsOfDirectoryAtPath:levelsPath error:&error];
+    [levelsList retain];
+    
+    NSLog(@"levels: %@", levelsList);
+    
+    SBTableAlert *alert;
+    alert	= [[SBTableAlert alloc] initWithTitle:@"Single Select" cancelButtonTitle:@"Cancel" messageFormat:nil];
+    [alert.view setTag:1];
+    [alert setDelegate:self];
+	[alert setDataSource:self];
+	
+	[alert show];
+}
+
+#pragma mark Table view methods
+#pragma mark - SBTableAlertDataSource
+
+- (UITableViewCell *)tableAlert:(SBTableAlert *)tableAlert cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+	UITableViewCell *cell;
+	
+	if (tableAlert.view.tag == 0 || tableAlert.view.tag == 1) {
+		cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:nil] autorelease];
+	} else {
+		// Note: SBTableAlertCell
+		cell = [[[SBTableAlertCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:nil] autorelease];
+	}
+	
+	[cell.textLabel setText:[NSString stringWithFormat:@"%@", [levelsList objectAtIndex:[indexPath row]]]];
+	
+	return cell;
+}
+
+- (NSInteger)tableAlert:(SBTableAlert *)tableAlert numberOfRowsInSection:(NSInteger)section {
+    return [levelsList count];
+}
+
+- (NSInteger)numberOfSectionsInTableAlert:(SBTableAlert *)tableAlert {
+		return 1;
+}
+
+- (NSString *)tableAlert:(SBTableAlert *)tableAlert titleForHeaderInSection:(NSInteger)section {
+    return @"levels";
+}
+
+#pragma mark - SBTableAlertDelegate
+
+- (void)tableAlert:(SBTableAlert *)tableAlert didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    NSString* levelNameSelected = [NSString stringWithFormat:@"Levels/%@", [levelsList objectAtIndex:[indexPath row]]];
+    levelNameSelected = [[levelNameSelected componentsSeparatedByString:@"."] objectAtIndex:0];
+    
+    [[CCDirector sharedDirector] replaceScene:[CCTransitionFade transitionWithDuration:1.0 scene:[HelloWorldLayer sceneWithLevel:levelNameSelected] ]];
+}
+
+- (void)tableAlert:(SBTableAlert *)tableAlert didDismissWithButtonIndex:(NSInteger)buttonIndex {
+	NSLog(@"Dismissed: %i", buttonIndex);
+	
+	[tableAlert release];
+}
+
+#pragma mark level init
+
+- (id) init
+{
+    if( (self=[self initWithName:@"Levels/level06"])) {
+        
+    }
+	return self;
+}
+
+- (id) initWithName:(NSString*)name
 {
 	if( (self=[super init])) {
 		
@@ -118,11 +213,14 @@ NSMutableArray* allStars;
 		
 		// init physics
 		[self initPhysics];
+        
+        // For testing to load scene
+//        [self scanFileToLoad];
     
         
         //create a LevelHelperLoader object that has the data of the specified level
         [LevelHelperLoader dontStretchArt];
-        loader = [[LevelHelperLoader alloc] initWithContentOfFile:@"Levels/level06"];
+        loader = [[LevelHelperLoader alloc] initWithContentOfFile:name];
         
         //create all objects from the level file and adds them to the cocos2d layer (self)
         [loader addObjectsToWorld:world cocos2dLayer:self];
@@ -653,7 +751,12 @@ NSMutableArray* ballSprites;
 {
     for( UITouch *touch in touches ) {
         [self spawnTouchStart:touch];
+        
+        if (touch.tapCount >= 2) {
+            [self scanFileToLoad];
+        }
     }
+    
 }
 
 - (void)ccTouchesMoved:(NSSet *)touches withEvent:(UIEvent *)event

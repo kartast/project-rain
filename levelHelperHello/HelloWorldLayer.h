@@ -14,6 +14,8 @@
 #import "Box2D.h"
 #import "GLES-Render.h"
 
+// Custom alert view with table
+#import "SBTableAlert.h"
 
 
 //Pixel to metres ratio. Box2D uses metres as the unit for measurement.
@@ -26,7 +28,7 @@
 @class GameObjectGoal;
 
 // HelloWorldLayer
-@interface HelloWorldLayer : CCLayer <GKAchievementViewControllerDelegate, GKLeaderboardViewControllerDelegate>
+@interface HelloWorldLayer : CCLayer <GKAchievementViewControllerDelegate, GKLeaderboardViewControllerDelegate, SBTableAlertDelegate, SBTableAlertDataSource>
 {
 	CCTexture2D *spriteTexture_;	// weak ref
 	b2World* world;					// strong ref
@@ -36,10 +38,17 @@
     BOOL bTouched;
     b2Vec2* startingPos;
     b2Vec2* startingVel;
+    
+    NSString* levelName;
 }
+
+@property (nonatomic, retain) NSString* levelName;
+
+- (id) initWithName:(NSString*)name;
 
 // returns a CCScene that contains the HelloWorldLayer as the only child
 +(CCScene *) scene;
++(CCScene *) sceneWithLevel:(NSString*) levelName;
 
 @end
 
