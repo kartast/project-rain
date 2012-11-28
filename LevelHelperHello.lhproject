@@ -46,6 +46,8 @@
 				<false/>
 				<key>isRotating</key>
 				<false/>
+				<key>spawnMax</key>
+				<real>1</real>
 			</dict>
 		</dict>
 	</array>

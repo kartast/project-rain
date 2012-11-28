@@ -11,6 +11,7 @@
 @synthesize isAbsorb;
 @synthesize isRotating;
 @synthesize isAmplify;
+@synthesize spawnMax;
 @synthesize isMoving;
 
 
@@ -47,6 +48,9 @@ return NSStringFromClass([self class]);
 
 	if([dictionary objectForKey:@"isAmplify"])
 		[self setIsAmplify:[[dictionary objectForKey:@"isAmplify"] boolValue]];
+
+	if([dictionary objectForKey:@"spawnMax"])
+		[self setSpawnMax:[[dictionary objectForKey:@"spawnMax"] floatValue]];
 
 	if([dictionary objectForKey:@"isMoving"])
 		[self setIsMoving:[[dictionary objectForKey:@"isMoving"] boolValue]];

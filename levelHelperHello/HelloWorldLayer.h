@@ -40,6 +40,7 @@
     b2Vec2* startingVel;
     
     NSString* levelName;
+    NSMutableArray *trajectorySprites;
 }
 
 @property (nonatomic, retain) NSString* levelName;

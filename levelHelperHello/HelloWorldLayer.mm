@@ -325,7 +325,7 @@ NSArray *levelsList;
     if (isAmplify) {
         // amplify ball velocity twice;
         b2Vec2 velocity = ballSprite.body->GetLinearVelocity();
-        velocity *= 0.05;
+        velocity *= fAmplifyMult;
         ballSprite.body->ApplyLinearImpulse(velocity, ballSprite.body->GetWorldCenter());
     }
     
@@ -333,7 +333,7 @@ NSArray *levelsList;
     bool isAbsorb = [(SpriteInfo*)[blockSprite userInfo] isAbsorb];
     if (isAbsorb) {
         b2Vec2 velocity = ballSprite.body->GetLinearVelocity();
-        velocity *= 0.6;
+        velocity *= fDampMult;
 //        ballSprite.body->ApplyLinearImpulse(velocity, ballSprite.body->GetWorldCenter());
         ballSprite.body->SetLinearVelocity(velocity);
     }
@@ -665,7 +665,7 @@ NSMutableDictionary *goalInfo;
 #pragma mark --
 #pragma mark trajectory prediction
 static int nMaxTrajectoryPoints = 10;
-NSMutableArray *trajectorySprites;
+
 
 b2Vec2 getTrajectoryPoint( b2Vec2& startingPosition, b2Vec2& startingVelocity, float n , b2World* world)
 {
@@ -901,6 +901,20 @@ CGFloat DistanceBetweenTwoPoints(CGPoint point1,CGPoint point2)
     else if ((color%3)==2) {
         mySprite = [loader createSpriteWithName:@"ball_yellow" fromSheet:@"UntitledSheet" fromSHFile:@"game_images" tag:BALL];
         [mySprite transformPosition:pos];
+    }
+    
+    // Limit spawn vel
+    float fCurrVel = sqrtf(direct.x*direct.x + direct.y*direct.y);
+    
+    NSLog(@" vel = %f, %f,%f", fCurrVel, direct.x, direct.y);
+    if (fCurrVel > spawnVelMax) {
+        float multiplier = spawnVelMax / fCurrVel;
+        direct.x *= multiplier;
+        direct.y *= multiplier;
+        
+        fCurrVel = sqrtf(direct.x*direct.x + direct.y*direct.y);
+        
+        NSLog(@"reduced vel = %f, %f,%f", fCurrVel, direct.x, direct.y);
     }
     
     [mySprite body]->SetLinearVelocity(b2Vec2(direct.x, direct.y));

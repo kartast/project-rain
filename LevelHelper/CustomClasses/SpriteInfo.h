@@ -10,6 +10,7 @@
 	BOOL isAbsorb;
 	BOOL isRotating;
 	BOOL isAmplify;
+	float spawnMax;
 	BOOL isMoving;
 
 
@@ -24,6 +25,7 @@
 @property BOOL isAbsorb;
 @property BOOL isRotating;
 @property BOOL isAmplify;
+@property float spawnMax;
 @property BOOL isMoving;
 
 +(SpriteInfo*) customClassInstance;
