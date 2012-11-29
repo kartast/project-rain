@@ -41,6 +41,9 @@
     
     NSString* levelName;
     NSMutableArray *trajectorySprites;
+    NSArray *levelsList;
+
+    NSMutableArray* allStars;
 }
 
 @property (nonatomic, retain) NSString* levelName;

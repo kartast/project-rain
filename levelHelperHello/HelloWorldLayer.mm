@@ -26,8 +26,7 @@ enum {
 	kTagParentNode = 1,
 };
 
-#pragma mark - spawn touches
-
+#pragma mark - spawn touches class`
 @interface SpawnTouches: NSObject
 {
     UITouch*    touch;
@@ -39,12 +38,9 @@ enum {
 @property (nonatomic, readwrite) CGPoint endPoint;
 @end
 
-NSMutableArray* allStars;
 
 @implementation SpawnTouches
 @synthesize touch, startPoint, endPoint;
-
-
 @end
 
 #pragma mark - HelloWorldLayer
@@ -87,7 +83,6 @@ NSMutableArray* allStars;
 }
 
 #pragma mark levels list selection
-NSArray *levelsList;
 - (void) scanFileToLoad {
     NSString * resourcePath = [[NSBundle mainBundle] resourcePath];
     NSString * levelsPath = [resourcePath stringByAppendingPathComponent:@"Levels"];
@@ -138,7 +133,6 @@ NSArray *levelsList;
 }
 
 #pragma mark - SBTableAlertDelegate
-
 - (void)tableAlert:(SBTableAlert *)tableAlert didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     NSString* levelNameSelected = [NSString stringWithFormat:@"Levels/%@", [levelsList objectAtIndex:[indexPath row]]];
     levelNameSelected = [[levelNameSelected componentsSeparatedByString:@"."] objectAtIndex:0];
@@ -148,7 +142,6 @@ NSArray *levelsList;
 
 - (void)tableAlert:(SBTableAlert *)tableAlert didDismissWithButtonIndex:(NSInteger)buttonIndex {
 	NSLog(@"Dismissed: %i", buttonIndex);
-	
 	[tableAlert release];
 }
 
@@ -156,8 +149,8 @@ NSArray *levelsList;
 
 - (id) init
 {
+    // Load level 6 by default
     if( (self=[self initWithName:@"Levels/level06"])) {
-        
     }
 	return self;
 }
@@ -166,18 +159,12 @@ NSArray *levelsList;
 {
 	if( (self=[super init])) {
 		
-		// enable events
-		
 		self.isTouchEnabled = YES;
 		self.isAccelerometerEnabled = YES;
 //		CGSize s = [CCDirector sharedDirector].winSize;
 		
 		// init physics
-		[self initPhysics];
-        
-        // For testing to load scene
-//        [self scanFileToLoad];
-    
+		[self initPhysics];    
         
         //create a LevelHelperLoader object that has the data of the specified level
         [LevelHelperLoader dontStretchArt];
@@ -192,25 +179,8 @@ NSArray *levelsList;
             //if it does, it will create the physic boundaries
             [loader createPhysicBoundaries:world]; 
         }
-        
-        // Setup collision detection
-        [loader useLevelHelperCollisionHandling];//necessary or else collision in LevelHelper will not be performed
-        
-        [loader registerBeginOrEndCollisionCallbackBetweenTagA:BALL andTagB:BLOCK_BLACK idListener:self selListener:@selector(beginEndCollisionBetweenBallAndBlackBlock:)];
-        [loader registerBeginOrEndCollisionCallbackBetweenTagA:BALL andTagB:BLOCK_RED idListener:self selListener:@selector(beginEndCollisionBetweenBallAndRedBlock:)];
-        [loader registerBeginOrEndCollisionCallbackBetweenTagA:BALL andTagB:BLOCK_YELLOW idListener:self selListener:@selector(beginEndCollisionBetweenBallAndYellowBlock:)];
-        [loader registerBeginOrEndCollisionCallbackBetweenTagA:BALL andTagB:BLOCK_GREEN idListener:self selListener:@selector(beginEndCollisionBetweenBallAndGreenBlock:)];
-        [loader registerBeginOrEndCollisionCallbackBetweenTagA:BALL andTagB:BLOCK_BLUE idListener:self selListener:@selector(beginEndCollisionBetweenBallAndBlueBlock:)];
-        
-        // Setup goal collision
-        [loader registerBeginOrEndCollisionCallbackBetweenTagA:BALL andTagB:GOAL_YELLOW idListener:self selListener:@selector(collisionBallAndGoalYellow:)];
-        
-        // Setup star collision
-        [loader registerBeginOrEndCollisionCallbackBetweenTagA:BALL andTagB:STAR_YELLOW idListener:self selListener:@selector(collisionBallAndStar:)];
-        [loader registerBeginOrEndCollisionCallbackBetweenTagA:BALL andTagB:STAR_RED idListener:self selListener:@selector(collisionBallAndStar:)];
-        [loader registerBeginOrEndCollisionCallbackBetweenTagA:BALL andTagB:STAR_GREEN idListener:self selListener:@selector(collisionBallAndStar:)];
-        [loader registerBeginOrEndCollisionCallbackBetweenTagA:BALL andTagB:STAR_BLUE idListener:self selListener:@selector(collisionBallAndStar:)];
-        [loader registerBeginOrEndCollisionCallbackBetweenTagA:BALL andTagB:STAR_BLACK idListener:self selListener:@selector(collisionBallAndStar:)];
+
+        [self registerCollisions];
         
         // do level setup
         [self setupLevel];
@@ -234,6 +204,26 @@ NSArray *levelsList;
 
 #pragma mark -- 
 #pragma mark Handle collision
+- (void) registerCollisions {
+        // Setup collision detection
+        [loader useLevelHelperCollisionHandling];//necessary or else collision in LevelHelper will not be performed
+        
+        [loader registerBeginOrEndCollisionCallbackBetweenTagA:BALL andTagB:BLOCK_BLACK idListener:self selListener:@selector(beginEndCollisionBetweenBallAndBlackBlock:)];
+        [loader registerBeginOrEndCollisionCallbackBetweenTagA:BALL andTagB:BLOCK_RED idListener:self selListener:@selector(beginEndCollisionBetweenBallAndRedBlock:)];
+        [loader registerBeginOrEndCollisionCallbackBetweenTagA:BALL andTagB:BLOCK_YELLOW idListener:self selListener:@selector(beginEndCollisionBetweenBallAndYellowBlock:)];
+        [loader registerBeginOrEndCollisionCallbackBetweenTagA:BALL andTagB:BLOCK_GREEN idListener:self selListener:@selector(beginEndCollisionBetweenBallAndGreenBlock:)];
+        [loader registerBeginOrEndCollisionCallbackBetweenTagA:BALL andTagB:BLOCK_BLUE idListener:self selListener:@selector(beginEndCollisionBetweenBallAndBlueBlock:)];
+        
+        // Setup goal collision
+        [loader registerBeginOrEndCollisionCallbackBetweenTagA:BALL andTagB:GOAL_YELLOW idListener:self selListener:@selector(collisionBallAndGoalYellow:)];
+        
+        // Setup star collision
+        [loader registerBeginOrEndCollisionCallbackBetweenTagA:BALL andTagB:STAR_YELLOW idListener:self selListener:@selector(collisionBallAndStar:)];
+        [loader registerBeginOrEndCollisionCallbackBetweenTagA:BALL andTagB:STAR_RED idListener:self selListener:@selector(collisionBallAndStar:)];
+        [loader registerBeginOrEndCollisionCallbackBetweenTagA:BALL andTagB:STAR_GREEN idListener:self selListener:@selector(collisionBallAndStar:)];
+        [loader registerBeginOrEndCollisionCallbackBetweenTagA:BALL andTagB:STAR_BLUE idListener:self selListener:@selector(collisionBallAndStar:)];
+        [loader registerBeginOrEndCollisionCallbackBetweenTagA:BALL andTagB:STAR_BLACK idListener:self selListener:@selector(collisionBallAndStar:)];
+}
 /*
  -----------------------------
     Handle collision start
@@ -241,7 +231,6 @@ NSArray *levelsList;
  */
 -(void) beginEndCollisionBetweenBallAndBlackBlock:(LHContactInfo*)contact
 {
-    
     LHSprite* ballSprite = [contact spriteA];
     [ballSprite setFrame:1];
     [self handleCollisionEffect:contact];
@@ -263,7 +252,6 @@ NSArray *levelsList;
 
 -(void) beginEndCollisionBetweenBallAndYellowBlock:(LHContactInfo*)contact
 {
-
     LHSprite* ballSprite = [contact spriteA];
     [ballSprite setFrame:4];
     [self handleCollisionEffect:contact];
@@ -336,15 +324,7 @@ NSMutableDictionary *goalInfo;
 
 -(void) setupLevel
 {
-    // set all goal frame to 4
-//    NSArray* spritesGoalYellow = [loader spritesWithTag:GOAL_YELLOW];
-//    
-//    for (LHSprite *sprite in spritesGoalYellow) {
-//        [sprite setFrame:GOAL_NEUTRAL_FRAME_INDEX];
-//        [self goalAddSprite:sprite];
-//    }
     [self findStars];
-    
     
     // setup physics boundary
     if([loader hasPhysicBoundaries])
@@ -546,17 +526,6 @@ NSMutableDictionary *goalInfo;
 	b2Vec2 gravity;
 	gravity.Set(0.0f, -10.0f);
 	world = new b2World(gravity);
-	
-//	
-//	// Do we want to let bodies sleep?
-//	world->SetAllowSleeping(true);
-//	
-//	world->SetContinuousPhysics(true);
-//	
-//	m_debugDraw = new GLESDebugDraw( PTM_RATIO ;
-//	world->SetDebugDraw(m_debugDraw);
-//	
-
 }
 
 -(void) draw
@@ -626,7 +595,6 @@ NSMutableDictionary *goalInfo;
 #pragma mark --
 #pragma mark trajectory prediction
 static int nMaxTrajectoryPoints = 10;
-
 
 b2Vec2 getTrajectoryPoint( b2Vec2& startingPosition, b2Vec2& startingVelocity, float n , b2World* world)
 {
@@ -800,7 +768,6 @@ CGFloat DistanceBetweenTwoPoints(CGPoint point1,CGPoint point2)
         }else {
             direct = ccp(0, 0);
         }
-        
         
 		CGPoint location = start;
 
