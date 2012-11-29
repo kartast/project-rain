@@ -22,43 +22,6 @@
 #import "b2WorldCallbacks.h"
 #import "Trajectories.h"
 
-
-
-//-------------------
-// Class TrajectoryRayCastClosestCallback
-//-------------------
-#ifndef DEGTORAD
-#define DEGTORAD 0.0174532925199432957f
-#define RADTODEG 57.295779513082320876f
-#endif
-
-// This callback finds the closest hit, optionally ignoring one particular body
-class TrajectoryRayCastClosestCallback : public b2RayCastCallback
-{
-public:
-    TrajectoryRayCastClosestCallback(b2Body* ignoreBody) : m_hit(false), m_ignoreBody(ignoreBody) {}
-    TrajectoryRayCastClosestCallback() : m_hit(false) {}
-    
-    float32 ReportFixture(b2Fixture* fixture, const b2Vec2& point, const b2Vec2& normal, float32 fraction)
-    {
-        if ( fixture->GetBody() == m_ignoreBody )
-            return -1;
-        
-        m_hit = true;
-        m_point = point;
-        m_normal = normal;
-        return fraction;
-    }
-    
-    b2Body* m_ignoreBody;
-    bool m_hit;
-    b2Vec2 m_point;
-    b2Vec2 m_normal;
-};
-//-------------------
-// End of Class TrajectoryRayCastClosestCallback
-//-------------------
-
 enum {
 	kTagParentNode = 1,
 };
@@ -75,8 +38,6 @@ enum {
 @property (nonatomic, readwrite) CGPoint startPoint;
 @property (nonatomic, readwrite) CGPoint endPoint;
 @end
-
-
 
 NSMutableArray* allStars;
 
