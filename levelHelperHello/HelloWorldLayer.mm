@@ -32,15 +32,17 @@ enum {
     UITouch*    touch;
     CGPoint     startPoint;
     CGPoint     endPoint;
+    GameObjectSpawner* spawnObject;
 }
 @property (nonatomic, retain) UITouch* touch;
+@property (nonatomic, retain) GameObjectSpawner* spawnObject;
 @property (nonatomic, readwrite) CGPoint startPoint;
 @property (nonatomic, readwrite) CGPoint endPoint;
 @end
 
 
 @implementation SpawnTouches
-@synthesize touch, startPoint, endPoint;
+@synthesize touch, startPoint, endPoint, spawnObject;
 @end
 
 #pragma mark - HelloWorldLayer
@@ -325,6 +327,7 @@ NSMutableDictionary *goalInfo;
 -(void) setupLevel
 {
     [self findStars];
+    [self findStartAreas];
     
     // setup physics boundary
     if([loader hasPhysicBoundaries])
@@ -334,6 +337,23 @@ NSMutableDictionary *goalInfo;
     
     // gravity 0.6 times
     world->SetGravity(b2Vec2(world->GetGravity().x * gravityMult, world->GetGravity().y * gravityMult));
+}
+
+- (void) findStartAreas {
+    NSArray* startAreaSprites = [loader spritesWithTag:START_AREA];
+    
+    if (!allStartAreas) {
+        allStartAreas = [[NSMutableArray alloc] init];
+    }
+    
+    for (LHSprite* sprite in startAreaSprites) {
+        int nMaxSpawn = [(SpriteInfo*)[sprite userInfo] spawnMax];
+        
+        GameObjectSpawner* spawnerObject = [[GameObjectSpawner alloc] init];
+        spawnerObject.sprite = sprite;
+        [spawnerObject setNSpawnMax:nMaxSpawn];
+        [allStartAreas addObject:spawnerObject];
+    }
 }
 
 
@@ -716,19 +736,38 @@ CGFloat DistanceBetweenTwoPoints(CGPoint point1,CGPoint point2)
     return sqrt(dx*dx + dy*dy );
 };
 
-- (CGPoint)getStartAreaCenterNearest:(CGPoint)touchPt
+- (GameObjectSpawner*)getStartAreaCenterNearest:(CGPoint)touchPt
 {
     NSArray* startAreas = [loader spritesWithTag:START_AREA];
     touchPt = [[CCDirector sharedDirector] convertToGL: touchPt];
     
-    for (LHSprite *startAreaSprite in startAreas ) {
+//    for (LHSprite *startAreaSprite in startAreas ) {
+//        CGRect boundingBox = [startAreaSprite boundingBox];
+//        if (CGRectContainsPoint(boundingBox, touchPt)) {
+//            return [[CCDirector sharedDirector] convertToUI:startAreaSprite.position];
+//            break;
+//        }
+//    }
+    
+    for (GameObjectSpawner *startAreaObject in allStartAreas ) {
+        LHSprite* startAreaSprite = [startAreaObject sprite];
         CGRect boundingBox = [startAreaSprite boundingBox];
+        
+        // make sure the maxspawn count bigger than 0
+        if (startAreaObject.nSpawnMax <= 0) {
+            continue;
+        }
+        
         if (CGRectContainsPoint(boundingBox, touchPt)) {
-            return [[CCDirector sharedDirector] convertToUI:startAreaSprite.position];
+            startAreaObject.nSpawnMax -= 1;
+//            return [[CCDirector sharedDirector] convertToUI:startAreaSprite.position];
+            return startAreaObject;
             break;
         }
     }
-    return CGPointMake(-1, -1);
+    
+//    return CGPointMake(-1, -1);
+    return nil;
 }
 
 - (void)spawnTouchStart:(UITouch*)touch
@@ -738,12 +777,17 @@ CGFloat DistanceBetweenTwoPoints(CGPoint point1,CGPoint point2)
     }
 
     // Should ignore touch?
-    CGPoint startAreaTouched = [self getStartAreaCenterNearest:[touch locationInView: [touch view]]];
-    if (startAreaTouched.x == -1 && startAreaTouched.y == -1) {
+//    CGPoint startAreaTouched = [self getStartAreaCenterNearest:[touch locationInView: [touch view]]];
+    GameObjectSpawner* spawnGameObject = [self getStartAreaCenterNearest:[touch locationInView: [touch view]]];
+    if (spawnGameObject == nil) {
         return;
     }
     
+    LHSprite* sprite = spawnGameObject.sprite;
+    CGPoint startAreaTouched = [[CCDirector sharedDirector] convertToUI:sprite.position];
+    
     SpawnTouches* spawnTouch = [[SpawnTouches alloc] init];
+    [spawnTouch setSpawnObject:spawnGameObject];
     [spawnTouch setTouch:touch];
     [spawnTouch setStartPoint:startAreaTouched];
     [pendingSpawners addObject:spawnTouch];
@@ -778,15 +822,19 @@ CGFloat DistanceBetweenTwoPoints(CGPoint point1,CGPoint point2)
         [loc setValue:[NSNumber numberWithFloat:direct.y] forKey:@"vely"];
         [loc setValue:[NSNumber numberWithInteger:nColorIndex] forKey:@"colorIndex"];
         
-
         nColorIndex++;
 
         if(bEnded){
                 NSLog(@"touch end called start:%f,%f end:%f,%f direction:%f,%f", start.x, start.y, end.x, end.y, direct.x, direct.y);
             [pendingSpawners removeObject:spawnTouch];
             [self trySpawnRainAtPosition:loc];
-            
             [self clearTrajectory];
+            
+            GameObjectSpawner* spawnObject = [spawnTouch spawnObject];
+            if (spawnObject.nSpawnMax<=0) {
+                LHSprite* sprite = [spawnObject sprite];
+                [sprite setOpacity:0.0];
+            }
         }
         else {
             // draw trajectory

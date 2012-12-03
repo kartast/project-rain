@@ -16,7 +16,7 @@
 
 // Custom alert view with table
 #import "SBTableAlert.h"
-
+#import "GameObjectSpawner.h"
 
 //Pixel to metres ratio. Box2D uses metres as the unit for measurement.
 //This ratio defines how many pixels correspond to 1 Box2D "metre"
@@ -44,6 +44,7 @@
     NSArray *levelsList;
 
     NSMutableArray* allStars;
+    NSMutableArray* allStartAreas;
 }
 
 @property (nonatomic, retain) NSString* levelName;
