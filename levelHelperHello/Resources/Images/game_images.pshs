@@ -815,10 +815,10 @@
 								<key>Fixture</key>
 								<array>
 									<array>
-										<string>{-13, -12}</string>
-										<string>{12, -12}</string>
-										<string>{12, 13}</string>
-										<string>{-13, 13}</string>
+										<string>{-12.5, -12.5}</string>
+										<string>{12.5, -12.5}</string>
+										<string>{12.5, 12.5}</string>
+										<string>{-12.5, 12.5}</string>
 									</array>
 								</array>
 								<key>Friction</key>
@@ -838,7 +838,7 @@
 								<key>LHHeight</key>
 								<real>25</real>
 								<key>LHShapePositionOffset</key>
-								<string>{-13, -13}</string>
+								<string>{-12.5, -12.5}</string>
 								<key>LHWidth</key>
 								<real>25</real>
 								<key>Mask</key>
@@ -892,9 +892,9 @@
 						<key>FlipY</key>
 						<false/>
 						<key>Frame</key>
-						<string>{{172, 294}, {26, 26}}</string>
+						<string>{{172, 294}, {25, 25}}</string>
 						<key>Frame-HD</key>
-						<string>{{344, 588}, {52, 52}}</string>
+						<string>{{344, 588}, {50, 50}}</string>
 						<key>Image</key>
 						<string>game_images_UntitledSheet.png</string>
 						<key>Image-HD</key>
@@ -916,15 +916,15 @@
 						<key>OriginalImage_RelativePath</key>
 						<string>../../../../../Pictures/rainbow%20hole/block_blue.png/</string>
 						<key>OriginalRect</key>
-						<string>{{0, 0}, {52, 52}}</string>
+						<string>{{0, 0}, {50, 50}}</string>
 						<key>OriginalSize</key>
-						<string>{52, 52}</string>
+						<string>{50, 50}</string>
 						<key>Position</key>
 						<string>{344, 588}</string>
 						<key>Scale</key>
 						<string>{1, 1}</string>
 						<key>SpriteSize</key>
-						<string>{26, 26}</string>
+						<string>{25, 25}</string>
 						<key>SpriteWasBreaked</key>
 						<false/>
 						<key>Tag</key>
@@ -973,10 +973,10 @@
 								<key>Fixture</key>
 								<array>
 									<array>
-										<string>{-13, -12}</string>
-										<string>{12, -12}</string>
-										<string>{12, 13}</string>
-										<string>{-13, 13}</string>
+										<string>{-12.5, -12.5}</string>
+										<string>{12.5, -12.5}</string>
+										<string>{12.5, 12.5}</string>
+										<string>{-12.5, 12.5}</string>
 									</array>
 								</array>
 								<key>Friction</key>
@@ -996,7 +996,7 @@
 								<key>LHHeight</key>
 								<real>25</real>
 								<key>LHShapePositionOffset</key>
-								<string>{-13, -13}</string>
+								<string>{-12.5, -12.5}</string>
 								<key>LHWidth</key>
 								<real>25</real>
 								<key>Mask</key>
@@ -1050,9 +1050,9 @@
 						<key>FlipY</key>
 						<false/>
 						<key>Frame</key>
-						<string>{{200, 266}, {26, 26}}</string>
+						<string>{{200, 266}, {25, 25}}</string>
 						<key>Frame-HD</key>
-						<string>{{400, 532}, {52, 52}}</string>
+						<string>{{400, 532}, {50, 50}}</string>
 						<key>Image</key>
 						<string>game_images_UntitledSheet.png</string>
 						<key>Image-HD</key>
@@ -1074,15 +1074,15 @@
 						<key>OriginalImage_RelativePath</key>
 						<string>../../../../../Pictures/rainbow%20hole/block_darkblue.png/</string>
 						<key>OriginalRect</key>
-						<string>{{0, 0}, {52, 52}}</string>
+						<string>{{0, 0}, {50, 50}}</string>
 						<key>OriginalSize</key>
-						<string>{52, 52}</string>
+						<string>{50, 50}</string>
 						<key>Position</key>
 						<string>{400, 532}</string>
 						<key>Scale</key>
 						<string>{1, 1}</string>
 						<key>SpriteSize</key>
-						<string>{26, 26}</string>
+						<string>{25, 25}</string>
 						<key>SpriteWasBreaked</key>
 						<false/>
 						<key>Tag</key>
@@ -1131,10 +1131,10 @@
 								<key>Fixture</key>
 								<array>
 									<array>
-										<string>{-13, -12}</string>
-										<string>{12, -12}</string>
-										<string>{12, 13}</string>
-										<string>{-13, 13}</string>
+										<string>{-12.5, -12.5}</string>
+										<string>{12.5, -12.5}</string>
+										<string>{12.5, 12.5}</string>
+										<string>{-12.5, 12.5}</string>
 									</array>
 								</array>
 								<key>Friction</key>
@@ -1154,7 +1154,7 @@
 								<key>LHHeight</key>
 								<real>25</real>
 								<key>LHShapePositionOffset</key>
-								<string>{-13, -13}</string>
+								<string>{-12.5, -12.5}</string>
 								<key>LHWidth</key>
 								<real>25</real>
 								<key>Mask</key>
@@ -1208,9 +1208,9 @@
 						<key>FlipY</key>
 						<false/>
 						<key>Frame</key>
-						<string>{{0, 338}, {26, 26}}</string>
+						<string>{{0, 338}, {25, 25}}</string>
 						<key>Frame-HD</key>
-						<string>{{0, 676}, {52, 52}}</string>
+						<string>{{0, 676}, {50, 50}}</string>
 						<key>Image</key>
 						<string>game_images_UntitledSheet.png</string>
 						<key>Image-HD</key>
@@ -1232,15 +1232,15 @@
 						<key>OriginalImage_RelativePath</key>
 						<string>../../../../../Pictures/rainbow%20hole/block_green.png/</string>
 						<key>OriginalRect</key>
-						<string>{{0, 0}, {52, 52}}</string>
+						<string>{{0, 0}, {50, 50}}</string>
 						<key>OriginalSize</key>
-						<string>{52, 52}</string>
+						<string>{50, 50}</string>
 						<key>Position</key>
 						<string>{0, 676}</string>
 						<key>Scale</key>
 						<string>{1, 1}</string>
 						<key>SpriteSize</key>
-						<string>{26, 26}</string>
+						<string>{25, 25}</string>
 						<key>SpriteWasBreaked</key>
 						<false/>
 						<key>Tag</key>
@@ -1289,10 +1289,10 @@
 								<key>Fixture</key>
 								<array>
 									<array>
-										<string>{-13, -12}</string>
-										<string>{12, -12}</string>
-										<string>{12, 13}</string>
-										<string>{-13, 13}</string>
+										<string>{-12.5, -12.5}</string>
+										<string>{12.5, -12.5}</string>
+										<string>{12.5, 12.5}</string>
+										<string>{-12.5, 12.5}</string>
 									</array>
 								</array>
 								<key>Friction</key>
@@ -1312,7 +1312,7 @@
 								<key>LHHeight</key>
 								<real>25</real>
 								<key>LHShapePositionOffset</key>
-								<string>{-13, -13}</string>
+								<string>{-12.5, -12.5}</string>
 								<key>LHWidth</key>
 								<real>25</real>
 								<key>Mask</key>
@@ -1366,9 +1366,9 @@
 						<key>FlipY</key>
 						<false/>
 						<key>Frame</key>
-						<string>{{200, 294}, {26, 26}}</string>
+						<string>{{200, 294}, {25, 25}}</string>
 						<key>Frame-HD</key>
-						<string>{{400, 588}, {52, 52}}</string>
+						<string>{{400, 588}, {50, 50}}</string>
 						<key>Image</key>
 						<string>game_images_UntitledSheet.png</string>
 						<key>Image-HD</key>
@@ -1390,15 +1390,15 @@
 						<key>OriginalImage_RelativePath</key>
 						<string>../../../../../Pictures/rainbow%20hole/block_red.png/</string>
 						<key>OriginalRect</key>
-						<string>{{0, 0}, {52, 52}}</string>
+						<string>{{0, 0}, {50, 50}}</string>
 						<key>OriginalSize</key>
-						<string>{52, 52}</string>
+						<string>{50, 50}</string>
 						<key>Position</key>
 						<string>{400, 588}</string>
 						<key>Scale</key>
 						<string>{1, 1}</string>
 						<key>SpriteSize</key>
-						<string>{26, 26}</string>
+						<string>{25, 25}</string>
 						<key>SpriteWasBreaked</key>
 						<false/>
 						<key>Tag</key>
@@ -1447,10 +1447,10 @@
 								<key>Fixture</key>
 								<array>
 									<array>
-										<string>{-13, -12}</string>
-										<string>{12, -12}</string>
-										<string>{12, 13}</string>
-										<string>{-13, 13}</string>
+										<string>{-12.5, -12.5}</string>
+										<string>{12.5, -12.5}</string>
+										<string>{12.5, 12.5}</string>
+										<string>{-12.5, 12.5}</string>
 									</array>
 								</array>
 								<key>Friction</key>
@@ -1470,7 +1470,7 @@
 								<key>LHHeight</key>
 								<real>25</real>
 								<key>LHShapePositionOffset</key>
-								<string>{-13, -13}</string>
+								<string>{-12.5, -12.5}</string>
 								<key>LHWidth</key>
 								<real>25</real>
 								<key>Mask</key>
@@ -1524,9 +1524,9 @@
 						<key>FlipY</key>
 						<false/>
 						<key>Frame</key>
-						<string>{{140, 330}, {26, 26}}</string>
+						<string>{{140, 330}, {25, 25}}</string>
 						<key>Frame-HD</key>
-						<string>{{280, 660}, {52, 52}}</string>
+						<string>{{280, 660}, {50, 50}}</string>
 						<key>Image</key>
 						<string>game_images_UntitledSheet.png</string>
 						<key>Image-HD</key>
@@ -1548,15 +1548,15 @@
 						<key>OriginalImage_RelativePath</key>
 						<string>../../../../../Pictures/rainbow%20hole/block_yellow.png/</string>
 						<key>OriginalRect</key>
-						<string>{{0, 0}, {52, 52}}</string>
+						<string>{{0, 0}, {50, 50}}</string>
 						<key>OriginalSize</key>
-						<string>{52, 52}</string>
+						<string>{50, 50}</string>
 						<key>Position</key>
 						<string>{280, 660}</string>
 						<key>Scale</key>
 						<string>{1, 1}</string>
 						<key>SpriteSize</key>
-						<string>{26, 26}</string>
+						<string>{25, 25}</string>
 						<key>SpriteWasBreaked</key>
 						<false/>
 						<key>Tag</key>
@@ -6781,6 +6781,38 @@
 				</dict>
 				<key>star_green</key>
 				<dict>
+					<key>DocumentSecurityImageBookmark</key>
+					<data>
+					Ym9vawgDAAAAAAQQMAAAAHZwiCNYr3VWSBfw
+					30w6UdTWyGbuC9X54lgdQ5Z4HhmH7AEAAAUA
+					AAABAQAAVXNlcnMAAAAIAAAAAQEAAGthcnRh
+					MDIyCAAAAAEBAABQaWN0dXJlcwwAAAABAQAA
+					cmFpbmJvdyBob2xlDgAAAAEBAABzdGFyX2dy
+					ZWVuLnBuZwAAFAAAAAEGAAAEAAAAFAAAACQA
+					AAA0AAAASAAAAAgAAAAEAwAAMb8AAAAAAAAI
+					AAAABAMAAIwBBQAAAAAACAAAAAQDAABWAgUA
+					AAAAAAgAAAAEAwAAMQvTBQAAAAAIAAAABAMA
+					AJRpFwYAAAAAFAAAAAEGAAB8AAAAjAAAAJwA
+					AACsAAAAvAAAAAgAAAAABAAAQbZbTHEAAAAY
+					AAAAAQIAAAEAAAAAAAAADwAAAAAAAAAAAAAA
+					AAAAAAAAAAABBQAABAAAAAMDAAAGAAAABAAA
+					AAMDAAADAAAACAAAAAQDAAADAAAAAAAAAAQA
+					AAADAwAA9QEAAAwAAAABAQAATWFjaW50b3No
+					IEhECAAAAAQDAAAAIMEMHAAAAAgAAAAABAAA
+					QbPG+AMAAAAkAAAAAQEAAEIxQTMwNkZFLTU3
+					M0UtMzA4MC04NjhDLTUwN0MyODJDQTAzRBgA
+					AAABAgAAgQAAAAEACADvPwAAAQAIAAAAAAAA
+					AAAAAQAAAAEBAAAvAAAABAAAAAMDAAAACAAo
+					5AAAAP7///8BAAAAAAAAABIAAAAEEAAAYAAA
+					AAAAAAAFEAAAzAAAAAAAAAAQEAAA+AAAAAAA
+					AABAEAAA6AAAAAAAAABUEAAAIAEAAAAAAABV
+					EAAALAEAAAAAAABWEAAAGAEAAAAAAAACIAAA
+					1AEAAAAAAAAQIAAAVAEAAAAAAAARIAAAiAEA
+					AAAAAAASIAAAaAEAAAAAAAATIAAAeAEAAAAA
+					AAAgIAAAtAEAAAAAAAAwIAAAGAEAAAAAAAAB
+					wAAAOAEAAAAAAAARwAAAFAAAAAAAAAASwAAA
+					SAEAAAAAAAAQ0AAA4AEAAAAAAAA=
+					</data>
 					<key>IsSHSprite</key>
 					<true/>
 					<key>PhysicProperties</key>
@@ -6929,6 +6961,38 @@
 				</dict>
 				<key>star_red</key>
 				<dict>
+					<key>DocumentSecurityImageBookmark</key>
+					<data>
+					Ym9vawQDAAAAAAQQMAAAAIYzRdUHgehDR3HY
+					kwamajwvghQLTqD36sMLzGfsp37R6AEAAAUA
+					AAABAQAAVXNlcnMAAAAIAAAAAQEAAGthcnRh
+					MDIyCAAAAAEBAABQaWN0dXJlcwwAAAABAQAA
+					cmFpbmJvdyBob2xlDAAAAAEBAABzdGFyX3Jl
+					ZC5wbmcUAAAAAQYAAAQAAAAUAAAAJAAAADQA
+					AABIAAAACAAAAAQDAAAxvwAAAAAAAAgAAAAE
+					AwAAjAEFAAAAAAAIAAAABAMAAFYCBQAAAAAA
+					CAAAAAQDAAAxC9MFAAAAAAgAAAAEAwAAeWkX
+					BgAAAAAUAAAAAQYAAHgAAACIAAAAmAAAAKgA
+					AAC4AAAACAAAAAAEAABBtltMWgAAABgAAAAB
+					AgAAAQAAAAAAAAAPAAAAAAAAAAAAAAAAAAAA
+					AAAAAAEFAAAEAAAAAwMAAAYAAAAEAAAAAwMA
+					AAMAAAAIAAAABAMAAAMAAAAAAAAABAAAAAMD
+					AAD1AQAADAAAAAEBAABNYWNpbnRvc2ggSEQI
+					AAAABAMAAAAgwQwcAAAACAAAAAAEAABBs8b4
+					AwAAACQAAAABAQAAQjFBMzA2RkUtNTczRS0z
+					MDgwLTg2OEMtNTA3QzI4MkNBMDNEGAAAAAEC
+					AACBAAAAAQAIAO8/AAABAAgAAAAAAAAAAAAB
+					AAAAAQEAAC8AAAAEAAAAAwMAAAAIACjkAAAA
+					/v///wEAAAAAAAAAEgAAAAQQAABcAAAAAAAA
+					AAUQAADIAAAAAAAAABAQAAD0AAAAAAAAAEAQ
+					AADkAAAAAAAAAFQQAAAcAQAAAAAAAFUQAAAo
+					AQAAAAAAAFYQAAAUAQAAAAAAAAIgAADQAQAA
+					AAAAABAgAABQAQAAAAAAABEgAACEAQAAAAAA
+					ABIgAABkAQAAAAAAABMgAAB0AQAAAAAAACAg
+					AACwAQAAAAAAADAgAAAUAQAAAAAAAAHAAAA0
+					AQAAAAAAABHAAAAUAAAAAAAAABLAAABEAQAA
+					AAAAABDQAADcAQAAAAAAAA==
+					</data>
 					<key>IsSHSprite</key>
 					<true/>
 					<key>PhysicProperties</key>
@@ -7077,6 +7141,38 @@
 				</dict>
 				<key>star_yellow</key>
 				<dict>
+					<key>DocumentSecurityImageBookmark</key>
+					<data>
+					Ym9vawgDAAAAAAQQMAAAAMfFT9Hs2J+koB0y
+					10i3JWmvGB6vNR68Qkcjx0GnPKay7AEAAAUA
+					AAABAQAAVXNlcnMAAAAIAAAAAQEAAGthcnRh
+					MDIyCAAAAAEBAABQaWN0dXJlcwwAAAABAQAA
+					cmFpbmJvdyBob2xlDwAAAAEBAABzdGFyX3ll
+					bGxvdy5wbmcAFAAAAAEGAAAEAAAAFAAAACQA
+					AAA0AAAASAAAAAgAAAAEAwAAMb8AAAAAAAAI
+					AAAABAMAAIwBBQAAAAAACAAAAAQDAABWAgUA
+					AAAAAAgAAAAEAwAAMQvTBQAAAAAIAAAABAMA
+					AHFpFwYAAAAAFAAAAAEGAAB8AAAAjAAAAJwA
+					AACsAAAAvAAAAAgAAAAABAAAQbZbTFEAAAAY
+					AAAAAQIAAAEAAAAAAAAADwAAAAAAAAAAAAAA
+					AAAAAAAAAAABBQAABAAAAAMDAAAGAAAABAAA
+					AAMDAAADAAAACAAAAAQDAAADAAAAAAAAAAQA
+					AAADAwAA9QEAAAwAAAABAQAATWFjaW50b3No
+					IEhECAAAAAQDAAAAIMEMHAAAAAgAAAAABAAA
+					QbPG+AMAAAAkAAAAAQEAAEIxQTMwNkZFLTU3
+					M0UtMzA4MC04NjhDLTUwN0MyODJDQTAzRBgA
+					AAABAgAAgQAAAAEACADvPwAAAQAIAAAAAAAA
+					AAAAAQAAAAEBAAAvAAAABAAAAAMDAAAACAAo
+					5AAAAP7///8BAAAAAAAAABIAAAAEEAAAYAAA
+					AAAAAAAFEAAAzAAAAAAAAAAQEAAA+AAAAAAA
+					AABAEAAA6AAAAAAAAABUEAAAIAEAAAAAAABV
+					EAAALAEAAAAAAABWEAAAGAEAAAAAAAACIAAA
+					1AEAAAAAAAAQIAAAVAEAAAAAAAARIAAAiAEA
+					AAAAAAASIAAAaAEAAAAAAAATIAAAeAEAAAAA
+					AAAgIAAAtAEAAAAAAAAwIAAAGAEAAAAAAAAB
+					wAAAOAEAAAAAAAARwAAAFAAAAAAAAAASwAAA
+					SAEAAAAAAAAQ0AAA4AEAAAAAAAA=
+					</data>
 					<key>IsSHSprite</key>
 					<true/>
 					<key>PhysicProperties</key>
@@ -7225,6 +7321,38 @@
 				</dict>
 				<key>start_area_blue</key>
 				<dict>
+					<key>DocumentSecurityImageBookmark</key>
+					<data>
+					Ym9vawwDAAAAAAQQMAAAAC8UcDq5aE92C7nj
+					WqBGwxwxvaWvtzDLcXYBe9iSKy7N8AEAAAUA
+					AAABAQAAVXNlcnMAAAAIAAAAAQEAAGthcnRh
+					MDIyCAAAAAEBAABQaWN0dXJlcwwAAAABAQAA
+					cmFpbmJvdyBob2xlEwAAAAEBAABzdGFydF9h
+					cmVhX2JsdWUucG5nABQAAAABBgAABAAAABQA
+					AAAkAAAANAAAAEgAAAAIAAAABAMAADG/AAAA
+					AAAACAAAAAQDAACMAQUAAAAAAAgAAAAEAwAA
+					VgIFAAAAAAAIAAAABAMAADEL0wUAAAAACAAA
+					AAQDAAC+0RIGAAAAABQAAAABBgAAgAAAAJAA
+					AACgAAAAsAAAAMAAAAAIAAAAAAQAAEG2Uxcl
+					AAAAGAAAAAECAAABAAAAAAAAAA8AAAAAAAAA
+					AAAAAAAAAAAAAAAAAQUAAAQAAAADAwAABgAA
+					AAQAAAADAwAAAwAAAAgAAAAEAwAAAwAAAAAA
+					AAAEAAAAAwMAAPUBAAAMAAAAAQEAAE1hY2lu
+					dG9zaCBIRAgAAAAEAwAAACDBDBwAAAAIAAAA
+					AAQAAEGzxvgDAAAAJAAAAAEBAABCMUEzMDZG
+					RS01NzNFLTMwODAtODY4Qy01MDdDMjgyQ0Ew
+					M0QYAAAAAQIAAIEAAAABAAgA7z8AAAEACAAA
+					AAAAAAAAAAEAAAABAQAALwAAAAQAAAADAwAA
+					AAgAKOQAAAD+////AQAAAAAAAAASAAAABBAA
+					AGQAAAAAAAAABRAAANAAAAAAAAAAEBAAAPwA
+					AAAAAAAAQBAAAOwAAAAAAAAAVBAAACQBAAAA
+					AAAAVRAAADABAAAAAAAAVhAAABwBAAAAAAAA
+					AiAAANgBAAAAAAAAECAAAFgBAAAAAAAAESAA
+					AIwBAAAAAAAAEiAAAGwBAAAAAAAAEyAAAHwB
+					AAAAAAAAICAAALgBAAAAAAAAMCAAABwBAAAA
+					AAAAAcAAADwBAAAAAAAAEcAAABQAAAAAAAAA
+					EsAAAEwBAAAAAAAAENAAAOQBAAAAAAAA
+					</data>
 					<key>IsSHSprite</key>
 					<true/>
 					<key>PhysicProperties</key>
@@ -7326,6 +7454,38 @@
 				</dict>
 				<key>start_area_green</key>
 				<dict>
+					<key>DocumentSecurityImageBookmark</key>
+					<data>
+					Ym9vawwDAAAAAAQQMAAAAKL2MlU7W3k1grWG
+					qBAtZN24v0uS/h6UoMkpZk1EYwFV8AEAAAUA
+					AAABAQAAVXNlcnMAAAAIAAAAAQEAAGthcnRh
+					MDIyCAAAAAEBAABQaWN0dXJlcwwAAAABAQAA
+					cmFpbmJvdyBob2xlFAAAAAEBAABzdGFydF9h
+					cmVhX2dyZWVuLnBuZxQAAAABBgAABAAAABQA
+					AAAkAAAANAAAAEgAAAAIAAAABAMAADG/AAAA
+					AAAACAAAAAQDAACMAQUAAAAAAAgAAAAEAwAA
+					VgIFAAAAAAAIAAAABAMAADEL0wUAAAAACAAA
+					AAQDAACSxhIGAAAAABQAAAABBgAAgAAAAJAA
+					AACgAAAAsAAAAMAAAAAIAAAAAAQAAEG2UxPQ
+					AAAAGAAAAAECAAABAAAAAAAAAA8AAAAAAAAA
+					AAAAAAAAAAAAAAAAAQUAAAQAAAADAwAABgAA
+					AAQAAAADAwAAAwAAAAgAAAAEAwAAAwAAAAAA
+					AAAEAAAAAwMAAPUBAAAMAAAAAQEAAE1hY2lu
+					dG9zaCBIRAgAAAAEAwAAACDBDBwAAAAIAAAA
+					AAQAAEGzxvgDAAAAJAAAAAEBAABCMUEzMDZG
+					RS01NzNFLTMwODAtODY4Qy01MDdDMjgyQ0Ew
+					M0QYAAAAAQIAAIEAAAABAAgA7z8AAAEACAAA
+					AAAAAAAAAAEAAAABAQAALwAAAAQAAAADAwAA
+					AAgAKOQAAAD+////AQAAAAAAAAASAAAABBAA
+					AGQAAAAAAAAABRAAANAAAAAAAAAAEBAAAPwA
+					AAAAAAAAQBAAAOwAAAAAAAAAVBAAACQBAAAA
+					AAAAVRAAADABAAAAAAAAVhAAABwBAAAAAAAA
+					AiAAANgBAAAAAAAAECAAAFgBAAAAAAAAESAA
+					AIwBAAAAAAAAEiAAAGwBAAAAAAAAEyAAAHwB
+					AAAAAAAAICAAALgBAAAAAAAAMCAAABwBAAAA
+					AAAAAcAAADwBAAAAAAAAEcAAABQAAAAAAAAA
+					EsAAAEwBAAAAAAAAENAAAOQBAAAAAAAA
+					</data>
 					<key>IsSHSprite</key>
 					<true/>
 					<key>PhysicProperties</key>
@@ -7427,6 +7587,38 @@
 				</dict>
 				<key>trajectory</key>
 				<dict>
+					<key>DocumentSecurityImageBookmark</key>
+					<data>
+					Ym9vawwDAAAAAAQQMAAAAAGa/AQASscmBQRg
+					kjPpK4bJ5DtG2SEtkDvlRx1+w9N+8AEAAAUA
+					AAABAQAAVXNlcnMAAAAIAAAAAQEAAGthcnRh
+					MDIyCAAAAAEBAABQaWN0dXJlcwwAAAABAQAA
+					cmFpbmJvdyBob2xlEQAAAAEBAABiYWxsX2Rh
+					cmtibHVlLnBuZwAAABQAAAABBgAABAAAABQA
+					AAAkAAAANAAAAEgAAAAIAAAABAMAADG/AAAA
+					AAAACAAAAAQDAACMAQUAAAAAAAgAAAAEAwAA
+					VgIFAAAAAAAIAAAABAMAADEL0wUAAAAACAAA
+					AAQDAAA8LhEGAAAAABQAAAABBgAAgAAAAJAA
+					AACgAAAAsAAAAMAAAAAIAAAAAAQAAEG2T+Ro
+					AAAAGAAAAAECAAABAAAAAAAAAA8AAAAAAAAA
+					AAAAAAAAAAAAAAAAAQUAAAQAAAADAwAABgAA
+					AAQAAAADAwAAAwAAAAgAAAAEAwAAAwAAAAAA
+					AAAEAAAAAwMAAPUBAAAMAAAAAQEAAE1hY2lu
+					dG9zaCBIRAgAAAAEAwAAACDBDBwAAAAIAAAA
+					AAQAAEGzxvgDAAAAJAAAAAEBAABCMUEzMDZG
+					RS01NzNFLTMwODAtODY4Qy01MDdDMjgyQ0Ew
+					M0QYAAAAAQIAAIEAAAABAAgA7z8AAAEACAAA
+					AAAAAAAAAAEAAAABAQAALwAAAAQAAAADAwAA
+					AAgAKOQAAAD+////AQAAAAAAAAASAAAABBAA
+					AGQAAAAAAAAABRAAANAAAAAAAAAAEBAAAPwA
+					AAAAAAAAQBAAAOwAAAAAAAAAVBAAACQBAAAA
+					AAAAVRAAADABAAAAAAAAVhAAABwBAAAAAAAA
+					AiAAANgBAAAAAAAAECAAAFgBAAAAAAAAESAA
+					AIwBAAAAAAAAEiAAAGwBAAAAAAAAEyAAAHwB
+					AAAAAAAAICAAALgBAAAAAAAAMCAAABwBAAAA
+					AAAAAcAAADwBAAAAAAAAEcAAABQAAAAAAAAA
+					EsAAAEwBAAAAAAAAENAAAOQBAAAAAAAA
+					</data>
 					<key>IsSHSprite</key>
 					<true/>
 					<key>PhysicProperties</key>
@@ -8044,7 +8236,26 @@
 		<key>SaveStyle</key>
 		<integer>0</integer>
 	</dict>
+	<key>SceneFolderSandboxBookmark</key>
+	<data>
+	Ym9vawwDAAAAAAQQMAAAADzvcPJV+VYBj7OOeh2vLGc06zwFZC9OLr5I76xvS4Z7FAIA
+	AAUAAAABAQAAVXNlcnMAAAAIAAAAAQEAAGthcnRhMDIyCAAAAAEBAABQcm9qZWN0cxAA
+	AAABAQAAbGV2ZWxIZWxwZXJIZWxsbwkAAAABAQAAUmVzb3VyY2VzAAAABgAAAAEBAABJ
+	bWFnZXMAABwAAAABBgAABAAAABQAAAAkAAAANAAAADQAAABMAAAAYAAAAAgAAAAEAwAA
+	Mb8AAAAAAAAIAAAABAMAAIwBBQAAAAAACAAAAAQDAABXZwgAAAAAAAgAAAAEAwAAZYWp
+	BQAAAAAIAAAABAMAAGiFqQUAAAAACAAAAAQDAABphakFAAAAAAgAAAAEAwAAE42pBQAA
+	AAAcAAAAAQYAAJQAAACkAAAAtAAAAMQAAADUAAAA5AAAAPQAAAAIAAAAAAQAAEG2GyO4
+	AAAAGAAAAAECAAACAAAAAAAAAA8AAAAAAAAAAAAAAAAAAAAIAAAABAMAAAUAAAAAAAAA
+	BAAAAAMDAAD1AQAADAAAAAEBAABNYWNpbnRvc2ggSEQIAAAABAMAAAAgwQwcAAAACAAA
+	AAAEAABBs8b4AwAAACQAAAABAQAAQjFBMzA2RkUtNTczRS0zMDgwLTg2OEMtNTA3QzI4
+	MkNBMDNEGAAAAAECAACBAAAAAQAIAO8/AAABAAgAAAAAAAAAAAABAAAAAQEAAC8AAAAA
+	AAAAAQUAAAQAAAADAwAAAAgAKMAAAAD+////AQAAAAAAAAAPAAAABBAAAHAAAAAAAAAA
+	BRAAAAQBAAAAAAAAEBAAADgBAAAAAAAAQBAAACgBAAAAAAAAAiAAAPQBAAAAAAAAECAA
+	AHQBAAAAAAAAESAAAKgBAAAAAAAAEiAAAIgBAAAAAAAAEyAAAJgBAAAAAAAAICAAANQB
+	AAAAAAAAMCAAAAACAAAAAAAAAcAAAFgBAAAAAAAAEcAAABQAAAAAAAAAEsAAAGgBAAAA
+	AAAAENAAAAgCAAAAAAAA
+	</data>
 	<key>Version</key>
-	<string>1.8.213</string>
+	<string>1.8.218</string>
 </dict>
 </plist>
