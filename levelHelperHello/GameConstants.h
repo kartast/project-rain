@@ -21,6 +21,10 @@ static const float spawnVelMax = 7.5;
 static const float fAmplifyMult = 0.02;
 static const float fDampMult = 0.6;
 
+static const float fStepTimeMult = 1.1;
+
+static const char* szDefaultLevel = "Levels/level04";
+
 #define GOAL_COLOR          @"goal_color"
 #define GOAL_COLOR_YELLOW   @"goal_color_yellow"
 #define GOAL_COLOR_RED      @"goal_color_red"

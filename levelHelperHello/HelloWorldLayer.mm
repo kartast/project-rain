@@ -152,7 +152,7 @@ enum {
 - (id) init
 {
     // Load level 6 by default
-    if( (self=[self initWithName:@"Levels/level06"])) {
+    if( (self=[self initWithName:[NSString stringWithCString:szDefaultLevel encoding:NSASCIIStringEncoding]])) {
     }
 	return self;
 }
@@ -579,7 +579,7 @@ NSMutableDictionary *goalInfo;
 	
 	// Instruct the world to perform a single step of simulation. It is
 	// generally best to keep the time step and iterations fixed.
-	world->Step(dt*1.4, velocityIterations, positionIterations);
+	world->Step(dt*fStepTimeMult, velocityIterations, positionIterations);
     
     
     //Iterate over the bodies in the physics world
