@@ -741,14 +741,6 @@ CGFloat DistanceBetweenTwoPoints(CGPoint point1,CGPoint point2)
     NSArray* startAreas = [loader spritesWithTag:START_AREA];
     touchPt = [[CCDirector sharedDirector] convertToGL: touchPt];
     
-//    for (LHSprite *startAreaSprite in startAreas ) {
-//        CGRect boundingBox = [startAreaSprite boundingBox];
-//        if (CGRectContainsPoint(boundingBox, touchPt)) {
-//            return [[CCDirector sharedDirector] convertToUI:startAreaSprite.position];
-//            break;
-//        }
-//    }
-    
     for (GameObjectSpawner *startAreaObject in allStartAreas ) {
         LHSprite* startAreaSprite = [startAreaObject sprite];
         CGRect boundingBox = [startAreaSprite boundingBox];
@@ -760,13 +752,10 @@ CGFloat DistanceBetweenTwoPoints(CGPoint point1,CGPoint point2)
         
         if (CGRectContainsPoint(boundingBox, touchPt)) {
             startAreaObject.nSpawnMax -= 1;
-//            return [[CCDirector sharedDirector] convertToUI:startAreaSprite.position];
             return startAreaObject;
             break;
         }
     }
-    
-//    return CGPointMake(-1, -1);
     return nil;
 }
 
@@ -777,7 +766,6 @@ CGFloat DistanceBetweenTwoPoints(CGPoint point1,CGPoint point2)
     }
 
     // Should ignore touch?
-//    CGPoint startAreaTouched = [self getStartAreaCenterNearest:[touch locationInView: [touch view]]];
     GameObjectSpawner* spawnGameObject = [self getStartAreaCenterNearest:[touch locationInView: [touch view]]];
     if (spawnGameObject == nil) {
         return;
