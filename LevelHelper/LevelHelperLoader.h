@@ -81,7 +81,8 @@ enum LevelHelper_TAG
 	STAR_BLACK 			= 17,
 	START_AREA 			= 18,
 	STAR 			= 19,
-	NUMBER_OF_TAGS 	= 20
+	BLACK_HOLE 			= 20,
+	NUMBER_OF_TAGS 	= 21
 };
 
 CGSize  LHSizeFromString(NSString* val);

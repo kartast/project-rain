@@ -106,6 +106,7 @@
 		<string>STAR_BLACK</string>
 		<string>START_AREA</string>
 		<string>STAR</string>
+		<string>BLACK_HOLE</string>
 	</array>
 </dict>
 </plist>
