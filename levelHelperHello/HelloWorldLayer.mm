@@ -203,6 +203,31 @@ enum {
 	return self;
 }
 
+#pragma mark --
+#pragma mark Special power
+- (void) teleportSprite:(LHSprite*)sprite FromSprite:(LHSprite*)spriteFrom toSprite:(LHSprite*)spriteEnd
+{
+    // Just change position from spriteOrigin to spriteEnd
+    CGPoint startPoint = spriteFrom.position;
+    CGPoint endPoint   = spriteEnd.position;
+    
+    CGPoint diff = CGPointMake(endPoint.x - startPoint.x, endPoint.y - startPoint.y);
+    
+    CGPoint newPos = CGPointMake(sprite.position.x + diff.x, sprite.position.y + diff.y);
+    
+    [sprite setPosition:newPos];
+}
+
+- (void) boostSprite:(LHSprite*)sprite
+{
+    // multiple current velocity by 10 times
+}
+
+- (void) splitSprite:(LHSprite*)sprite
+{
+    // Spawn three small balls at current sprite position
+    // remove current sprite
+}
 
 #pragma mark -- 
 #pragma mark Handle collision
@@ -521,9 +546,15 @@ NSMutableDictionary *goalInfo;
         // Hit !!
         // do animation
         // hide star
-//        [spriteGoal removeBodyFromWorld];
         [spriteGoal removeFromParentAndCleanup:YES];
-            [allStars removeObject:spriteGoal];
+        [allStars removeObject:spriteGoal];
+    }
+    else {
+        // Wrong color
+        // remove ball
+        if ([allStars containsObject:spriteGoal]) {
+            [self performSelector:@selector(removeBall:) withObject:spriteBall afterDelay:0.000];
+        }
     }
 }
 
