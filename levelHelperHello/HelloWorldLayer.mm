@@ -205,8 +205,20 @@ enum {
 
 #pragma mark --
 #pragma mark Special power
-- (void) teleportSprite:(LHSprite*)sprite FromSprite:(LHSprite*)spriteFrom toSprite:(LHSprite*)spriteEnd
+
+// Teleport sprite from one black hole to another
+// One sprite can only teleport once
+- (BOOL) teleportSprite:(LHSprite*)sprite FromSprite:(LHSprite*)spriteFrom toSprite:(LHSprite*)spriteEnd
 {
+    // Check if sprite teleported before.. 
+    // If yes, ignore 
+    if (!teleportedSprites) {
+        teleportedSprites = [[NSMutableArray alloc] init];
+    }
+    else if ([teleportedSprites containsObject:sprite]) {
+        return NO;
+    }
+
     // Just change position from spriteOrigin to spriteEnd
     CGPoint startPoint = spriteFrom.position;
     CGPoint endPoint   = spriteEnd.position;
@@ -216,11 +228,21 @@ enum {
     CGPoint newPos = CGPointMake(sprite.position.x + diff.x, sprite.position.y + diff.y);
     
     [sprite setPosition:newPos];
+
+    // Add sprite to teleported sprites so next time ignore this sprite
+    [teleportedSprites addObject:sprite];
+
+    return YES;
 }
 
 - (void) boostSprite:(LHSprite*)sprite
 {
     // multiple current velocity by 10 times
+    b2Vec2 currentLinearVel = sprite.body->GetLinearVelocity();
+    b2Vec2 newLinearVel = currentLinearVel;
+    newLinearVel *= 4.0;
+
+    sprite.body->SetLinearVelocity(newLinearVel);
 }
 
 - (void) splitSprite:(LHSprite*)sprite
@@ -417,6 +439,10 @@ NSMutableDictionary *goalInfo;
         [sprite setFrame:4];
         [allStars addObject:sprite];
     }
+}
+
+- (void) findBlackholes {
+    NSMutableArray* allBlackholes = [loader spritesWithTag:BLACK_HOLE];
 }
 
 #pragma mark --

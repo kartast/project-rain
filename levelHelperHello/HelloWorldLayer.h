@@ -45,6 +45,9 @@
 
     NSMutableArray* allStars;
     NSMutableArray* allStartAreas;
+    NSMutableArray* allBlackholes;
+
+    NSMutableArray* teleportedSprites;
 }
 
 @property (nonatomic, retain) NSString* levelName;
