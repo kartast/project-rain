@@ -8,6 +8,7 @@
 
 // Import the interfaces
 #import "HelloWorldLayer.h"
+#import "NSObject+PWObject.h"
 
 // Not included in "cocos2d.h"
 #import "CCPhysicsSprite.h"
@@ -226,8 +227,11 @@ enum {
     CGPoint diff = CGPointMake(endPoint.x - startPoint.x, endPoint.y - startPoint.y);
     
     CGPoint newPos = CGPointMake(sprite.position.x + diff.x, sprite.position.y + diff.y);
-    
-    [sprite setPosition:newPos];
+
+
+    [self performBlock:^{
+        [sprite transformPosition:endPoint];
+    } afterDelay:0.1f];
 
     // Add sprite to teleported sprites so next time ignore this sprite
     [teleportedSprites addObject:sprite];
@@ -272,6 +276,8 @@ enum {
         [loader registerBeginOrEndCollisionCallbackBetweenTagA:BALL andTagB:STAR_GREEN idListener:self selListener:@selector(collisionBallAndStar:)];
         [loader registerBeginOrEndCollisionCallbackBetweenTagA:BALL andTagB:STAR_BLUE idListener:self selListener:@selector(collisionBallAndStar:)];
         [loader registerBeginOrEndCollisionCallbackBetweenTagA:BALL andTagB:STAR_BLACK idListener:self selListener:@selector(collisionBallAndStar:)];
+    
+        [loader registerBeginOrEndCollisionCallbackBetweenTagA:BALL andTagB:BLACK_HOLE idListener:self selListener:@selector(collisionBallAndBlackhole:)];
 }
 /*
  -----------------------------
@@ -348,7 +354,7 @@ enum {
     [self goalHitBySprite:ballSprite andGoalSprite:goalSprite];
 }
 
-- (void)collisionBallAndStar:(LHContactInfo*)contact
+- (void) collisionBallAndStar:(LHContactInfo*)contact
 {
     // If same color, increment goal ball count
     // otherwise decrease
@@ -357,6 +363,23 @@ enum {
     LHSprite* goalSprite = [contact spriteB];
     
     [self starHitBySprite:ballSprite andGoalSprite:goalSprite];
+}
+
+- (void) collisionBallAndBlackhole:(LHContactInfo*)contact
+{
+    LHSprite* ballSprite = [contact spriteA];
+    LHSprite* blackholeSprite = [contact spriteB];
+    
+    LHSprite* fromSprite = blackholeSprite;
+    LHSprite* toSprite = nil;
+    
+    for (LHSprite* sprite in allBlackholes) {
+        if (![sprite isEqual:blackholeSprite]) {
+            toSprite = sprite;
+        }
+    }
+    
+    [self teleportSprite:ballSprite FromSprite:fromSprite toSprite:toSprite];
 }
 /*
  -----------------------------
@@ -375,6 +398,7 @@ NSMutableDictionary *goalInfo;
 {
     [self findStars];
     [self findStartAreas];
+    [self findBlackholes];
     
     // setup physics boundary
     if([loader hasPhysicBoundaries])
@@ -441,8 +465,12 @@ NSMutableDictionary *goalInfo;
     }
 }
 
+// black holes must be equal to 2
 - (void) findBlackholes {
-    NSMutableArray* allBlackholes = [loader spritesWithTag:BLACK_HOLE];
+    NSArray* sprites = [loader spritesWithTag:BLACK_HOLE];
+    allBlackholes = [[NSMutableArray alloc] initWithArray:sprites];
+    
+    NSAssert( [allBlackholes count] == 2, @"black holes must be equals to 2");
 }
 
 #pragma mark --
