@@ -18,6 +18,7 @@
 
 #else
 
+	NSMutableArray* spawnTypes;
 
 #endif // __has_feature(objc_arc)
 
@@ -26,6 +27,7 @@
 @property BOOL isRotating;
 @property BOOL isAmplify;
 @property float spawnMax;
+@property (nonatomic, retain) NSMutableArray* spawnTypes;
 @property BOOL isMoving;
 
 +(SpriteInfo*) customClassInstance;

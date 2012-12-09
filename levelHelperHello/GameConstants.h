@@ -32,4 +32,7 @@ static const char* szDefaultLevel = "Levels/level04";
 #define GOAL_COLOR_GREEN    @"goal_color_green"
 #define GOAL_COLOR_BLACK    @"goal_color_black"
 
+#define BALL_TYPE_NORMAL    @"normal"
+#define BALL_TYPE_BOOST     @"boost"
+
 #endif

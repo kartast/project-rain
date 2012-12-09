@@ -45,6 +45,7 @@
 #import "CCLayer.h"
 #import "ccGLStateCache.h"
 #import "CCShaderCache.h"
+#import "ccFPSImages.h"
 
 // support imports
 #import "Platforms/CCGL.h"
@@ -82,6 +83,8 @@ extern NSString * cocos2dVersion(void);
 -(void) calculateDeltaTime;
 // calculates the milliseconds per frame from the start of the frame
 -(void) calculateMPF;
+// returns the FPS image data pointer and len
+-(void)getFPSImageData:(unsigned char**)datapointer lenght:(NSUInteger*)len;
 @end
 
 @implementation CCDirector
@@ -90,7 +93,7 @@ extern NSString * cocos2dVersion(void);
 @synthesize runningScene = runningScene_;
 @synthesize displayStats = displayStats_;
 @synthesize nextDeltaTimeZero = nextDeltaTimeZero_;
-@synthesize isPaused = isPaused_;
+@synthesize paused = isPaused_;
 @synthesize isAnimating = isAnimating_;
 @synthesize sendCleanupToScene = sendCleanupToScene_;
 @synthesize runningThread = runningThread_;
@@ -191,7 +194,6 @@ static CCDirector *_sharedDirector = nil;
 	[scenesStack_ release];
 	[scheduler_ release];
 	[actionManager_ release];
-	[delegate_ release];
 
 	_sharedDirector = nil;
 
@@ -252,7 +254,8 @@ static CCDirector *_sharedDirector = nil;
 -(void) purgeCachedData
 {
 	[CCLabelBMFont purgeCachedData];
-	[[CCTextureCache sharedTextureCache] removeUnusedTextures];
+	if ([_sharedDirector view])
+		[[CCTextureCache sharedTextureCache] removeUnusedTextures];
 	[[CCFileUtils sharedFileUtils] purgeCachedEntries];
 }
 
@@ -455,7 +458,6 @@ static CCDirector *_sharedDirector = nil;
 	[drawsLabel_ release];
 	FPSLabel_ = nil, SPFLabel_=nil, drawsLabel_=nil;
 
-	[delegate_ release];
 	delegate_ = nil;
 
 	[self setView:nil];
@@ -609,15 +611,24 @@ static CCDirector *_sharedDirector = nil;
 
 #pragma mark Director - Helper
 
+-(void)getFPSImageData:(unsigned char**)datapointer lenght:(NSUInteger*)len
+{
+	*datapointer = cc_fps_images_png;
+	*len = cc_fps_images_len();
+}
+
 -(void) createStatsLabel
 {
+	CCTexture2D *texture;
+	CCTextureCache *textureCache = [CCTextureCache sharedTextureCache];
+	
 	if( FPSLabel_ && SPFLabel_ ) {
-		CCTexture2D *texture = [FPSLabel_ texture];
+		texture = [FPSLabel_ texture];
 
 		[FPSLabel_ release];
 		[SPFLabel_ release];
 		[drawsLabel_ release];
-		[[CCTextureCache sharedTextureCache ] removeTexture:texture];
+		[textureCache removeTextureForKey:@"cc_fps_images"];
 		FPSLabel_ = nil;
 		SPFLabel_ = nil;
 		drawsLabel_ = nil;
@@ -627,9 +638,19 @@ static CCDirector *_sharedDirector = nil;
 
 	CCTexture2DPixelFormat currentFormat = [CCTexture2D defaultAlphaPixelFormat];
 	[CCTexture2D setDefaultAlphaPixelFormat:kCCTexture2DPixelFormat_RGBA4444];
-	FPSLabel_ = [[CCLabelAtlas alloc]  initWithString:@"00.0" charMapFile:@"fps_images.png" itemWidth:12 itemHeight:32 startCharMap:'.'];
-	SPFLabel_ = [[CCLabelAtlas alloc]  initWithString:@"0.000" charMapFile:@"fps_images.png" itemWidth:12 itemHeight:32 startCharMap:'.'];
-	drawsLabel_ = [[CCLabelAtlas alloc]  initWithString:@"000" charMapFile:@"fps_images.png" itemWidth:12 itemHeight:32 startCharMap:'.'];
+
+	unsigned char *data;
+	NSUInteger data_len;
+	[self getFPSImageData:&data lenght:&data_len];
+	
+	NSData *nsdata = [NSData dataWithBytes:data length:data_len];
+	CGDataProviderRef imgDataProvider = CGDataProviderCreateWithCFData( (CFDataRef) nsdata);
+	CGImageRef imageRef = CGImageCreateWithPNGDataProvider(imgDataProvider, NULL, true, kCGRenderingIntentDefault);
+	texture = [textureCache addCGImage:imageRef forKey:@"cc_fps_images"];
+
+	FPSLabel_ = [[CCLabelAtlas alloc]  initWithString:@"00.0" texture:texture itemWidth:12 itemHeight:32 startCharMap:'.'];
+	SPFLabel_ = [[CCLabelAtlas alloc]  initWithString:@"0.000" texture:texture itemWidth:12 itemHeight:32 startCharMap:'.'];
+	drawsLabel_ = [[CCLabelAtlas alloc]  initWithString:@"000" texture:texture itemWidth:12 itemHeight:32 startCharMap:'.'];
 
 	[CCTexture2D setDefaultAlphaPixelFormat:currentFormat];
 

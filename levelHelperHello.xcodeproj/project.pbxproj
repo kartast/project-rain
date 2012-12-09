@@ -722,7 +722,6 @@
 		1475B4BA166A577D00646000 /* GameObjectSpawner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameObjectSpawner.m; sourceTree = "<group>"; };
 		14AF938A1663CFB800A8021C /* SBTableAlert.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SBTableAlert.h; sourceTree = "<group>"; };
 		14AF938B1663CFB800A8021C /* SBTableAlert.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SBTableAlert.m; sourceTree = "<group>"; };
-		14BD5C3316342F450063F84E /* levelHelperHello copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "levelHelperHello copy-Info.plist"; path = "/Users/karta022/Projects/levelHelperHello/levelHelperHello copy-Info.plist"; sourceTree = "<absolute>"; };
 		14DC80421672EB3600538550 /* NSObject+PWObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+PWObject.h"; sourceTree = "<group>"; };
 		14DC80431672EB3600538550 /* NSObject+PWObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+PWObject.m"; sourceTree = "<group>"; };
 		189f8d165fca06a598e21c7d /* LHContactInfo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LHContactInfo.h; sourceTree = "<group>"; };
@@ -801,7 +800,6 @@
 				1420BC6F161B234000948B0C /* Frameworks */,
 				1420BC6D161B234000948B0C /* Products */,
 				a7a2907c30322286ead7472e /* LevelHelper */,
-				14BD5C3316342F450063F84E /* levelHelperHello copy-Info.plist */,
 			);
 			sourceTree = "<group>";
 		};
@@ -1931,6 +1929,7 @@
 				14AF938C1663D02C00A8021C /* SBTableAlert.m in Sources */,
 				1475B4BB166A577D00646000 /* GameObjectGoal.m in Sources */,
 				1475B4BC166A577D00646000 /* GameObjectSpawner.m in Sources */,
+				14DC80441672EB3600538550 /* NSObject+PWObject.m in Sources */,
 				8dd598f0ba722e864e7e94cf /* SpriteInfo.mm in Sources */,
 				da8ae1a3ed563136e9d0c419 /* LevelHelperLoader.mm in Sources */,
 				d89955832a2f30a40fc0378f /* LHDictionaryExt.mm in Sources */,
@@ -1953,7 +1952,6 @@
 				7c4477967b3e8d5773baaf1c /* LHSprite.mm in Sources */,
 				cbcf8a3be72e6868338383a0 /* LHTouchMgr.mm in Sources */,
 				250e1473997f280a794687eb /* SHDocumentLoader.mm in Sources */,
-				14DC80441672EB3600538550 /* NSObject+PWObject.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

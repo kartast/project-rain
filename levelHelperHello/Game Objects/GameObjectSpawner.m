@@ -9,7 +9,7 @@
 #import "GameObjectSpawner.h"
 
 @implementation GameObjectSpawner
-@synthesize nSpawnMax, sprite;
+@synthesize nSpawnMax, sprite, spawnTypes;
 
 -(id)init {
     if (self = [super init])  {

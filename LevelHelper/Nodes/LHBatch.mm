@@ -80,6 +80,27 @@ static int untitledBatchCount = 0;
     }
 }
 //------------------------------------------------------------------------------
+-(void) loadUserCustomInfoFromDictionary:(NSDictionary*)dictionary{
+    userCustomInfo = nil;
+    if(!dictionary)return;
+    
+    NSString* className = [dictionary stringForKey:@"ClassName"];
+    Class customClass = NSClassFromString(className);
+    
+    if(!customClass) return;
+    
+    userCustomInfo = [customClass performSelector:@selector(customClassInstance)];
+#ifndef LH_ARC_ENABLED
+    [userCustomInfo retain];
+#endif
+    [userCustomInfo performSelector:@selector(setPropertiesFromDictionary:) withObject:[dictionary objectForKey:@"ClassRepresentation"]];
+}
+-(NSString*)userInfoClassName{
+    if(userCustomInfo)
+        return NSStringFromClass([userCustomInfo class]);
+    return @"No Class";
+}
+//------------------------------------------------------------------------------
 -(id) initWithDictionary:(NSDictionary*)dictionary layer:(LHLayer*)layer{
     
     NSString* imgPath = [[LHSettings sharedInstance] imagePath:[dictionary stringForKey:@"SheetImage"]];
@@ -110,6 +131,8 @@ static int untitledBatchCount = 0;
         imagePath = [[NSString alloc] initWithString:imgPath];
         
         zOrder_ = [dictionary intForKey:@"ZOrder"];
+        
+        [self setTag:[dictionary intForKey:@"Tag"]];
         
         if(layer){
             [layer addChild:self z:[self zOrder]];
@@ -163,27 +186,6 @@ static int untitledBatchCount = 0;
         return [(LHLayer*)layerParent parentLoader];
     }
     return nil;
-}
-//------------------------------------------------------------------------------
--(void) loadUserCustomInfoFromDictionary:(NSDictionary*)dictionary{
-    userCustomInfo = nil;
-    if(!dictionary)return;
-    
-    NSString* className = [dictionary stringForKey:@"ClassName"];
-    Class customClass = NSClassFromString(className);
-    
-    if(!customClass) return;
-    
-    userCustomInfo = [customClass performSelector:@selector(customClassInstance)];
-#ifndef LH_ARC_ENABLED
-    [userCustomInfo retain];
-#endif
-    [userCustomInfo performSelector:@selector(setPropertiesFromDictionary:) withObject:[dictionary objectForKey:@"ClassRepresentation"]];
-}
--(NSString*)userInfoClassName{
-    if(userCustomInfo)
-        return NSStringFromClass([userCustomInfo class]);
-    return @"No Class";
 }
 //------------------------------------------------------------------------------
 -(id)userInfo{

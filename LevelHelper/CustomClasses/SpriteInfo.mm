@@ -12,6 +12,7 @@
 @synthesize isRotating;
 @synthesize isAmplify;
 @synthesize spawnMax;
+@synthesize spawnTypes;
 @synthesize isMoving;
 
 
@@ -20,6 +21,7 @@
 
 #else
 
+if(spawnTypes) [spawnTypes release];
 
 [super dealloc];
 
@@ -51,6 +53,9 @@ return NSStringFromClass([self class]);
 
 	if([dictionary objectForKey:@"spawnMax"])
 		[self setSpawnMax:[[dictionary objectForKey:@"spawnMax"] floatValue]];
+
+	if([dictionary objectForKey:@"spawnTypes"])
+		[self setSpawnTypes:[NSMutableArray arrayWithArray:[[dictionary objectForKey:@"spawnTypes"] objectAtIndex:0]]];
 
 	if([dictionary objectForKey:@"isMoving"])
 		[self setIsMoving:[[dictionary objectForKey:@"isMoving"] boolValue]];

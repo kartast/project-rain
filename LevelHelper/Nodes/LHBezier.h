@@ -47,7 +47,13 @@
 @class LevelHelperLoader;
 
 #ifdef __IPHONE_OS_VERSION_MAX_ALLOWED
+
+#if COCOS2D_VERSION >= 0x00020100
+@interface LHBezier : CCNode <CCTouchAllAtOnceDelegate, CCTouchOneByOneDelegate>
+#else
 @interface LHBezier : CCNode <CCStandardTouchDelegate, CCTargetedTouchDelegate>
+#endif
+
 #elif defined(__MAC_OS_X_VERSION_MAX_ALLOWED)
 @interface LHBezier : CCNode <CCMouseEventDelegate>
 #endif
@@ -177,6 +183,8 @@
 +(NSString*) uniqueNameForBody:(b2Body*)body;
 +(LHBezier*) bezierForBody:(b2Body*)body;
 +(int) tagForBody:(b2Body*)body;
+
+-(void)removeBodyFromWorld;
 
 -(void)setCollisionFilterCategory:(int)category;
 -(void)setCollisionFilterMask:(int)mask;

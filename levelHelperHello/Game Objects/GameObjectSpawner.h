@@ -12,9 +12,11 @@
 @interface GameObjectSpawner : NSObject {
     int nSpawnMax;
     LHSprite* sprite;
+    NSMutableArray* spawnTypes;
 }
 
 @property(nonatomic, readwrite) int nSpawnMax;
 @property(nonatomic, retain) LHSprite* sprite;
+@property(nonatomic, retain) NSMutableArray* spawnTypes;
 
 @end

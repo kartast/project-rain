@@ -41,6 +41,27 @@ static int untitledLayersCount = 0;
 #endif
 }
 //------------------------------------------------------------------------------
+-(void) loadUserCustomInfoFromDictionary:(NSDictionary*)dictionary{
+    userCustomInfo = nil;
+    if(!dictionary)return;
+    
+    NSString* className = [dictionary stringForKey:@"ClassName"];
+    Class customClass = NSClassFromString(className);
+    
+    if(!customClass) return;
+    
+    userCustomInfo = [customClass performSelector:@selector(customClassInstance)];
+#ifndef LH_ARC_ENABLED
+    [userCustomInfo retain];
+#endif
+    [userCustomInfo performSelector:@selector(setPropertiesFromDictionary:) withObject:[dictionary objectForKey:@"ClassRepresentation"]];
+}
+-(NSString*)userInfoClassName{
+    if(userCustomInfo)
+        return NSStringFromClass([userCustomInfo class]);
+    return @"No Class";
+}
+//------------------------------------------------------------------------------
 -(id)initWithDictionary:(NSDictionary*)dictionary{
   
     self = [super init];
@@ -56,6 +77,8 @@ static int untitledLayersCount = 0;
         }
                 
         zOrder_ = [dictionary intForKey:@"ZOrder"];
+        
+        [self setTag:[dictionary intForKey:@"Tag"]];
         
         NSArray* childrenInfo = [dictionary objectForKey:@"Children"];
         for(NSDictionary* childDict in childrenInfo){
@@ -127,27 +150,6 @@ static int untitledLayersCount = 0;
         [self addChild:layer z:[layer zOrder]];
     }
 }
--(void) loadUserCustomInfoFromDictionary:(NSDictionary*)dictionary{
-    userCustomInfo = nil;
-    if(!dictionary)return;
-    
-    NSString* className = [dictionary stringForKey:@"ClassName"];
-    Class customClass = NSClassFromString(className);
-    
-    if(!customClass) return;
-    
-    userCustomInfo = [customClass performSelector:@selector(customClassInstance)];
-#ifndef LH_ARC_ENABLED
-    [userCustomInfo retain];
-#endif
-    [userCustomInfo performSelector:@selector(setPropertiesFromDictionary:) withObject:[dictionary objectForKey:@"ClassRepresentation"]];
-}
--(NSString*)userInfoClassName{
-    if(userCustomInfo)
-        return NSStringFromClass([userCustomInfo class]);
-    return @"No Class";
-}
-//------------------------------------------------------------------------------
 -(id)userInfo{
     return userCustomInfo;
 }

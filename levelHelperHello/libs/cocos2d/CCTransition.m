@@ -78,14 +78,6 @@ const NSInteger kSceneFade = 0xFADEFADE;
 
 		NSAssert( inScene_ != outScene_, @"Incoming scene must be different from the outgoing scene" );
 
-		// disable events while transitions
-		CCDirector *director = [CCDirector sharedDirector];
-#ifdef __CC_PLATFORM_IOS
-		[[director touchDispatcher] setDispatchEvents: NO];
-#elif defined(__CC_PLATFORM_MAC)
-		[[director eventDispatcher] setDispatchEvents: NO];
-#endif
-
 		[self sceneOrder];
 	}
 	return self;
@@ -137,13 +129,6 @@ const NSInteger kSceneFade = 0xFADEFADE;
 
 	[director replaceScene: inScene_];
 
-	// enable events while transitions
-#ifdef __CC_PLATFORM_IOS
-	[[director touchDispatcher] setDispatchEvents: YES];
-#elif defined(__CC_PLATFORM_MAC)
-	[[director eventDispatcher] setDispatchEvents: YES];
-#endif
-
 	// issue #267
 	[outScene_ setVisible:YES];
 }
@@ -159,6 +144,15 @@ const NSInteger kSceneFade = 0xFADEFADE;
 {
 	[super onEnter];
 	
+	// disable events while transitions
+	CCDirector *director = [CCDirector sharedDirector];
+#ifdef __CC_PLATFORM_IOS
+	[[director touchDispatcher] setDispatchEvents: NO];
+#elif defined(__CC_PLATFORM_MAC)
+	[[director eventDispatcher] setDispatchEvents: NO];
+#endif
+	
+	
 	// outScene_ should not receive the onExit callback
 	// only the onExitTransitionDidStart
 	[outScene_ onExitTransitionDidStart];
@@ -170,6 +164,16 @@ const NSInteger kSceneFade = 0xFADEFADE;
 -(void) onExit
 {
 	[super onExit];
+	
+	// enable events while transitions
+	CCDirector *director = [CCDirector sharedDirector];
+#ifdef __CC_PLATFORM_IOS
+	[[director touchDispatcher] setDispatchEvents: YES];
+#elif defined(__CC_PLATFORM_MAC)
+	[[director eventDispatcher] setDispatchEvents: YES];
+#endif
+	
+
 	[outScene_ onExit];
 
 	// inScene_ should not receive the onEnter callback
@@ -518,7 +522,7 @@ const NSInteger kSceneFade = 0xFADEFADE;
 	float inDeltaZ, inAngleZ;
 	float outDeltaZ, outAngleZ;
 
-	if( orientation == kOrientationRightOver ) {
+	if( orientation == kCCTransitionOrientationRightOver ) {
 		inDeltaZ = 90;
 		inAngleZ = 270;
 		outDeltaZ = 90;
@@ -565,7 +569,7 @@ const NSInteger kSceneFade = 0xFADEFADE;
 	float inDeltaZ, inAngleZ;
 	float outDeltaZ, outAngleZ;
 
-	if( orientation == kOrientationUpOver ) {
+	if( orientation == kCCTransitionOrientationUpOver ) {
 		inDeltaZ = 90;
 		inAngleZ = 270;
 		outDeltaZ = 90;
@@ -611,7 +615,7 @@ const NSInteger kSceneFade = 0xFADEFADE;
 	float inDeltaZ, inAngleZ;
 	float outDeltaZ, outAngleZ;
 
-	if( orientation == kOrientationRightOver ) {
+	if( orientation == kCCTransitionOrientationRightOver ) {
 		inDeltaZ = 90;
 		inAngleZ = 270;
 		outDeltaZ = 90;
@@ -656,7 +660,7 @@ const NSInteger kSceneFade = 0xFADEFADE;
 	float inDeltaZ, inAngleZ;
 	float outDeltaZ, outAngleZ;
 
-	if( orientation == kOrientationRightOver ) {
+	if( orientation == kCCTransitionOrientationRightOver ) {
 		inDeltaZ = 90;
 		inAngleZ = 270;
 		outDeltaZ = 90;
@@ -708,7 +712,7 @@ const NSInteger kSceneFade = 0xFADEFADE;
 	float inDeltaZ, inAngleZ;
 	float outDeltaZ, outAngleZ;
 
-	if( orientation == kOrientationUpOver ) {
+	if( orientation == kCCTransitionOrientationUpOver ) {
 		inDeltaZ = 90;
 		inAngleZ = 270;
 		outDeltaZ = 90;
@@ -761,7 +765,7 @@ const NSInteger kSceneFade = 0xFADEFADE;
 	float inDeltaZ, inAngleZ;
 	float outDeltaZ, outAngleZ;
 
-	if( orientation == kOrientationRightOver ) {
+	if( orientation == kCCTransitionOrientationUpOver ) {
 		inDeltaZ = 90;
 		inAngleZ = 270;
 		outDeltaZ = 90;
@@ -848,7 +852,7 @@ const NSInteger kSceneFade = 0xFADEFADE;
 -(void) onExit
 {
 	[super onExit];
-	[self removeChildByTag:kSceneFade cleanup:NO];
+	[self removeChildByTag:kSceneFade cleanup:YES];
 }
 @end
 
@@ -933,7 +937,7 @@ const NSInteger kSceneFade = 0xFADEFADE;
 -(void) onExit
 {
 	// remove our layer and release all containing objects
-	[self removeChildByTag:kSceneFade cleanup:NO];
+	[self removeChildByTag:kSceneFade cleanup:YES];
 
 	[super onExit];
 }

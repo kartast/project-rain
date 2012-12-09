@@ -103,10 +103,17 @@
 	NSDictionary *dict = [NSDictionary dictionaryWithContentsOfFile:path];
 
 	NSAssert( dict != nil, @"Particles: file not found");
-	return [self initWithDictionary:dict];
+	
+	return [self initWithDictionary:dict path:[plistFile stringByDeletingLastPathComponent]];
 }
 
+
 -(id) initWithDictionary:(NSDictionary *)dictionary
+{
+	return [self initWithDictionary:dictionary path:@""];
+}
+
+-(id) initWithDictionary:(NSDictionary *)dictionary path:(NSString*)dirname
 {
 	NSUInteger maxParticles = [[dictionary valueForKey:@"maxParticles"] integerValue];
 	// self, not super
@@ -232,6 +239,11 @@
 			// Try to get the texture from the cache
 
 			NSString *textureName = [dictionary valueForKey:@"textureFileName"];
+			NSString *textureDir = [textureName stringByDeletingLastPathComponent];
+			
+			// For backward compatibility, only append the dirname if both dirnames are the same
+			if( ! [textureDir isEqualToString:dirname] )
+				textureName = [dirname stringByAppendingPathComponent:textureName];
 
 			CCTexture2D *tex = [[CCTextureCache sharedTextureCache] addImage:textureName];
 
@@ -326,7 +338,9 @@
 
 -(void) dealloc
 {
-	[self unscheduleUpdate];
+	// Since the scheduler retains the "target (in this case the ParticleSystem)
+	// it is not needed to call "unscheduleUpdate" here. In fact, it will be called in "cleanup"
+//	[self unscheduleUpdate];
 
 	free( particles );
 

@@ -418,11 +418,19 @@ NSMutableDictionary *goalInfo;
     }
     
     for (LHSprite* sprite in startAreaSprites) {
-        int nMaxSpawn = [(SpriteInfo*)[sprite userInfo] spawnMax];
+        SpriteInfo* spriteInfo = [sprite userInfo];
+        int nMaxSpawn = [spriteInfo spawnMax];
+        
+        // Get spawnTypes
+        // First one normal, second one boost, etc
+        NSMutableArray* spawnTypes = [spriteInfo spawnTypes];
         
         GameObjectSpawner* spawnerObject = [[GameObjectSpawner alloc] init];
         spawnerObject.sprite = sprite;
         [spawnerObject setNSpawnMax:nMaxSpawn];
+        if (spawnTypes) {
+            [spawnerObject setSpawnTypes:spawnTypes];
+        }
         [allStartAreas addObject:spawnerObject];
     }
 }
@@ -590,9 +598,6 @@ NSMutableDictionary *goalInfo;
     if ([allStars count] <=0) {
         return;
     }
-    
-    int nBallColor = [spriteBall currentFrame];
-
     
     if ([spriteGoal currentFrame] == [spriteBall currentFrame]) {
         // Hit !!
