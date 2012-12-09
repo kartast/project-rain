@@ -48,6 +48,11 @@
 				<false/>
 				<key>spawnMax</key>
 				<real>1</real>
+				<key>spawnTypes</key>
+				<array>
+					<array/>
+					<string>STRING</string>
+				</array>
 			</dict>
 		</dict>
 	</array>

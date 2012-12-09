@@ -469,8 +469,6 @@ NSMutableDictionary *goalInfo;
 - (void) findBlackholes {
     NSArray* sprites = [loader spritesWithTag:BLACK_HOLE];
     allBlackholes = [[NSMutableArray alloc] initWithArray:sprites];
-    
-    NSAssert( [allBlackholes count] == 2, @"black holes must be equals to 2");
 }
 
 #pragma mark --
