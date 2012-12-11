@@ -23,7 +23,7 @@ static const float fDampMult = 0.6;
 
 static const float fStepTimeMult = 1.1;
 
-static const char* szDefaultLevel = "Levels/level04";
+static const char* szDefaultLevel = "Levels/level06";
 
 #define GOAL_COLOR          @"goal_color"
 #define GOAL_COLOR_YELLOW   @"goal_color_yellow"
